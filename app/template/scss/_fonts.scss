@@ -1,17 +1,91 @@
 @font-face {
-	font-family: 'Avanti';
-	src: local('Avanti'),
-		 url('../fonts/Avanti/Avanti.woff2') format('woff2'),
-		 url('../fonts/Avanti/Avanti.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'proxima';
+    src: url('../fonts/ProximaNova-Semibold/proxima_nova_semibold.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Semibold/proxima_nova_semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 900;
+
+}
+
+
+@font-face {
+    font-family: 'proxima';
+    src: url('../fonts/proxima_nova_black.woff2') format('woff2'),
+         url('../fonts/proxima_nova_black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-weight: 700;
+}
+
+
+
+@font-face {
+    font-family: 'proxima_novablack_italic';
+    src: url('../fonts/ProximaNova-BlackIt/proxima_nova_black_italic.woff2') format('woff2'),
+         url('../fonts/ProximaNova-BlackIt/proxima_nova_black_italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'proxima';
+    src: url('../fonts/ProximaNova-Bold/proxima_nova_bold.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Bold/proxima_nova_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+
+@font-face {
+    font-family: 'proxima';
+    src: url('../fonts/ProximaNova-Regular/proxima_nova_regular.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Regular/proxima_nova_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+
+@font-face {
+    font-family: 'proxima';
+    src: url('../fonts/ProximaNova-Light/proxima_nova_light.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Light/proxima_nova_light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 100;
+
+}
+
+
+@font-face {
+    font-family: 'proxima_novaregular_italic';
+    src: url('../fonts/ProximaNova-RegularIt/proxima_nova_regular_italic.woff2') format('woff2'),
+         url('../fonts/ProximaNova-RegularIt/proxima_nova_regular_italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Avanti';
-	src: local('Avanti Bold'), local('Avanti-Bold'),
-		 url('../fonts/Avanti/Avanti-Bold.woff2') format('woff2'),
-		 url('../fonts/Avanti/Avanti-Bold.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
+    font-family: 'proxima_novabold_italic';
+    src: url('../fonts/ProximaNova-BoldIt/proxima_nova_bold_italic.woff2') format('woff2'),
+         url('../fonts/ProximaNova-BoldIt/proxima_nova_bold_italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'proxima_novaextrabold_italic';
+    src: url('../fonts/ProximaNova-ExtraboldIt/proxima_nova_extrabold_italic.woff2') format('woff2'),
+         url('../fonts/ProximaNova-ExtraboldIt/proxima_nova_extrabold_italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
