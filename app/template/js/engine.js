@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+	$('#fullpage').fullpage({
+		responsiveWidth : 1024,
+		responsiveHeight: 900,
+		autoScrolling : true,
+		fitToSection : false,
+		scrollBar : true,
+		// normalScrollElements: '#section7',
+		// bigSectionsDestination : 'bottom'
+	});
 
 	// mobile-menu
 	$('#navbar').each(function(){
