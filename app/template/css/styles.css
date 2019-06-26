@@ -297,6 +297,9 @@ template {
 [hidden] {
   display: none; }
 
+.red {
+  color: #fe0036; }
+
 @font-face {
   font-family: 'Avanti';
   src: local("Avanti"), url("../fonts/Avanti/Avanti.woff2") format("woff2"), url("../fonts/Avanti/Avanti.woff") format("woff");
@@ -3545,11 +3548,7 @@ html {
 
 body {
   font-size: 14px;
-  font-size: 1.4rem;
-  font-display: swap; }
-
-html, body {
-  height: 100%; }
+  font-size: 1.4rem; }
 
 input::-moz-focus-inner {
   border: 0;
@@ -3573,23 +3572,7 @@ input::-moz-focus-inner {
     min-height: 100vh;
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: auto 1fr auto; }
-  @media (min-width: 992px) {
-    .grid-lg-2 {
-      grid-template-columns: repeat(2, 1fr);
-      grid-row-gap: 30px; }
-    .grid-lg-3 {
-      grid-template-columns: repeat(3, 1fr);
-      grid-row-gap: 30px; }
-    .d-lg-grid {
-      display: grid !important; } }
-  @media (min-width: 1250px) {
-    .grid-xl-6 {
-      grid-template-columns: repeat(6, 1fr); } } }
-
-.outerwrapper {
-  -webkit-flex: 1;
-  flex: 1; }
+    grid-template-rows: auto 1fr auto; } }
 
 /*** standart classes *****/
 a {
@@ -3633,33 +3616,112 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before {
+.before, .btn:before {
   content: "";
   display: block;
   position: absolute; }
 
-/* =header
+.text-color-white {
+  color: #fff; }
+
+.btn {
+  background: none;
+  padding: 0;
+  border: none;
+  position: relative;
+  display: block; }
+  .btn span {
+    align-items: center;
+    border-radius: 5rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 5rem;
+    justify-content: center;
+    margin: auto;
+    padding: 0 2.4rem;
+    position: relative;
+    z-index: 2; }
+  .btn:before {
+    height: 5rem;
+    border-radius: 5rem;
+    left: 2px;
+    top: 3px;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+  .btn-blue span {
+    background-color: #0d2481;
+    color: #fff; }
+  .btn-white span {
+    background-color: #fff;
+    color: #000; }
+  .btn-bg-turqueise:before {
+    background-color: #00ffd1; }
+  .btn-bg-red:before {
+    background-color: #fe0034; }
+
+/* =section1
 ---------------------------*/
-/* =/header
+.header {
+  padding-top: 3rem; }
+
+.title {
+  line-height: 1.2;
+  font-size: 4.4rem;
+  font-weight: bold; }
+  .title-black {
+    color: #000; }
+  .title-white {
+    color: #fff; }
+
+.text-black {
+  color: #000; }
+
+.text-white {
+  color: #fff; }
+  .text-white a {
+    color: currentColor; }
+
+#section-1 {
+  background-color: #060a2d; }
+  #section-1 .contacts {
+    font-size: 1.3rem; }
+    #section-1 .contacts .tel {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold; }
+      #section-1 .contacts .tel:hover {
+        text-decoration: none; }
+
+#section-3 {
+  background-color: #0b6be4; }
+
+#section-4 {
+  background-color: #031229; }
+
+#section-6 {
+  background-color: #0d2481; }
+
+#section-7 {
+  background-color: #0b1521; }
+
+nav a {
+  color: #fff; }
+
+/* =/section1
 ---------------------------*/
-/* =navigation
----------------------------*/
-/* =/navigation
----------------------------*/
-/* =main
----------------------------*/
+.footer {
+  background-color: #00101f;
+  padding: 3.2rem 0; }
+
 .tab-content > .tab-pane {
   display: none; }
 
 .tab-content > .active {
   display: block; }
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0); }
 
 @font-face {
   font-family: 'Avanti';
