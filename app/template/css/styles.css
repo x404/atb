@@ -3683,7 +3683,7 @@ h3 {
   font-weight: bold;
   height: 6rem;
   justify-content: center;
-  padding: 0 2.4rem;
+  padding: 0 2.8rem;
   transition: background-color .3s;
   z-index: 2; }
   .btn:hover span {
@@ -3694,6 +3694,9 @@ h3 {
   .btn-red {
     background-color: #ff0035;
     color: #fff; }
+  .btn-turqueise {
+    background-color: #00ffd2;
+    color: #000; }
   .btn-white span {
     background-color: #fff;
     color: #000; }
@@ -3702,6 +3705,11 @@ h3 {
     .btn-bg-turqueise:hover {
       background-color: #00ffd2;
       color: #000; }
+  .btn-bg-red {
+    box-shadow: 3px 3px 0px 0px #ff0035; }
+    .btn-bg-red:hover {
+      background-color: #ff0035;
+      color: #fff; }
 
 /* =section1
 ---------------------------*/
@@ -3745,7 +3753,8 @@ h3 {
     border-radius: 5rem;
     height: 5rem;
     margin-left: 4.5rem;
-    font-size: 16px; }
+    font-size: 16px;
+    padding: 0 2.4rem; }
 
 .title {
   line-height: 1;
@@ -4328,13 +4337,13 @@ nav a {
       margin: 0  auto;
       height: 55px; }
   #section-2 .tab-content {
-    padding-top: 50px; }
+    padding-top: 25px; }
   #section-2 .tab-pane {
-    line-height: 1.8; }
+    line-height: 1.7; }
     #section-2 .tab-pane ul {
       list-style: none; }
       #section-2 .tab-pane ul li {
-        margin: 20px 0;
+        margin: 15px 0;
         padding-left: 43px;
         position: relative; }
         #section-2 .tab-pane ul li:before {
@@ -4343,6 +4352,10 @@ nav a {
           top: 10px;
           width: 22px;
           height: 5px; }
+  #section-2 .group-buttons {
+    margin-top: 25px; }
+    #section-2 .group-buttons .btn {
+      margin-right: 10px; }
 
 /* =mobile-menu
 ---------------------------*/
