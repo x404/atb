@@ -3663,7 +3663,7 @@ h3 {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .header .logo:after, .half-redline:before, #section-2 .categories .nav-item:before, #section-2 .categories .nav-item:after, #section-2 .tab-pane ul li:before {
+.before, .header .logo:after, .half-redline:before, #section-2 .categories .nav-item:before, #section-2 .categories .nav-item:after, .content ul li:before, .steps__list .step:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3697,7 +3697,7 @@ h3 {
   .btn-turqueise {
     background-color: #00ffd2;
     color: #000; }
-  .btn-white span {
+  .btn-white {
     background-color: #fff;
     color: #000; }
   .btn-bg-turqueise {
@@ -3888,17 +3888,12 @@ form .form-control {
   padding-left: 0;
   width: 260px; }
 
-#section-3 {
-  background-color: #0b6be4; }
-
-#section-4 {
-  background-color: #031229; }
-
-#section-6 {
-  background-color: #0d2481; }
-
-#section-7 {
-  background-color: #0b1521; }
+.excerption {
+  border: 10px solid #00ffd2;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 0;
+  padding: 18px 14px; }
 
 nav a {
   color: #fff; }
@@ -3918,12 +3913,34 @@ nav a {
 .webp #section-1 {
   background-image: url(../images/bg/section-1-bg.webp); }
 
+.webp #section-3 {
+  background-image: url(../images/bg/section-3-bg.webp); }
+
+.section {
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 #section-1 {
   background-color: #0a0a1f;
   background-image: url(../images/bg/section-1-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   min-height: 1128px; }
+
+#section-3 {
+  background-image: url(../images/bg/section-3-bg.jpg);
+  background-color: #0b6be4;
+  min-height: 797px; }
+  #section-3 .container {
+    background: url(../images/timer.png) no-repeat;
+    background-position: 60px 20px; }
+
+#section-4 {
+  background-color: #031229; }
+
+#section-6 {
+  background-color: #0d2481; }
+
+#section-7 {
+  background-color: #0b1521; }
 
 @font-face {
   font-family: 'proxima-nova';
@@ -4340,22 +4357,84 @@ nav a {
     padding-top: 25px; }
   #section-2 .tab-pane {
     line-height: 1.7; }
-    #section-2 .tab-pane ul {
-      list-style: none; }
-      #section-2 .tab-pane ul li {
-        margin: 15px 0;
-        padding-left: 43px;
-        position: relative; }
-        #section-2 .tab-pane ul li:before {
-          background-color: #00ffd2;
-          left: 0;
-          top: 10px;
-          width: 22px;
-          height: 5px; }
   #section-2 .group-buttons {
     margin-top: 25px; }
     #section-2 .group-buttons .btn {
       margin-right: 10px; }
+
+.content ul {
+  list-style: none; }
+  .content ul li {
+    margin: 15px 0;
+    padding-left: 43px;
+    position: relative; }
+    .content ul li:before {
+      background-color: #00ffd2;
+      left: 0;
+      top: 10px;
+      width: 22px;
+      height: 5px; }
+
+#section-3 {
+  font-size: 17px; }
+  #section-3 .container {
+    padding-top: 60px;
+    padding-bottom: 70px; }
+  #section-3 .content {
+    padding-right: 110px; }
+  #section-3 .title {
+    margin-bottom: 25px; }
+
+#section-4 {
+  padding: 8rem 0 6rem; }
+  #section-4 .content {
+    font-size: 17px;
+    padding-right: 115px; }
+    #section-4 .content .title {
+      padding-bottom: 15px; }
+    #section-4 .content p:not(.title) {
+      color: #b8c5d0; }
+
+.steps__list {
+  margin-top: 30px; }
+  .steps__list:first-child {
+    margin-top: 10px; }
+  .steps__list .num {
+    font-family: "Proxima Nova - Black";
+    font-size: 40px; }
+  .steps__list .step {
+    width: 25%;
+    position: relative; }
+    .steps__list .step:before {
+      height: 7px;
+      width: 100%;
+      background-color: #00ffd2;
+      top: 34px;
+      right: 0; }
+    .steps__list .step:first-child:before, .steps__list .step:last-child:before {
+      width: 50%; }
+    .steps__list .step:last-child:before {
+      left: 0;
+      right: auto; }
+    .steps__list .step .num {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+      padding-top: 8px; }
+    .steps__list .step .circle {
+      width: 71px;
+      height: 71px;
+      background-color: #0d2580;
+      box-shadow: 2px 3px 0 #ff0035, inset 2px 4px 0 #00ffd2;
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+.steps__title {
+  font-weight: 700;
+  line-height: 1.4; }
 
 /* =mobile-menu
 ---------------------------*/
