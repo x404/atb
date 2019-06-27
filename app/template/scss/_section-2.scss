@@ -84,28 +84,31 @@
 
 	.tab-pane{
 		line-height: 1.7;
-		ul{
-			list-style: none;
-			li{
-				margin: 15px 0;
-				padding-left: 43px;
-				position: relative;
-				&:before{
-					@extend .before;
-					background-color: $color4;
-					left: 0;
-					top: 10px;
-					width: 22px;
-					height: 5px;
-				}
-			}
-		}
 	}
 
 	.group-buttons{
 		margin-top: 25px;
 		.btn{
 			margin-right: 10px;
+		}
+	}
+}
+
+.content{
+	ul{
+		list-style: none;
+		li{
+			margin: 15px 0;
+			padding-left: 43px;
+			position: relative;
+			&:before{
+				@extend .before;
+				background-color: $color4;
+				left: 0;
+				top: 10px;
+				width: 22px;
+				height: 5px;
+			}
 		}
 	}
 }

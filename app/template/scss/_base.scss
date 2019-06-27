@@ -177,10 +177,8 @@ h3{font-size:1.6rem}
 		color: $color1;
 	}
 	&-white{
-		span{
-			background-color: #fff;
-			color: $color1;
-		}
+		background-color: #fff;
+		color: $color1;
 	}
 	&-bg-turqueise{
 		box-shadow: 3px 3px 0px 0px $color4;
@@ -435,12 +433,16 @@ form{
 	}
 }
 
-
-
-
-#section-3{
-	background-color: #0b6be4;
+.excerption{
+	border: 10px solid $color4;
+	font-size: 20px;
+	font-weight: 700;
+	margin: 30px 0;
+	padding: 18px 14px;
 }
+
+
+
 
 #section-4{
 	background-color: #031229;

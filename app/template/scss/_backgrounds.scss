@@ -1,13 +1,30 @@
 .webp{
 	#section-1{
 		background-image: url(../images/bg/section-1-bg.webp);
+	}
+	#section-3{
+		background-image: url(../images/bg/section-3-bg.webp);
 	}	
 }
+
+.section{
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 
 #section-1{
 	background-color: #0a0a1f;
 	background-image: url(../images/bg/section-1-bg.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
 	min-height: 1128px;
+}	
+
+#section-3{
+	background-image: url(../images/bg/section-3-bg.jpg);
+	background-color: #0b6be4;
+	min-height: 797px;
+	.container{
+		background: url(../images/timer.png) no-repeat;
+		background-position: 60px 20px;
+	}
 }	
