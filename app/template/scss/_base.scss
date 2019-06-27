@@ -240,6 +240,7 @@ em strong
 
 .header{
 	padding-top: 3rem;
+	padding-bottom: 2.5rem;
 	.logo{
 		align-items: center;
 		border: 3px solid $color4;
@@ -339,9 +340,28 @@ em strong
 	}
 }
 
+.half-redline{
+	color: $color2;
+	margin-left: 2px;
+	position: relative;
+	&:before{
+		@extend .before;
+		background-color: $color3;
+		left: -4px;
+		bottom: 0;
+		height: 50%;
+		width: calc(100% + 8px);
+		z-index: 1;
+	}
+	span{
+		position: relative;
+		z-index: 2;
+	}
+}
 
 #section-1{
 	.contacts{
+		font-size: 1.4rem;
 		.tel{
 			color: $color2;
 			font-size: 2rem;
@@ -354,7 +374,22 @@ em strong
 				text-decoration: none;
 			}
 		}
-		font-size: 1.4rem;
+	}
+
+	.title{
+		color: $color2;
+	}
+
+	.subtitle{
+		color: $color4;
+		font-size: 30px;
+		font-weight: 700;
+		margin: 15px 0; 
+	}
+
+	.content{
+		color: $color6;
+		font-size: 20px;
 	}
 }
 
@@ -378,6 +413,30 @@ em strong
 nav{
 	a{
 		color: $color2;
+	}
+}
+
+
+// advantages
+.advantages{
+	&__list{
+	}
+	&__items{
+		padding-right: 30px;
+		width: 20%;
+	}
+}
+
+.item__advantage{
+	&-pic{
+		height: 120px;	
+	}
+	&-title{
+		font-size: 20px;
+		margin: 1rem 0;
+	}
+	&-text{
+		font-size: 15px;
 	}
 }
 

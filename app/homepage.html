@@ -31,43 +31,117 @@
 
 </head>
 <body data-spy="scroll" data-target="#navbar">
-<div id="section-1" class="header section text-color-white">
+<div id="section-1" class="section text-color-white">
 	<div class="container-big">
-		<div class="d-flex justify-content-between align-items-center">
-			<div class="d-flex align-items-center">
-				<div class="menu">
-					<button type="button" class="extra-toggle btn-animate">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+		<!-- =header -->
+		<div class="header">
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="d-flex align-items-center">
+					<div class="menu">
+						<button type="button" class="extra-toggle btn-animate">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="logo">
+						АТВ-Сервис
+					</div>
 				</div>
-				<div class="logo">
-					АТВ-Сервис
+
+				<nav id="navbar" class="mainnav">
+					<ul class="nav menu d-flex cl-effect-11">
+						<li class="menu-item"><a href="#" title="" data-hover="Что ремонтируем?">Что ремонтируем?</a></li>
+						<li class="menu-item"><a href="#" title="" data-hover="Чем мы лучше?">Чем мы лучше?</a></li>
+						<li class="menu-item"><a href="#" title="" data-hover="Цены на ремонт">Цены на ремонт</a></li>
+						<li class="menu-item"><a href="#" title="" data-hover="Отзывы">Отзывы</a></li>
+						<li class="menu-item"><a href="#" title="" data-hover="Контакты">Контакты</a></li>
+					</ul>
+				</nav>
+
+
+				<div class="d-flex align-items-center">			
+					<div class="contacts">
+						<a href="tel:+73912557171" class="tel">+7 (391) 255-71-71</a>
+						<a href="tel:+79082038434" class="tel">+7-908-203-8434</a>
+						<p>г. Красноярск, 78й Добровольческой бригады д.1</p>
+					</div>		
+
+					<button type="button" class="btn btn-blue btn-bg-turqueise qorder">Заказать диагностику</button>
+				</div>			
+			</div>
+		</div>
+		<!-- =/header -->
+	</div>
+
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-xl-6 content">
+				<p class="title"><span class="red">Ремонт</span> телевизоров и бытовой техники</p>
+				<p class="subtitle">Специализированная <span class="half-redline"><span>мастерская!</span></span></p>
+				<p>Мы мастера своего дела! Ремонтируем телевизоры всех марок. Быстро и качественно устраняем даже сложные неисправности. Даем гарантию на все виды работ.</p>
+
+				<form action="#" method="post">
+					<fieldset>
+						<input type="submit" value="Заказать бесплатную диагностику" />
+						<p class="policy">Нажимая на кнопку Вы даете согласие на обработку персональных данных</p>
+					</fieldset>
+				</form>
+			</div>
+			<div class="col-xl-6">
+				<img src="/template/images/tv.png" alt="" />
+			</div>
+		</div>
+
+		<!-- =advantages -->
+		<div class="advantages__list d-flex justify-content-between">
+			<div class="advantages__items item__advantage">
+				<div class="item__advantage-pic">
+					<img src="/template/images/advantage-1.png" alt="" />
+				</div>
+				<h3 class="item__advantage-title">Бесплатная диагностика! </h3>
+				<div class="item__advantage-text">
+					<p><span class="turqueise">Независимо от того, заказываете вы дальнейший ремонт или нет.</span> Вы платите только за результат! </p>
 				</div>
 			</div>
-
-			<nav id="navbar" class="mainnav">
-				<ul class="nav menu d-flex cl-effect-11">
-					<li class="menu-item"><a href="#" title="" data-hover="Что ремонтируем?">Что ремонтируем?</a></li>
-					<li class="menu-item"><a href="#" title="" data-hover="Чем мы лучше?">Чем мы лучше?</a></li>
-					<li class="menu-item"><a href="#" title="" data-hover="Цены на ремонт">Цены на ремонт</a></li>
-					<li class="menu-item"><a href="#" title="" data-hover="Отзывы">Отзывы</a></li>
-					<li class="menu-item"><a href="#" title="" data-hover="Контакты">Контакты</a></li>
-				</ul>
-			</nav>
-
-
-			<div class="d-flex align-items-center">			
-				<div class="contacts">
-					<a href="tel:+73912557171" class="tel">+7 (391) 255-71-71</a>
-					<a href="tel:+79082038434" class="tel">+7-908-203-8434</a>
-					<p>г. Красноярск, 78й Добровольческой бригады д.1</p>
-				</div>		
-
-				<button type="button" class="btn btn-blue btn-bg-turqueise qorder">Заказать диагностику</button>
-			</div>			
+			<div class="advantages__items item__advantage">
+				<div class="item__advantage-pic">
+					<img src="/template/images/advantage-2.png" alt="" />
+				</div>
+				<h3 class="item__advantage-title">Мы не посредники!</h3>
+				<div class="item__advantage-text">
+					<p><span class="turqueise">Мы сами ремонтируем  вашу технику — это позволяет снизить стоимость ремонта.</span> Посредники несут вашу технику к нам! </p>
+				</div>
+			</div>
+			<div class="advantages__items item__advantage">
+				<div class="item__advantage-pic">
+					<img src="/template/images/advantage-3.png" alt="" />
+				</div>
+				<h3 class="item__advantage-title">Производим ремонт только после согласования</h3>
+				<div class="item__advantage-text">
+					<p>Для вас <span class="turqueise">не будет неприятным сюрпризом</span> увеличение цены при получении техники! </p>
+				</div>
+			</div>
+			<div class="advantages__items item__advantage">
+				<div class="item__advantage-pic">
+					<img src="/template/images/advantage-4.png" alt="" />
+				</div>
+				<h3 class="item__advantage-title">Ремонт за 1 день!</h3>
+				<div class="item__advantage-text">
+					<p><span class="turqueise">Типовые (распространенные) неисправности</span>  устраним за 1 рабочий день! </p>
+				</div>
+			</div>
+			<div class="advantages__items item__advantage">
+				<div class="item__advantage-pic">
+					<img src="/template/images/advantage-5.png" alt="" />
+				</div>
+				<h3 class="item__advantage-title">Собственный уникальный склад запчастей</h3>
+				<div class="item__advantage-text">
+					<p>Что позволяет осуществлять <span class="turqueise">ремонт существенно быстрее и дешевле</span> других сервисов.</p>
+				</div>
+			</div>
 		</div>
+		<!-- =/advantages -->
 	</div>
 </div>
 
