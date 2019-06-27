@@ -1,16 +1,4 @@
 $(document).ready(function(){
-console.log("!");
-	$('#fullpage').fullpage({
-		responsiveWidth : 1024,
-		responsiveHeight: 900,
-		autoScrolling : true,
-		verticalCentered: false,
-		// fitToSection : false,
-		// scrollBar : true,
-		// normalScrollElements: '#section7',
-		// bigSectionsDestination : 'bottom'
-	});
-
 	// mobile-menu
 	$('#navbar').each(function(){
 		var $this = $(this),
