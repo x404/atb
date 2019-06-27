@@ -79,15 +79,15 @@
 	}
 
 	.tab-content{
-		padding-top: 50px;
+		padding-top: 25px;
 	}
 
 	.tab-pane{
-		line-height: 1.8;
+		line-height: 1.7;
 		ul{
 			list-style: none;
 			li{
-				margin: 20px 0;
+				margin: 15px 0;
 				padding-left: 43px;
 				position: relative;
 				&:before{
@@ -99,6 +99,13 @@
 					height: 5px;
 				}
 			}
+		}
+	}
+
+	.group-buttons{
+		margin-top: 25px;
+		.btn{
+			margin-right: 10px;
 		}
 	}
 }

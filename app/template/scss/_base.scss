@@ -153,7 +153,7 @@ h3{font-size:1.6rem}
 	height: $radius;
 	justify-content: center;
 	// margin: auto;
-	padding: 0 2.4rem;
+	padding: 0 2.8rem;
 	transition: background-color .3s;
 	z-index: 2;
 
@@ -172,6 +172,10 @@ h3{font-size:1.6rem}
 		background-color: $color3;
 		color: $color2;
 	}
+	&-turqueise{
+		background-color: $color4;
+		color: $color1;
+	}
 	&-white{
 		span{
 			background-color: #fff;
@@ -183,6 +187,13 @@ h3{font-size:1.6rem}
 		&:hover{
 			background-color: $color4;
 			color: $color1;
+		}
+	}
+	&-bg-red{
+		box-shadow: 3px 3px 0px 0px $color3;
+		&:hover{
+			background-color: $color3;
+			color: $color2;
 		}
 	}
 }
@@ -245,6 +256,7 @@ h3{font-size:1.6rem}
 		height: $radius;
 		margin-left: 4.5rem;
 		font-size: 16px;
+		padding: 0 2.4rem;
 	}
 }
 
