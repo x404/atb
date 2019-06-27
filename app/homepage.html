@@ -161,70 +161,102 @@
 	<div class="container">
 		<p class="title title-black">ATB-сервис ремонтирует</p>
 		<div class="categories">
-			<ul class="d-flex">
+			<ul class="d-flex justify-content-between nav nav-tabs" role="tablist">
 				<li>
-					<button type="button" class="">
-						<img src="/template/icons/" alt="" />
-						<p>Телевизоры</p>
-					</button>
+					<a class="nav-item active" id="nav-tv-tab" data-toggle="tab" href="#nav-tv" role="tab" aria-controls="nav-tv" aria-selected="true">
+						<span class="icon"><img src="/template/images/icons/tv.png" alt="" /></span>
+						Телевизоры
+					</a>
 				</li>
 				<li>
-					<button type="button" class="">
-						<img src="/template/icons/" alt="" />
-						<p>Мониторы</p>
-					</button>
+					<a class="nav-item" id="nav-monitors-tab" data-toggle="tab" href="#nav-monitors" role="tab" aria-controls="nav-monitors" aria-selected="false">
+						<span class="icon"><img src="/template/images/icons/monitors.png" alt="" /></span>
+						Мониторы
+					</a>
 				</li>
 				<li>
-					<button type="button" class="">
-						<img src="/template/icons/" alt="" />
-						<p>Микроволновые печи (СВЧ)</p>
-					</button>
+					<a class="nav-item" id="nav-microwave-tab" data-toggle="tab" href="#nav-microwave" role="tab" aria-controls="nav-microwave" aria-selected="false">
+						<span class="icon"><img src="/template/images/icons/microwave.png" alt="" /></span>
+						Микроволновые <br> печи (СВЧ)
+					</a>
 				</li>
 				<li>
-					<button type="button" class="">
-						<img src="/template/icons/" alt="" />
-						<p>Мультиварки</p>
-					</button>
+					<a class="nav-item" id="nav-multiv-tab" data-toggle="tab" href="#nav-multiv" role="tab" aria-controls="nav-multiv" aria-selected="false">
+						<span class="icon"><img src="/template/images/icons/multiv.png" alt="" /></span>
+						Мультиварки
+					</a>
 				</li>
 				<li>
-					<button type="button" class="">
-						<img src="/template/icons/" alt="" />
-						<p>Кофеварки и кофемашины</p>
-					</button>
+					<a class="nav-item" id="nav-cofe-tab" data-toggle="tab" href="#nav-cofe" role="tab" aria-controls="nav-cofe" aria-selected="false">
+						<span class="icon"><img src="/template/images/icons/cofe.png" alt="" /></span>
+						Кофеварки и <br> кофемашины
+					</a>
 				</li>
 				<li>
-					<button type="button" class="">
-						<img src="/template/icons/" alt="" />
-						<p>Пылесосы</p>
-					</button>
+					<a class="nav-item" id="nav-turbine-tab" data-toggle="tab" href="#nav-turbine" role="tab" aria-controls="nav-cofe" aria-selected="false">
+						<span class="icon"><img src="/template/images/icons/turbine.png" alt="" /></span>
+						Пылесосы
+					</a>
 				</li>
 				<li>
-					<button type="button" class="">
-						<img src="/template/icons/" alt="" />
-						<p>Утюги и отпариватели</p>
-					</button>
+					<a class="nav-item" id="nav-iron-tab" data-toggle="tab" href="#nav-iron" role="tab" aria-controls="nav-iron" aria-selected="false">
+						<span class="icon"><img src="/template/images/icons/iron.png" alt="" /></span>
+						Утюги и <br>отпариватели
+					</a>
 				</li>
 				<li>
-					<button type="button" class="">
-						<img src="/template/icons/" alt="" />
-						<p>Ионизаторы и увлажнители воздуха</p>
-					</button>
+					<a class="nav-item" id="nav-ion-tab" data-toggle="tab" href="#nav-ion" role="tab" aria-controls="nav-ion" aria-selected="false">
+						<span class="icon"><img src="/template/images/icons/ion.png" alt="" /></span>
+						Ионизаторы <br> и увлажнители <br> воздуха
+					</a>
 				</li>
 				<li>
-					<button type="button" class="">
-						<img src="/template/icons/" alt="" />
-						<p>Мелкую бытовую технику</p>
-					</button>
+					<a class="nav-item" id="nav-techics-tab" data-toggle="tab" href="#nav-techics" role="tab" aria-controls="nav-techics" aria-selected="false">
+						<span class="icon"><img src="/template/images/icons/techics.png" alt="" /></span>
+						Мелкую бытовую <br>технику
+					</a>
 				</li>					
 			</ul>
 		</div>
-		<div class="tab-contents">
-			<div class="row">
-				<div class="col-xl-2"></div>
-				<div class="col-xl-10">
-					<button type="button" class="btn btn-blue btn-bg-turqueise qorder"><span>Оставить заявку на ремонт</span></button>
+		<div class="tab-content">
+			<div class="tab-pane fade show active" id="nav-tv" role="tabpanel" aria-labelledby="nav-tv-tab">
+				<div class="row">
+					<div class="col-xl-4 text-center">
+						<picture>
+							<source srcset="/images/tv.webp" type="image/webp">
+							<img src="/images/tv.png" alt="Alt Text!">
+						</picture>
+					</div>
+					<div class="col-xl-8">
+						<h2>Ремонт телевизоров любой сложности и любого бренда! </h2>
+						<p>Наша основная сфера деятельности — это ремонт жидкокристаллических телевизоров (LCD, LED), плазменных телевизоров (PDP), кинескопных (CRT). Современный телевизор состоит из нескольких компонентов: ЖК экран (матрица), блок питания, материнская плата, динамики, кнопки, плата фотоприемника. Основные неисправности с которыми мы сталкиваемся каждый день:</p>
+						<ul>
+							<li>
+								<strong>Отсутствие изображения (звук при этом остается).</strong> Примерно 65% клиентов обращаются к нам именно с этой проблемой. Данная неисправность обычно означает выход из строя светодиодов подсветки. Перегореть может как 1-3-5-10, так и все диоды. Даже если перегорел 1 или несколько диодов — менять необходимо абсолютно все, поскольку все диоды работали одинаковое время и если поменять только сгоревшие, то через весьма короткий срок незамененные светодиоды тоже перегорят. Мы используем только новые качественные линейки подсветки целиком, либо новые светодиоды отдельно, при этом меняем все, делаем доработку блока питания и даем гарантию на данный вид работ 1 год! 
+							</li>
+							<li>
+								<strong>Прошивка телевизоров.</strong> Идет на втором месте по частоте ремонтов, примерно 20%. В современном телевизоре используется несколько видов памяти, таких как: Eeprom, SPI, EMMC, NAND, oneNAND, причем каждый тип памяти отвечает за определенные процессы. К сожалению многие производители привязывают память к процессору, в таком случае прошить материнскую плату невозможно и приходится менять плату целиком. У нас есть все необходимое оборудование для перепрошивки всех видов памяти современных телевизоров. 
+							</li>
+							<li>
+								<strong>Неисправности блоков питания телевизоров.</strong> 10% обращений. Обычно это происходит в связи с перепадом сетевого напряжения, грозы или просто заводским браком. В данном случае можно заменить блок питания целиком, но мы предпочитаем ремонтировать блок питания на уровне компонентов, что на порядок снижает стоимость ремонта. 
+							</li>
+							<li>
+								<strong>Остальные 5% ремонтов</strong> связаны с механическими повреждениями, такими как: залитая жидкостью матрица, сломанные разъемы и антенные входы, поврежденные шнуры питания.
+							</li>
+						</ul>
+
+						<button type="button" class="btn btn-blue btn-bg-turqueise qorder"><span>Оставить заявку на ремонт</span></button>
+					</div>
 				</div>
 			</div>
+			<div class="tab-pane fade" id="nav-monitors" role="tabpanel" aria-labelledby="nav-monitors-tab">...</div>
+			<div class="tab-pane fade" id="nav-microwave" role="tabpanel" aria-labelledby="nav-microwave-tab">...</div>
+			<div class="tab-pane fade" id="nav-multiv" role="tabpanel" aria-labelledby="nav-multiv-tab">...</div>
+			<div class="tab-pane fade" id="nav-cofe" role="tabpanel" aria-labelledby="nav-cofe-tab">...</div>
+			<div class="tab-pane fade" id="nav-turbine" role="tabpanel" aria-labelledby="nav-turbine-tab">...</div>
+			<div class="tab-pane fade" id="nav-iron" role="tabpanel" aria-labelledby="nav-iron-tab">...</div>
+			<div class="tab-pane fade" id="nav-ion" role="tabpanel" aria-labelledby="nav-ion-tab">...</div>
+			<div class="tab-pane fade" id="nav-techics" role="tabpanel" aria-labelledby="nav-techics-tab">...</div>
 		</div>
 	</div>
 </div>
