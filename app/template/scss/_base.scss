@@ -404,7 +404,7 @@ form{
 
 	.is-focused{
 		label{
-			@include transform(translate3d(0,-7px,0) scale(.8));
+			@include transform(translate3d(0,-12px,0) scale(.8));
 		}
 		.name-field{
 			opacity: 1;
@@ -444,48 +444,6 @@ form{
 
 
 
-#section-1{
-	.contacts{
-		font-size: 1.4rem;
-		.tel{
-			color: $color2;
-			font-size: 2rem;
-			font-weight: bold; 
-			margin-left: 2.5rem;
-			&:first-child{
-				margin-left: 0;
-			}
-			&:hover{
-				text-decoration: none;
-			}
-		}
-	}
-
-	.title{
-		color: $color2;
-	}
-
-	.subtitle{
-		color: $color4;
-		font-size: 30px;
-		font-weight: 700;
-		margin: 15px 0; 
-	}
-
-	.content{
-		color: $color6;
-		font-size: 20px;
-		padding-top: 30px;
-	}
-
-	form{
-		margin-top: 50px;
-	}
-	.btn-submit{
-		margin-top: 28px;
-	}
-}
-
 
 #section-3{
 	background-color: #0b6be4;
@@ -509,31 +467,6 @@ nav{
 	}
 }
 
-
-// advantages
-.advantages{
-	&__list{
-		margin-top: 20px;
-	}
-	&__items{
-		padding-right: 30px;
-		width: 20%;
-	}
-}
-
-.item__advantage{
-	&-pic{
-		height: 120px;	
-	}
-	&-title{
-		font-size: 20px;
-		margin: 2px 0 15px;
-	}
-	&-text{
-		font-size: 15px;
-		line-height: 1.6;
-	}
-}
 
 /* =/section1
 ---------------------------*/
