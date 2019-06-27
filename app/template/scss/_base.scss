@@ -167,7 +167,7 @@ em strong
 	border: none;
 	cursor: pointer;
 	display: flex;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: bold;
 	height: $radius;
 	justify-content: center;
@@ -186,11 +186,10 @@ em strong
 	&-blue{
 		background-color: $color5;
 		color: $color2;
-
-		&:hover{
-			background-color: $color4;
-			color: $color1;
-		}
+	}
+	&-red{
+		background-color: $color3;
+		color: $color2;
 	}
 	&-white{
 		span{
@@ -200,10 +199,9 @@ em strong
 	}
 	&-bg-turqueise{
 		box-shadow: 3px 3px 0px 0px $color4;
-	}
-	&-bg-red{
-		&:before{
-			background-color: $color6;
+		&:hover{
+			background-color: $color4;
+			color: $color1;
 		}
 	}
 }
@@ -265,6 +263,7 @@ em strong
 		border-radius: $radius;
 		height: $radius;
 		margin-left: 4.5rem;
+		font-size: 16px;
 	}
 }
 
@@ -359,6 +358,92 @@ em strong
 	}
 }
 
+
+.policy{
+	color: #cfcae1;
+	font-style: italic;
+	font-size: 13px;
+	font-weight: 400;
+	margin-top: 2.2rem;
+}
+
+
+form{
+	$pl: 0;
+	.input-field{
+		position: relative;	
+		&:before{
+			bottom: 15px;
+		}	
+		label{
+			-moz-user-select: none;
+			color: $color2;
+			font-weight: 300;
+			cursor: text;
+			font-size: 17px;
+			opacity: 1;
+			overflow: hidden;
+			position: absolute;
+			padding-left: 0;
+			text-overflow: ellipsis;
+			top: 7px;
+			transform-origin: left top 0;
+			transform: translate3d(0, 9px, 0px);
+			transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+			white-space: nowrap;
+			width: calc(96% - 10px);	
+		}	
+		.name-field{
+			opacity: 0;
+			color: #8bab9d;
+		}
+
+		.helper-field{
+		}
+	}
+
+	.is-focused{
+		label{
+			@include transform(translate3d(0,-7px,0) scale(.8));
+		}
+		.name-field{
+			opacity: 1;
+		}
+		.helper-field{
+			opacity: 0;
+		}
+
+	}
+
+	.input-field.is-charged:not(.is-focused) > label.name-field{
+		@include transform(translate3d(0px, -7px, 0px) scale(0.8));
+	}
+
+	.is-charged{
+		label{
+			opacity: 0;
+		}
+		.helper-field{
+			opacity: 0
+		}
+	}
+
+	.form-control{
+		background: none;
+		border: none;
+		border-bottom: 2px solid #fff;
+		color: #fff;
+		font-size: 17px;
+		height: 48px;
+		margin-right: 38px;
+		outline: none;
+		padding-left: $pl;
+		width: 260px;
+	}
+}
+
+
+
 #section-1{
 	.contacts{
 		font-size: 1.4rem;
@@ -390,6 +475,13 @@ em strong
 	.content{
 		color: $color6;
 		font-size: 20px;
+	}
+
+	form{
+		margin-top: 50px;
+	}
+	.btn-submit{
+		margin-top: 28px;
 	}
 }
 
