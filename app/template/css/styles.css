@@ -3722,6 +3722,9 @@ nav a {
 .webp #section-8 {
   background-image: url(../images/bg/section-8-bg.webp); }
 
+.webp #section-10 {
+  background-image: url(../images/bg/section-10-bg.webp); }
+
 .section {
   background-size: cover;
   background-repeat: no-repeat; }
@@ -3756,6 +3759,11 @@ nav a {
   background-image: url(../images/bg/section-8-bg.jpg);
   background-color: #f5f4f1;
   min-height: 756px; }
+
+#section-10 {
+  background-image: url(../images/bg/section-10-bg.jpg);
+  background-color: #1f2744;
+  min-height: 660px; }
 
 @font-face {
   font-family: 'proxima-nova';
@@ -4457,6 +4465,14 @@ table {
     table tr td .ps {
       font-size: 14px;
       color: #686f76; }
+
+#section-10 {
+  font-size: 20px;
+  padding: 120px 0; }
+  #section-10 .title {
+    margin-bottom: 30px; }
+  #section-10 p:not(.title) {
+    color: #cad3e4; }
 
 /* =mobile-menu
 ---------------------------*/

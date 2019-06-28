@@ -1,0 +1,11 @@
+#section-10{
+	.title{
+		margin-bottom: 30px;
+	}
+	font-size: 20px;
+	padding: 120px 0;
+
+	p:not(.title){
+		color: #cad3e4;
+	}
+}
