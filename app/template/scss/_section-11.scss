@@ -40,9 +40,16 @@
 		.form-control{
 			border-bottom-color: $color5;
 		}
-		form .input-field label{
-			color: #000;
-			font-weight: 400;
+		form .input-field{
+			label{
+				color: #000;
+				font-weight: 400;
+			}
+			&.is-focused{
+				.form-control{
+					border-bottom-color: $color3;
+				}
+			}
 		}
 		.policy{
 			color: #6b6b6b;

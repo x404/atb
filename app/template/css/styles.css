@@ -4539,6 +4539,8 @@ table {
     #section-11 .callback form .input-field label {
       color: #000;
       font-weight: 400; }
+    #section-11 .callback form .input-field.is-focused .form-control {
+      border-bottom-color: #ff0035; }
     #section-11 .callback .policy {
       color: #6b6b6b;
       margin-top: 2px; }
