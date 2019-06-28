@@ -76,13 +76,10 @@ gulp.task('compress', function(){
 	pump([
 			gulp.src([  // Берем все необходимые библиотеки
 				config.templateDir + '/js/modernizr-custom-webp.js',
-				config.templateDir + '/js/modernizr.js',
 				config.libsDir + '/jquery/dist/jquery.js',
 				config.templateDir + '/js/util.js',
-				config.templateDir + '/js/collapse.js',
-				config.templateDir + '/js/tab.js',
-				config.templateDir + '/js/popper.min.js',
-				config.templateDir + '/js/jquery.fancybox.min.js'
+				config.templateDir + '/js/modal.js',
+				config.templateDir + '/js/popper.min.js'
 			]),
 			concat('libs.min.js'), // Собираем их в кучу в новом файле libs.min.js
 			uglify(), // Сжимае JS файл
