@@ -43,10 +43,9 @@
 	}
 
 	.examples{
-		margin-top: 15px;
+		background: #fff4e0 url(../images/attempt2.png) no-repeat 30px 36px;
 		margin-bottom: 15px;
-		background: url(../images/attempt2.png) no-repeat 30px 36px;
-		background-color: #fff4e0;
+		margin-top: 15px;
 		padding: 28px 30px 32px 122px;
 		p{
 			line-height: 1.5;
@@ -76,9 +75,9 @@ table{
 	tr{
 		td{
 			border-bottom: 1px solid #dde5e4;
+			padding-bottom: 7px;
 			padding-left: 30px;
 			padding-top: 7px;
-			padding-bottom: 7px;
 
 			.ps{
 				 font-size: 14px;

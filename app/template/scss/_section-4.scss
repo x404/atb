@@ -25,16 +25,15 @@
 		}
 
 		.step{
-			// background-color: $color4;
-			width: 25%;
 			position: relative;
+			width: 25%;
 			&:before{
 				@extend .before;
-				height: 7px;
-				width: 100%;
 				background-color: $color4;
-				top: 34px;
+				height: 7px;
 				right: 0;
+				top: 34px;
+				width: 100%;
 			}
 
 			&:first-child(),
@@ -60,15 +59,15 @@
 			}
 
 			.circle{
-				width: 71px;
-				height: 71px;
-				background-color: $color5;
-				box-shadow: 2px 3px 0 #ff0035, inset 2px 4px 0 $color4;
-				border-radius: 50%;
-				position: relative;
-				display: flex;
 				align-items: center;
+				background-color: $color5;
+				border-radius: 50%;
+				box-shadow: 2px 3px 0 #ff0035, inset 2px 4px 0 $color4;
+				display: flex;
+				height: 71px;
 				justify-content: center;
+				position: relative;
+				width: 71px;
 			}
 		}
 	}

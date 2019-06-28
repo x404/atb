@@ -1,7 +1,6 @@
 #section-7{
-	padding: 85px 0;
 	font-size: 20px;
-
+	padding: 85px 0;
 	.title{
 		padding-bottom: 17px;
 	}
@@ -11,7 +10,6 @@
 		font-size: 30px;
 		font-weight: 700;
 		margin-top: 17px;
-
 	}
 
 	.ready{
@@ -34,6 +32,7 @@
 	}
 }
 
+
 .icon-attempt{
 	background: url(../images/attempt.png) no-repeat left 5px;	
 	min-height: 38px;
@@ -41,6 +40,21 @@
 }
 
 .variations{
+	color: $color10;
+	font-size: 17px;
+	.icon{
+		min-height: 55px;
+		padding-left: 60px;
+		background-repeat: no-repeat;
+		background-position: left 12px;
+		&-no{
+			background-image: url(../images/no.png);
+		}
+		&-ok{
+			background-image: url(../images/ok.png);
+		}
+	}
+
 	background: linear-gradient(to bottom, 
 		transparent 0%, transparent 155px, 
 		$color5 155px, $color5 230px, 
@@ -50,8 +64,6 @@
 		$color5 535px, $color5 685px,
 		transparent 685px, transparent 720px
 	);
-	color: $color10;
-	font-size: 17px;
 	&__cell{
 		padding-top: 20px;
 		padding-right: 35px;
@@ -97,15 +109,3 @@
 	}
 }
 
-.icon{
-	min-height: 55px;
-	padding-left: 60px;
-	background-repeat: no-repeat;
-	background-position: left 12px;
-	&-no{
-		background-image: url(../images/no.png);
-	}
-	&-ok{
-		background-image: url(../images/ok.png);
-	}
-}

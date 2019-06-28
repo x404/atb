@@ -3,8 +3,8 @@
 
 	.categories{
 		box-shadow: 0 7px 15px rgba(63, 34, 11, 0.2);
-		padding: 22px 50px 28px; 
 		margin: 10px 0;
+		padding: 22px 50px 28px; 
 		.nav-item{
 			background: none;
 			border: none;
@@ -12,12 +12,12 @@
 			cursor: pointer;
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
 			font-weight: 700;
-			text-align: center;
+			justify-content: center;
 			line-height: 1.2;
 			outline: none;
 			position: relative;
+			text-align: center;
 			img{
 				display: block;
 				margin: auto;
@@ -73,8 +73,8 @@
 		}
 		.icon{
 			display: flex;
-			margin: 0  auto;
 			height: 55px;
+			margin: 0  auto;
 		}
 	}
 
@@ -104,10 +104,10 @@
 			&:before{
 				@extend .before;
 				background-color: $color4;
+				height: 5px;
 				left: 0;
 				top: 10px;
 				width: 22px;
-				height: 5px;
 			}
 		}
 	}

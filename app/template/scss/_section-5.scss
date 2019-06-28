@@ -3,8 +3,8 @@
 	.subtitle{
 		font-size: 30px;
 		font-weight: 700;
-		padding-left: 14px;
 		margin-bottom: 15px;
+		padding-left: 14px;
 		& > span:before{
 			height: 26px;
 			bottom: -8px;
@@ -25,8 +25,8 @@
 	}
 	&__title{
 		color: $color5;
-		font-size: 70px;
 		font-family: "Proxima Nova - Black";
+		font-size: 70px;
 		font-weight: 400;
 		line-height: 1.2;
 	}
