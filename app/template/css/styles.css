@@ -4316,12 +4316,10 @@ nav a {
   #section-7 .title {
     padding-bottom: 17px; }
   #section-7 .attempt {
-    background: url(../images/attempt.png) no-repeat left 5px;
     color: #ff0035;
     font-size: 30px;
     font-weight: 700;
-    margin-top: 17px;
-    padding-left: 57px; }
+    margin-top: 17px; }
   #section-7 .ready {
     font-size: 25px;
     font-weight: 700;
@@ -4334,6 +4332,11 @@ nav a {
   #section-7 .btn {
     border-radius: 60px;
     height: 60px; }
+
+.icon-attempt {
+  background: url(../images/attempt.png) no-repeat left 5px;
+  min-height: 38px;
+  padding-left: 57px; }
 
 .variations {
   background: linear-gradient(to bottom, transparent 0%, transparent 155px, #0d2580 155px, #0d2580 230px, transparent 230px, transparent 305px, #0d2580 305px, #0d2580 380px, transparent 380px, transparent 535px, #0d2580 535px, #0d2580 685px, transparent 685px, transparent 720px);
@@ -4393,6 +4396,67 @@ nav a {
     #section-8 .content ul {
       line-height: 1.7;
       margin-top: 20px; }
+
+#section-9 {
+  font-size: 17px;
+  padding: 90px 0;
+  color: #3d4145; }
+  #section-9 .title {
+    color: #000;
+    margin-bottom: 25px; }
+  #section-9 .subtitle {
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    margin-top: 10px; }
+  #section-9 .attempt {
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+    margin-bottom: 15px; }
+  #section-9 .know {
+    color: #434a50;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px; }
+  #section-9 table {
+    margin-bottom: 40px; }
+  #section-9 .content {
+    padding-left: 55px; }
+    #section-9 .content p {
+      line-height: 1.7; }
+  #section-9 .examples {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: url(../images/attempt2.png) no-repeat 30px 36px;
+    background-color: #fff4e0;
+    padding: 28px 30px 32px 122px; }
+    #section-9 .examples p {
+      line-height: 1.5; }
+
+table {
+  color: #00101e; }
+  table th {
+    background-color: #00ffd2;
+    color: #00101e;
+    font-size: 20px;
+    height: 80px; }
+  table th {
+    padding: 25px 30px; }
+  table .head {
+    background-color: #d2dde7;
+    font-weight: bold;
+    padding: 17px 20px 17px 30px; }
+  table tr td {
+    border-bottom: 1px solid #dde5e4;
+    padding-left: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px; }
+    table tr td .ps {
+      font-size: 14px;
+      color: #686f76; }
 
 /* =mobile-menu
 ---------------------------*/

@@ -1,0 +1,88 @@
+#section-9{
+	font-size: 17px;
+	padding: 90px 0;
+	color: $color11;
+	.title{
+		color: $color1;
+		margin-bottom: 25px;
+	}
+	.subtitle{
+		color: $color1;
+		font-size: 35px;
+		font-weight: 700;
+		line-height: 1.2;
+		margin-bottom: 15px;
+		margin-top: 10px;
+	}
+
+	.attempt{
+		display: flex;
+		align-items: center;
+		line-height: 1.2;
+		margin-bottom: 15px;
+	}
+
+	.know{
+		color: $color12;
+		font-size: 15px;
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
+
+	table{
+		margin-bottom: 40px;
+	}
+
+
+
+	.content{
+		padding-left: 55px;
+		p{
+			line-height: 1.7;
+		}
+	}
+
+	.examples{
+		margin-top: 15px;
+		margin-bottom: 15px;
+		background: url(../images/attempt2.png) no-repeat 30px 36px;
+		background-color: #fff4e0;
+		padding: 28px 30px 32px 122px;
+		p{
+			line-height: 1.5;
+		}
+	}
+}
+
+table{
+	color: #00101e;
+	th{
+		background-color: $color4;
+		color: #00101e;
+		font-size: 20px;
+		height: 80px;
+	}
+	th{
+		padding: 25px 30px;
+	}
+
+	.head{
+		background-color: #d2dde7;
+		font-weight: bold;
+		padding: 17px 20px 17px 30px;
+	}
+
+	tr{
+		td{
+			border-bottom: 1px solid #dde5e4;
+			padding-left: 30px;
+			padding-top: 7px;
+			padding-bottom: 7px;
+
+			.ps{
+				 font-size: 14px;
+				 color: #686f76;
+			}
+		}
+	}
+}

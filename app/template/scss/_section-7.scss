@@ -7,12 +7,11 @@
 	}
 
 	.attempt{
-		background: url(../images/attempt.png) no-repeat left 5px;
 		color: $color3;
 		font-size: 30px;
 		font-weight: 700;
 		margin-top: 17px;
-		padding-left: 57px;
+
 	}
 
 	.ready{
@@ -33,6 +32,12 @@
 		border-radius: $h;
 		height: $h;
 	}
+}
+
+.icon-attempt{
+	background: url(../images/attempt.png) no-repeat left 5px;	
+	min-height: 38px;
+	padding-left: 57px;	
 }
 
 .variations{
