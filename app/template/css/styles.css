@@ -3663,7 +3663,7 @@ h3 {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .header .logo:after, .half-redline:before, #section-2 .categories .nav-item:before, #section-2 .categories .nav-item:after, .content ul li:before, .steps__list .step:before {
+.before, .header .logo:after, .half-redline:before, .half-turqueise:before, #section-2 .categories .nav-item:before, #section-2 .categories .nav-item:after, .content ul li:before, .steps__list .step:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3819,6 +3819,19 @@ h3 {
     width: calc(100% + 8px);
     z-index: 1; }
   .half-redline span {
+    position: relative;
+    z-index: 2; }
+
+.half-turqueise {
+  position: relative; }
+  .half-turqueise:before {
+    background-color: #00ffd2;
+    left: -4px;
+    bottom: 0;
+    height: 50%;
+    width: calc(100% + 8px);
+    z-index: 1; }
+  .half-turqueise span {
     position: relative;
     z-index: 2; }
 
@@ -4435,6 +4448,35 @@ nav a {
 .steps__title {
   font-weight: 700;
   line-height: 1.4; }
+
+#section-5 {
+  padding: 70px 0 55px; }
+  #section-5 .subtitle {
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 14px;
+    margin-bottom: 15px; }
+    #section-5 .subtitle > span:before {
+      height: 26px;
+      bottom: -8px; }
+  #section-5 .content {
+    font-size: 17px;
+    line-height: 1.8; }
+
+.statistics {
+  margin: 50px 0 0; }
+  .statistics .cell {
+    padding-right: 50px;
+    width: 25%; }
+  .statistics__title {
+    color: #0d2580;
+    font-size: 70px;
+    font-family: "Proxima Nova - Black";
+    font-weight: 400;
+    line-height: 1.2; }
+  .statistics__text {
+    font-size: 17px;
+    font-weight: 700; }
 
 /* =mobile-menu
 ---------------------------*/

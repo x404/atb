@@ -349,6 +349,24 @@ h3{font-size:1.6rem}
 	}
 }
 
+.half-turqueise{
+	position: relative;
+	&:before{
+		@extend .before;
+		background-color: $color4;
+		left: -4px;
+		bottom: 0;
+		height: 50%;
+		width: calc(100% + 8px);
+		z-index: 1;
+	}
+	span{
+		position: relative;
+		z-index: 2;
+	}
+}
+
+
 
 .policy{
 	color: #cfcae1;
