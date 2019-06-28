@@ -1,0 +1,52 @@
+#section-11{
+	background-color: $color4;
+	padding: 70px 0;
+	.title{
+		color: $color1;
+		font-family: 'proxima-nova', sans-serif;
+		font-size: 40px;
+		font-weight: 400;
+		strong{
+			font-family: "Proxima Nova - Black";
+			font-weight: 700;
+		}
+	}
+
+	.callback{
+		border: 10px solid #ffffff;
+		font-size: 22px;
+		margin-top: 15px;
+		padding: 37px 175px 28px 40px; 
+		.left{
+			.tel-link{
+				background: url(../images/icon-tel.png) no-repeat left center;
+				color: $color5;
+				display: inline-block;
+				font-size: 30px;
+				font-weight: 700;
+				min-height: 48px;
+				padding-left: 56px;
+				margin-top: 10px;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+
+		form{
+			margin-top: 5px;
+		}
+
+		.form-control{
+			border-bottom-color: $color5;
+		}
+		form .input-field label{
+			color: #000;
+			font-weight: 400;
+		}
+		.policy{
+			color: #6b6b6b;
+			margin-top: 2px;
+		}
+	}
+}

@@ -3449,7 +3449,7 @@ h3 {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .header .logo:after, .half-redline:before, .half-turqueise:before, #section-2 .categories .nav-item:before, #section-2 .categories .nav-item:after, .content ul li:before, .steps__list .step:before, #section-6 .diagnostics__cell:before, #section-6 .diagnostics__cell:after {
+.before, .header .logo:after, .half-redline:before, .half-turqueise:before, .half-white:before, #section-2 .categories .nav-item:before, #section-2 .categories .nav-item:after, .content ul li:before, .steps__list .step:before, #section-6 .diagnostics__cell:before, #section-6 .diagnostics__cell:after {
   content: "";
   display: block;
   position: absolute; }
@@ -3616,6 +3616,19 @@ h3 {
     width: calc(100% + 8px);
     z-index: 1; }
   .half-turqueise span {
+    position: relative;
+    z-index: 2; }
+
+.half-white {
+  position: relative; }
+  .half-white:before {
+    background-color: #fff;
+    left: -4px;
+    bottom: 0;
+    height: 50%;
+    width: calc(100% + 8px);
+    z-index: 1; }
+  .half-white span {
     position: relative;
     z-index: 2; }
 
@@ -4445,7 +4458,8 @@ nav a {
       line-height: 1.5; }
 
 table {
-  color: #00101e; }
+  color: #00101e;
+  width: 100%; }
   table th {
     background-color: #00ffd2;
     color: #00101e;
@@ -4473,6 +4487,44 @@ table {
     margin-bottom: 30px; }
   #section-10 p:not(.title) {
     color: #cad3e4; }
+
+#section-11 {
+  background-color: #00ffd2;
+  padding: 70px 0; }
+  #section-11 .title {
+    color: #000;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 40px;
+    font-weight: 400; }
+    #section-11 .title strong {
+      font-family: "Proxima Nova - Black";
+      font-weight: 700; }
+  #section-11 .callback {
+    border: 10px solid #ffffff;
+    font-size: 22px;
+    margin-top: 15px;
+    padding: 37px 175px 28px 40px; }
+    #section-11 .callback .left .tel-link {
+      background: url(../images/icon-tel.png) no-repeat left center;
+      color: #0d2580;
+      display: inline-block;
+      font-size: 30px;
+      font-weight: 700;
+      min-height: 48px;
+      padding-left: 56px;
+      margin-top: 10px; }
+      #section-11 .callback .left .tel-link:hover {
+        text-decoration: none; }
+    #section-11 .callback form {
+      margin-top: 5px; }
+    #section-11 .callback .form-control {
+      border-bottom-color: #0d2580; }
+    #section-11 .callback form .input-field label {
+      color: #000;
+      font-weight: 400; }
+    #section-11 .callback .policy {
+      color: #6b6b6b;
+      margin-top: 2px; }
 
 /* =mobile-menu
 ---------------------------*/

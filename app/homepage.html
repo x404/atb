@@ -87,12 +87,12 @@
 							<div class="input-field">
 								<label for="name" class="name-field">Ваше имя</label>
 								<label for="name" class="helper-field helper-field-name">Ваше имя</label>
-								<input type="text" id="name" name="name" class="form-control required" value="" arial-label="Имя" />
+								<input type="text" id="name" name="name" class="form-control required" value="" aria-label="Имя" />
 							</div>
 							<div class="input-field">
 								<label for="tel" class="name-field">Телефон</label>
 								<label for="tel" class="helper-field helper-field-name">Телефон</label>
-								<input type="tel" id="tel" name="tel" class="form-control tel required" value="" arial-label="Телефон" />
+								<input type="tel" id="tel" name="tel" class="form-control tel required" value="" aria-label="Телефон" />
 							</div>							
 						</div>
 						<input type="submit" value="Заказать БЕСПЛАТНУЮ диагностику" class="btn btn-red btn-bg-turqueise btn-submit " />
@@ -211,7 +211,7 @@
 					</a>
 				</li>
 				<li>
-					<a class="nav-item" id="techics-tab" data-toggle="tab" href="#ion" role="tab" aria-controls="techics" aria-selected="false">
+					<a class="nav-item" id="techics-tab" data-toggle="tab" href="#ion" role="tab" aria-controls="ion" aria-selected="false">
 						<span class="icon"><img src="/template/images/icons/techics.png" alt="" /></span>
 						Мелкую бытовую <br>технику
 					</a>
@@ -416,30 +416,6 @@
 
 						<p>Так же мы проводим диагностику и ремонт мелкой бытовой техники. К сожалению не вся техника подлежит ремонту . Многая дешевая бытовая техника по сути своей одноразовая, производитель проектирует неразборный корпус, либо затирает маркировку на радиодеталях, без которой нельзя купить новую запчасть. <strong>Однако нас это не останавливает и мы все равно принимаем все виды мелкой бытовой техники на диагностику.</strong></p>
 
-						<div class="d-flex group-buttons">
-							<button type="button" class="btn btn-turqueise btn-bg-red">Оставить заявку на ремонт</button>
-							<button type="button" class="btn btn-blue btn-bg-red">Посмотреть цены на ремонт</button>
-						</div>
-					</div>	
-				</div>
-			</div>
-			<div class="tab-pane fade" id="techics" role="tabpanel" aria-labelledby="techics-tab">
-				<div class="row">
-					<div class="col-xl-4 text-center">
-						<picture>
-							<source srcset="/images/.webp" type="image/webp">
-							<img src="/images/.png" alt="">
-						</picture>
-					</div>
-					<div class="col-xl-8">
-						<h2></h2>
-						<ul>
-							<li><strong></strong></li>
-							<li><strong></strong></li>
-							<li><strong></strong></li>
-							<li><strong></strong></li>
-							<li><strong></strong></li>
-						</ul>
 						<div class="d-flex group-buttons">
 							<button type="button" class="btn btn-turqueise btn-bg-red">Оставить заявку на ремонт</button>
 							<button type="button" class="btn btn-blue btn-bg-red">Посмотреть цены на ремонт</button>
@@ -706,7 +682,7 @@
 		<p class="attempt icon-attempt">Пенсионерам и инвалидам скидка 10% на все виды ремонта</p>
 
 
-		<table width="100%" border="0">
+		<table class="table">
 			<tr>
 				<th>Наименование</th>
 				<th>Стоимость</th>
@@ -918,6 +894,44 @@
 	</div>
 </div>
 
+
+<div id="section-11" class="section">
+	<div class="container">
+		<p class="title"><strong>Хотите пообщаться с <span class="half-white"><span>квалифицированным специалистом,</span></span></strong> <br>а не менеджером по работе с клиентами?</p>
+
+		<div class="callback d-flex	justify-content-between">
+			<div class="left">
+				<p>Позвоните нам по номеру:</p>
+				<a href="tel:+73912557171" class="tel-link icon-tel" title="">+7 (391) 255-71-71</a>
+			</div>
+			<div class="right">
+				<p>Или оставьте заявку и мы Вам перезвоним в течение рабочего дня</p>
+
+				<form action="#" method="post">
+					<fieldset>
+						<div class="d-flex">
+							<div class="input-field">
+								<label for="cb-name" class="name-field">Ваше имя</label>
+								<label for="cb-name" class="helper-field helper-field-name">Ваше имя</label>
+								<input type="text" id="cb-name" name="name" class="form-control required" value="" aria-label="Имя" />
+							</div>
+							<div class="input-field">
+								<label for="cb-tel" class="name-field">Телефон</label>
+								<label for="cb-tel" class="helper-field helper-field-name">Телефон</label>
+								<input type="tel" id="cb-tel" name="tel" class="form-control tel required" value="" aria-label="Телефон" />
+							</div>							
+							<input type="submit" value="Перезвоните мне" class="btn btn-blue btn-bg-red btn-submit " />
+						</div>
+						<p class="policy">Нажимая на кнопку Вы даете согласие на обработку персональных данных</p>
+					</fieldset>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <div class="footer text-white">
 	<div class="container">
 		<div class="d-flex justify-content-between align-items-center">
@@ -934,7 +948,7 @@
 </div>
 
 <div id="outdated"></div>
-<script type="text/javascript" src="/template/js/slick.min.js"></script>
+<script src="/template/js/slick.min.js"></script>
 <!-- =phone mask -->
 <script src="/template/js/inputmask/jquery.inputmask.bundle.min.js"></script>
 <!-- =/phone mask -->
