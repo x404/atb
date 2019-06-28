@@ -3454,9 +3454,6 @@ h3 {
   display: block;
   position: absolute; }
 
-.text-color-white {
-  color: #fff; }
-
 .btn {
   background: none;
   position: relative;
@@ -3557,6 +3554,9 @@ h3 {
   color: #fff; }
   .text-white a {
     color: currentColor; }
+
+.text-red {
+  color: #f00 !important; }
 
 /* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
 .cl-effect-11 a {
@@ -4525,6 +4525,50 @@ table {
     #section-11 .callback .policy {
       color: #6b6b6b;
       margin-top: 2px; }
+
+#section-12 {
+  padding: 85px 0 95px;
+  color: #343434; }
+  #section-12 .title {
+    color: #00101e;
+    margin-bottom: 30px; }
+  #section-12 .address {
+    font-size: 17px; }
+  #section-12 .tel {
+    color: #343434;
+    font-size: 25px;
+    font-weight: 700; }
+    #section-12 .tel:hover {
+      text-decoration: none; }
+  #section-12 .email {
+    color: #01b192;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: underline; }
+    #section-12 .email:hover {
+      text-decoration: none; }
+
+#map {
+  height: 433px;
+  width: 100%; }
+
+.map-wrapper {
+  box-shadow: 0 5px 30px rgba(13, 37, 128, 0.15); }
+
+.work-time {
+  margin-top: 30px; }
+  .work-time .cell {
+    border-right: 5px solid #00ffd2;
+    padding-right: 25px;
+    margin-right: 20px; }
+    .work-time .cell:last-child {
+      border-right: 0; }
+  .work-time .time {
+    color: #00101e;
+    font-size: 22px;
+    font-weight: 700; }
+  .work-time .day {
+    font-size: 17px; }
 
 /* =mobile-menu
 ---------------------------*/

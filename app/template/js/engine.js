@@ -65,3 +65,39 @@ $(function(){
 		}
 	})
 });
+
+
+
+function init(){
+	/******* =Yandex MAP ********/
+	//http://api.yandex.ru/maps/jsbox/2.1/placemark_shape
+	//http://api.yandex.ru/maps/jsbox/2.1/placemark_balloon
+	//http://api.yandex.ru/maps/jsbox/2.1/icon_customImage
+	ymaps.ready(function() {
+		var myMap = new ymaps.Map('map', {
+			center: [56.037413, 92.917646],
+			zoom: 11
+		}),
+		myPlacemark = new ymaps.Placemark(
+			[56.037413, 92.917646],
+			{
+				hintContent: 'ATB-сервис',
+				balloonContent: 'ул. 78й Добровольческой Бригады, д. 1'
+			}, 
+			{
+				// http://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/option.presetStorage.xml
+				// preset: 'islands#darkGreenDotIcon'
+				// Необходимо указать данный тип макета.
+				iconLayout: 'default#image',
+				// Своё изображение иконки метки.
+				iconImageHref: '/template/images/balloon.png',
+				// Размеры метки.
+				iconImageSize: [51, 60],
+				// Смещение левого верхнего угла иконки относительно
+				// её "ножки" (точки привязки).
+				iconImageOffset: [-3, -42]
+			},{
+		});
+		myMap.geoObjects.add(myPlacemark);
+	});	
+}

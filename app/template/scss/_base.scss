@@ -129,13 +129,6 @@ h3{font-size:1.6rem}
 }
 
 
-.form-control {
-
-}
-
-.text-color-white{
-	color: $color2;
-}
 
 .btn{
 	$radius: 6rem;
@@ -276,7 +269,11 @@ h3{font-size:1.6rem}
 		a{
 			color: currentColor;
 		}
-	}	
+	}
+
+	&-red{
+		color: #f00 !important;
+	}
 }
 
 

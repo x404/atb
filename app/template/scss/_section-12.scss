@@ -1,0 +1,60 @@
+#section-12{
+	padding: 85px 0 95px;
+	color: #343434;
+	.title{
+		color: #00101e;
+		margin-bottom: 30px;
+	}
+	.address{
+		font-size: 17px;
+	}
+	.tel{
+		color: #343434;
+		font-size: 25px;
+		font-weight: 700;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	.email{
+		color: $color7;
+		font-size: 17px;
+		font-weight: 700;
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+#map{
+	height: 433px;
+	width: 100%;
+}
+
+.map-wrapper{
+	box-shadow: 0 5px 30px rgba(13, 37, 128, 0.15);
+}
+
+.work-time{
+	margin-top: 30px;
+	.cell{
+		border-right: 5px solid $color4;
+		padding-right: 25px;
+		margin-right: 20px;
+		&:last-child{
+			border-right: 0;
+		}
+	}
+
+	.time{
+		color: #00101e;
+		font-size: 22px;
+		font-weight: 700;
+	}
+
+	.day{
+		font-size: 17px;
+	}
+}
