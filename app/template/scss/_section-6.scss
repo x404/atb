@@ -1,0 +1,45 @@
+#section-6{
+	padding: 110px 0 130px;
+	.content{
+		font-size: 17px;
+	}
+
+	.title{
+		margin-bottom: 25px;
+	}
+
+	.diagnostics{
+		margin-top: 30px;
+		&__cell{
+			padding: 15px 0 20px;
+			position: relative;
+			p{
+				position: relative;
+
+			}
+			&:first-child{
+				padding-right: 40px;
+			}
+			&:before{
+				@extend .before;
+				background: url(../images/cross.png) no-repeat left top;
+				height: 124px;
+				left: -60px;
+				top: -10px;
+				width: 124px;
+			}
+			&:after{
+				@extend .before;
+				background-color: $color9;
+				height: 5px;
+				top: 0;
+				left: 0;
+				width: 30px;
+			}
+		}
+	}
+
+	.excerption{
+		margin-bottom: 35px;
+	}
+}
