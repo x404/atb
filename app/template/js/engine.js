@@ -70,7 +70,7 @@ $(function(){
 document.querySelector('.extra-toggle').addEventListener('click', function(){
 	document.querySelector('body').classList.toggle('o-popup-menu')
 });
-document.querySelector('.close-menu').addEventListener('click', function(){
+document.querySelector('.popup-menu .close-menu').addEventListener('click', function(){
 	document.querySelector('body').classList.toggle('o-popup-menu')
 });
 

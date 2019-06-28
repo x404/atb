@@ -66,7 +66,7 @@
 						<p>г. Красноярск, 78й Добровольческой бригады д.1</p>
 					</div>		
 
-					<button type="button" class="btn btn-blue btn-bg-turqueise qorder">Заказать диагностику</button>
+					<button type="button" class="btn btn-blue btn-bg-turqueise qorder" data-toggle="modal" data-target="#qorder">Заказать диагностику</button>
 				</div>			
 			</div>
 		</div>
@@ -1056,6 +1056,41 @@
 	</div>
 </div>
 <!-- =/popup menu -->
+
+
+<div class="modal fade" id="qorder" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<p class="title">Оставьте заявку</p>
+			<p class="subtitle">И мы Вам перезвоним в течение рабочего дня</p>
+			
+			<form action="#" method="post">
+				<fieldset>
+					<div class="input-field">
+						<label for="qname" class="name-field">Ваше имя</label>
+						<label for="qname" class="helper-field helper-field-name">Ваше имя</label>
+						<input type="text" id="qname" name="name" class="form-control required" value="" aria-label="Имя" />
+					</div>
+					<div class="input-field">
+						<label for="qtel" class="name-field">Телефон</label>
+						<label for="qtel" class="helper-field helper-field-name">Телефон</label>
+						<input type="tel" id="qtel" name="tel" class="form-control tel required" value="" aria-label="Телефон" />
+					</div>
+					<input type="submit" value="Перезвоните мне" class="btn btn-blue btn-bg-red btn-submit " />
+					<p class="policy">Нажимая на кнопку Вы даете согласие <br>на обработку персональных данных</p>
+				</fieldset>
+			</form>
+			
+			<button type="button" class="close-menu" aria-label="Закрыть меню" data-dismiss="modal" >
+				<svg width="32" height="32">
+					<line x1="0" y1="0" x2="32" y2="32"/>
+					<line x1="32" y1="0" x2="0" y2="32"/>
+				</svg>
+			</button>
+			
+		</div>
+	</div>
+</div>
 
 <div id="outdated"></div>
 <!-- =phone mask -->
