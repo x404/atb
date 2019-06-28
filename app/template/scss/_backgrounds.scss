@@ -8,6 +8,12 @@
 	#section-6{
 		background-image: url(../images/bg/section-6-bg.webp);
 	}
+	#section-7{
+		background-image: url(../images/bg/section-7-bg.webp);
+	}
+	#section-8{
+		background-image: url(../images/bg/section-8-bg.webp);
+	}
 }
 
 .section{
@@ -44,5 +50,13 @@
 }
 
 #section-7{
+	background-image: url(../images/bg/section-7-bg.jpg);
 	background-color: #0b1521;
+	min-height: 1085px;
+}
+
+#section-8{
+	background-image: url(../images/bg/section-8-bg.jpg);
+	background-color: #f5f4f1;
+	min-height: 756px;
 }
