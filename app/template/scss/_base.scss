@@ -437,6 +437,9 @@ form{
 		.helper-field{
 			opacity: 0;
 		}
+		.form-control{
+			border-bottom-color: $color4;
+		}
 	}
 
 	.input-field.is-charged:not(.is-focused) > label.name-field{

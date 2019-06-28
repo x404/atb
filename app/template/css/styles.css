@@ -3680,6 +3680,9 @@ form .is-focused .name-field {
 form .is-focused .helper-field {
   opacity: 0; }
 
+form .is-focused .form-control {
+  border-bottom-color: #00ffd2; }
+
 form .input-field.is-charged:not(.is-focused) > label.name-field {
   -webkit-transform: translate3d(0px, -7px, 0px) scale(0.8);
   -ms-transform: translate3d(0px, -7px, 0px) scale(0.8);
