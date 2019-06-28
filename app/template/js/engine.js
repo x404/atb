@@ -49,6 +49,12 @@ $(document).ready(function(){
 		mask: '+7(999)999-99-99',
 		showMaskOnHover : false
 	});
+
+	$('#navbar a, .popup-menu a').click(function () {
+		elementClick = $(this).attr('href');
+		destination = $(elementClick).offset().top;
+		$('body, html').animate({scrollTop: destination }, 800);
+	});
 });
 
 
