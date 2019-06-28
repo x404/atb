@@ -1,0 +1,106 @@
+#section-7{
+	padding: 85px 0;
+	font-size: 20px;
+
+	.title{
+		padding-bottom: 17px;
+	}
+
+	.attempt{
+		background: url(../images/attempt.png) no-repeat left 5px;
+		color: $color3;
+		font-size: 30px;
+		font-weight: 700;
+		margin-top: 17px;
+		padding-left: 57px;
+	}
+
+	.ready{
+		font-size: 25px;
+		font-weight: 700;
+		line-height: 1.2;
+		margin-top: 14px;
+		.right{
+			flex-shrink: 0;
+		}
+		.left{
+			padding-right: 60px;
+		}
+	}
+
+	.btn{
+		$h: 60px;
+		border-radius: $h;
+		height: $h;
+	}
+}
+
+.variations{
+	background: linear-gradient(to bottom, 
+		transparent 0%, transparent 155px, 
+		$color5 155px, $color5 230px, 
+		transparent 230px, transparent 305px, 
+		$color5 305px, $color5 380px, 
+		transparent 380px, transparent 535px, 
+		$color5 535px, $color5 685px,
+		transparent 685px, transparent 720px
+	);
+	color: $color10;
+	font-size: 17px;
+	&__cell{
+		padding-top: 20px;
+		padding-right: 35px;
+		border-width: 10px;
+		border-style: solid;
+		border-color: rgba(0,0,0,0);
+		&-border{
+			border-color: $color4;
+			padding-left: 25px;
+		}
+		.table{
+			margin-bottom: 0;
+		}
+		.str{
+			padding-top: 12px;
+			padding-bottom: 12px;
+
+			&-1{
+				min-height: 80px;
+			}
+			&-2{
+				min-height: 75px;
+			}
+			&-3{
+				min-height: 75px;
+			}
+			&-4{
+				min-height: 75px;
+			}
+			&-5{
+				min-height: 155px;
+			}
+			&-6{
+				min-height: 150px;
+			}
+		}
+	}
+	&__title{
+		color: $color2;
+		font-size: 30px;
+		font-weight: 400;
+		font-family: "Proxima Nova - Black";
+	}
+}
+
+.icon{
+	min-height: 55px;
+	padding-left: 60px;
+	background-repeat: no-repeat;
+	background-position: left 12px;
+	&-no{
+		background-image: url(../images/no.png);
+	}
+	&-ok{
+		background-image: url(../images/ok.png);
+	}
+}
