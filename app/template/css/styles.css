@@ -3449,7 +3449,8 @@ h3 {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .header .logo:after, .half-redline:before, .half-turqueise:before, .half-white:before, #section-2 .categories .nav-item:before, #section-2 .categories .nav-item:after, .content ul li:before, .steps__list .step:before, #section-6 .diagnostics__cell:before, #section-6 .diagnostics__cell:after {
+.before, .header .logo:after,
+.footer .logo:after, .half-redline:before, .half-turqueise:before, .half-white:before, #section-2 .categories .nav-item:before, #section-2 .categories .nav-item:after, .content ul li:before, .steps__list .step:before, #section-6 .diagnostics__cell:before, #section-6 .diagnostics__cell:after {
   content: "";
   display: block;
   position: absolute; }
@@ -3515,27 +3516,31 @@ h3 {
 .header {
   padding-top: 30px;
   padding-bottom: 10px; }
-  .header .logo {
-    align-items: center;
-    border: 3px solid #00ffd2;
-    display: flex;
-    font-family: "Proxima Nova - Black";
-    font-size: 30px;
-    height: 60px;
-    justify-content: center;
-    position: relative;
-    width: 206px; }
-    .header .logo:after {
-      border-bottom: 3px solid #00ffd2;
-      bottom: -10px;
-      left: -3px;
-      right: -3px; }
   .header .qorder {
     border-radius: 5rem;
     height: 5rem;
     margin-left: 4.5rem;
     font-size: 16px;
     padding: 0 2.4rem; }
+
+.header .logo,
+.footer .logo {
+  align-items: center;
+  border: 3px solid #00ffd2;
+  color: #fff;
+  display: flex;
+  font-family: "Proxima Nova - Black";
+  font-size: 30px;
+  height: 60px;
+  justify-content: center;
+  position: relative;
+  width: 206px; }
+  .header .logo:after,
+  .footer .logo:after {
+    border-bottom: 3px solid #00ffd2;
+    bottom: -10px;
+    left: -3px;
+    right: -3px; }
 
 .title {
   line-height: 1;
@@ -3711,8 +3716,20 @@ nav a {
 /* =/section1
 ---------------------------*/
 .footer {
-  background-color: #0d2580;
+  background-color: #00101e;
+  font-size: 15px;
   padding: 3.2rem 0; }
+  .footer .btn {
+    font-size: 16px;
+    height: 50px; }
+  .footer .contacts {
+    margin-right: 37px; }
+  .footer .tel {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700; }
+    .footer .tel:hover {
+      text-decoration: none; }
 
 .tab-content > .tab-pane {
   display: none; }

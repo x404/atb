@@ -218,9 +218,24 @@ h3{font-size:1.6rem}
 .header{
 	padding-top: 30px;
 	padding-bottom: 10px;
+
+
+	.qorder{
+		$radius: 5rem;	
+		border-radius: $radius;
+		height: $radius;
+		margin-left: 4.5rem;
+		font-size: 16px;
+		padding: 0 2.4rem;
+	}
+}
+
+.header,
+.footer{
 	.logo{
 		align-items: center;
 		border: 3px solid $color4;
+		color: $color2;
 		display: flex;
 		font-family: "Proxima Nova - Black";
 		font-size: 30px;
@@ -235,15 +250,6 @@ h3{font-size:1.6rem}
 			left: -3px;
 			right: -3px;
 		}
-	}
-
-	.qorder{
-		$radius: 5rem;	
-		border-radius: $radius;
-		height: $radius;
-		margin-left: 4.5rem;
-		font-size: 16px;
-		padding: 0 2.4rem;
 	}
 }
 
@@ -485,8 +491,25 @@ nav{
 
 
 .footer{
-	background-color: $color5;
+	background-color: #00101e;
+	font-size: 15px;
 	padding: 3.2rem 0;
+	.btn{
+		font-size: 16px;
+		height: 50px;
+	}
+
+	.contacts{
+		margin-right: 37px;
+	}
+	.tel{
+		color: $color2;
+		font-size: 30px;
+		font-weight: 700;
+		&:hover{
+			text-decoration: none;
+		}
+	}
 }
 
 .tab-content {
