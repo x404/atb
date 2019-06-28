@@ -67,6 +67,13 @@ $(function(){
 });
 
 
+document.querySelector('.extra-toggle').addEventListener('click', function(){
+	document.querySelector('body').classList.toggle('o-popup-menu')
+});
+document.querySelector('.close-menu').addEventListener('click', function(){
+	document.querySelector('body').classList.toggle('o-popup-menu')
+});
+
 
 function init(){
 	/******* =Yandex MAP ********/
@@ -101,3 +108,5 @@ function init(){
 		myMap.geoObjects.add(myPlacemark);
 	});	
 }
+
+

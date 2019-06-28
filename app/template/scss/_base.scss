@@ -437,7 +437,6 @@ form{
 		.helper-field{
 			opacity: 0;
 		}
-
 	}
 
 	.input-field.is-charged:not(.is-focused) > label.name-field{
@@ -518,5 +517,94 @@ nav{
 	}
 	> .active {
 		display: block;
+	}
+}
+
+
+.o-popup-menu{
+	.popup-menu{
+		transform: translateY(0)
+	}
+}
+
+
+.popup-menu{
+	background: $color4;
+	font-family: "Proxima Nova - Black";
+	font-size: 25px;
+	font-weight: 400;
+	left: 0;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	min-height: 580px;
+	overflow: hidden;
+	transition: transform .6s;
+	transform: translateY(-140%);
+
+	&-inner{
+		overflow: auto;
+		padding: 45px 0 40px;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+	}
+
+	li{
+		margin-bottom: 7px;
+		padding-bottom: 7px;
+		position: relative;
+		&:after{
+			@extend .before;
+			border-bottom: 3px solid #fff;
+			bottom: 0;
+			height: 3px;
+			left: 50%;
+			margin-left: -25px;
+			width: 51px;
+		}
+		&:last-child(){
+			margin-bottom: 0;
+			padding-bottom: 0;
+			&:after{
+				display: none;
+			}
+		}
+	}
+
+	a{
+		color: #000000;
+	}
+
+	.close-menu{
+		display: block;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 0;
+		position: absolute;
+		left: 60px;
+		top: 45px;
+		width: 32px;
+		height: 32px;
+		z-index: 9999;
+		svg{
+			transition: transform .3s;
+			transform-origin: center center;
+			vertical-align: top;
+		}
+		line{
+			stroke: #000;
+			stroke-width: 3px;
+		}
+		&:hover{
+			svg{
+				transform: rotate(90deg);
+			}
+		}
 	}
 }
