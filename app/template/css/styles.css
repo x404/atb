@@ -4575,6 +4575,17 @@ picture img {
     padding: 28px 30px 32px 122px; }
     #section-9 .examples p {
       line-height: 1.5; }
+  @media (max-width: 1050px) {
+    #section-9 {
+      padding: 50px 0;
+      font-size: 15px; }
+      #section-9 .subtitle {
+        font-size: 30px; }
+      #section-9 .content {
+        padding-left: 10px; }
+      #section-9 .examples {
+        background-position: 15px 35px;
+        padding: 15px 25px 15px 100px; } }
 
 table {
   color: #00101e;
@@ -4606,6 +4617,12 @@ table {
     margin-bottom: 30px; }
   #section-10 p:not(.title) {
     color: #cad3e4; }
+  @media (max-width: 1280px) {
+    #section-10 {
+      padding: 50px 0; } }
+  @media (max-width: 1050px) {
+    #section-10 {
+      font-size: 15px; } }
 
 #section-11 {
   background-color: #00ffd2;

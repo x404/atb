@@ -8,4 +8,12 @@
 	p:not(.title){
 		color: #cad3e4;
 	}
+
+	@media (max-width: 1280px){
+		padding: 50px 0;
+	}
+
+	@media (max-width: 1050px){
+		font-size: 15px;
+	}
 }
