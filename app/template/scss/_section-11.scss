@@ -27,6 +27,8 @@
 				min-height: 48px;
 				padding-left: 56px;
 				margin-top: 10px;
+				white-space: nowrap;
+				margin-right: 15px;
 				&:hover{
 					text-decoration: none;
 				}
@@ -54,6 +56,52 @@
 		.policy{
 			color: #6b6b6b;
 			margin-top: 2px;
+		}
+	}
+
+	@media (max-width: 1800px){
+		.callback{
+			padding-right: 25px;
+		}
+	}
+
+	@media (max-width: 1600px){
+		form .form-control{
+			width: 230px;
+		}
+
+		.callback .left .tel-link{
+			font-size: 28px;
+
+		}
+	}
+	@media (max-width: 1400px){
+		padding: 40px 0;
+		.title{
+			font-size: 35px;
+		}
+	}
+
+
+	@media (max-width: 1250px){
+		.callback{
+			font-size: 17px;
+			.right{
+				.input-field{
+					margin-bottom: 5px;
+					width: 50%;
+				}
+			}
+			.policy{
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+
+	@media (max-width: 1050px){
+		.title{
+			font-size: 38px;
 		}
 	}
 }

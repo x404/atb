@@ -332,6 +332,7 @@ h3{font-size:1.6rem}
 
 .half-redline{
 	color: $color2;
+	display: inline-block;
 	margin-left: 2px;
 	position: relative;
 	&:before{
@@ -350,6 +351,7 @@ h3{font-size:1.6rem}
 }
 
 .half-turqueise{
+	display: inline-block;
 	position: relative;
 	&:before{
 		@extend .before;
@@ -367,6 +369,7 @@ h3{font-size:1.6rem}
 }
 
 .half-white{
+	display: inline-block;
 	position: relative;
 	&:before{
 		@extend .before;

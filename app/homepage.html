@@ -939,20 +939,23 @@
 
 				<form action="#" method="post">
 					<fieldset>
-						<div class="d-flex">
-							<div class="input-field">
-								<label for="cb-name" class="name-field">Ваше имя</label>
-								<label for="cb-name" class="helper-field helper-field-name">Ваше имя</label>
-								<input type="text" id="cb-name" name="name" class="form-control required" value="" aria-label="Имя" />
+						<div class="d-block d-xl-flex">
+							<div class="form-group d-flex">
+								<div class="input-field">
+									<label for="cb-name" class="name-field">Ваше имя</label>
+									<label for="cb-name" class="helper-field helper-field-name">Ваше имя</label>
+									<input type="text" id="cb-name" name="name" class="form-control required" value="" aria-label="Имя" />
+								</div>
+								<div class="input-field">
+									<label for="cb-tel" class="name-field">Телефон</label>
+									<label for="cb-tel" class="helper-field helper-field-name">Телефон</label>
+									<input type="tel" id="cb-tel" name="tel" class="form-control tel required" value="" aria-label="Телефон" />
+								</div>								
 							</div>
-							<div class="input-field">
-								<label for="cb-tel" class="name-field">Телефон</label>
-								<label for="cb-tel" class="helper-field helper-field-name">Телефон</label>
-								<input type="tel" id="cb-tel" name="tel" class="form-control tel required" value="" aria-label="Телефон" />
-							</div>							
+							<p class="policy d-xl-none">Нажимая на кнопку Вы даете согласие на обработку персональных данных</p>
 							<input type="submit" value="Перезвоните мне" class="btn btn-blue btn-bg-red btn-submit " />
 						</div>
-						<p class="policy">Нажимая на кнопку Вы даете согласие на обработку персональных данных</p>
+						<p class="policy d-none d-xl-block">Нажимая на кнопку Вы даете согласие на обработку персональных данных</p>
 					</fieldset>
 				</form>
 
@@ -995,10 +998,12 @@
 			</div>
 			<div class="col-xl-7">
 				<div class="map-wrapper d-flex">
-					<picture>
-						<source srcset="/images/house.webp" type="image/webp" />
-						<img src="/images/house.png" alt="" loading="lazy" />
-					</picture>
+					<div class="house">
+						<picture>
+							<source srcset="/images/house.webp" type="image/webp" />
+							<img src="/images/house.png" alt="" loading="lazy" />
+						</picture>
+					</div>
 					<script>
 						$(document).ready(function(){
 							$.getScript("http://api-maps.yandex.ru/2.0.24/?load=package.full&lang=ru-RU", function() {

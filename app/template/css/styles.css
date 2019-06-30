@@ -3184,6 +3184,16 @@ a.text-dark:hover, a.text-dark:focus {
   .container {
     max-width: 100%;
     width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+  .container-big {
+    padding-left: 40px;
+    padding-right: 40px; } }
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
     padding-left: 88px;
     padding-right: 88px; }
   .container-big {
@@ -3633,6 +3643,7 @@ h3 {
 
 .half-redline {
   color: #fff;
+  display: inline-block;
   margin-left: 2px;
   position: relative; }
   .half-redline:before {
@@ -3647,6 +3658,7 @@ h3 {
     z-index: 2; }
 
 .half-turqueise {
+  display: inline-block;
   position: relative; }
   .half-turqueise:before {
     background-color: #00ffd2;
@@ -3660,6 +3672,7 @@ h3 {
     z-index: 2; }
 
 .half-white {
+  display: inline-block;
   position: relative; }
   .half-white:before {
     background-color: #fff;
@@ -4648,7 +4661,9 @@ table {
       font-weight: 700;
       min-height: 48px;
       padding-left: 56px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      white-space: nowrap;
+      margin-right: 15px; }
       #section-11 .callback .left .tel-link:hover {
         text-decoration: none; }
     #section-11 .callback form {
@@ -4663,6 +4678,30 @@ table {
     #section-11 .callback .policy {
       color: #6b6b6b;
       margin-top: 2px; }
+  @media (max-width: 1800px) {
+    #section-11 .callback {
+      padding-right: 25px; } }
+  @media (max-width: 1600px) {
+    #section-11 form .form-control {
+      width: 230px; }
+    #section-11 .callback .left .tel-link {
+      font-size: 28px; } }
+  @media (max-width: 1400px) {
+    #section-11 {
+      padding: 40px 0; }
+      #section-11 .title {
+        font-size: 35px; } }
+  @media (max-width: 1250px) {
+    #section-11 .callback {
+      font-size: 17px; }
+      #section-11 .callback .right .input-field {
+        margin-bottom: 5px;
+        width: 50%; }
+      #section-11 .callback .policy {
+        margin-bottom: 15px; } }
+  @media (max-width: 1050px) {
+    #section-11 .title {
+      font-size: 38px; } }
 
 #section-12 {
   padding: 85px 0 95px;
@@ -4692,6 +4731,9 @@ table {
 
 .map-wrapper {
   box-shadow: 0 5px 30px rgba(13, 37, 128, 0.15); }
+  .map-wrapper .house {
+    flex-shrink: 0;
+    width: 450px; }
 
 .work-time {
   margin-top: 30px; }

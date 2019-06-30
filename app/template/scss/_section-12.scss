@@ -35,6 +35,10 @@
 
 .map-wrapper{
 	box-shadow: 0 5px 30px rgba(13, 37, 128, 0.15);
+	.house{
+		flex-shrink: 0;
+		width: 450px;
+	}
 }
 
 .work-time{

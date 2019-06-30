@@ -74,6 +74,19 @@
 	.container {
 		max-width: 100%;
 		width: 100%;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.container-big{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.container {
+		max-width: 100%;
+		width: 100%;
 		padding-left: 88px;
 		padding-right: 88px;
 	}
@@ -82,6 +95,7 @@
 		padding-right: 40px;
 	}
 }
+
 
 
 
