@@ -20,6 +20,11 @@
 			max-width: 100%;
 		}
 	}
+	@media (max-width: 1600px) {
+		.content{
+			padding-right: 0;
+		}
+	}
 }
 
 .steps{
@@ -101,6 +106,15 @@
 			margin-left: auto;
 			margin-right: auto;
 			width: 220px;
-		}		
+		}	
+	}
+
+	@media (max-width: 1250px) {
+		&__list{
+			&:first-child(){
+				margin-top: 35px;
+			}
+			margin-top: 35px;
+		}
 	}
 }

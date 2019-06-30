@@ -3773,6 +3773,9 @@ nav a {
   .footer .btn {
     font-size: 16px;
     height: 50px; }
+  .footer .copyright {
+    padding-left: 50px;
+    padding-right: 50px; }
   .footer .contacts {
     margin-right: 37px; }
   .footer .tel {
@@ -3781,6 +3784,35 @@ nav a {
     font-weight: 700; }
     .footer .tel:hover {
       text-decoration: none; }
+  @media (max-width: 1600px) {
+    .footer .copyright {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media (min-width: 1250px) and (max-width: 1500px) {
+    .footer .left {
+      flex-basis: auto;
+      flex-grow: 1;
+      max-width: calc(100% - 280px); }
+    .footer .right {
+      max-width: 280px;
+      flex-basis: 280px;
+      flex-shrink: 0; } }
+  @media (max-width: 1500px) {
+    .footer {
+      font-size: 14px; }
+      .footer .right {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center; }
+      .footer .contacts {
+        margin-right: 0;
+        text-align: center; }
+      .footer .tel {
+        font-size: 25px; } }
+  @media (max-width: 1300px) {
+    .footer .copyright {
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 .tab-content > .tab-pane {
   display: none; }
@@ -4306,6 +4338,9 @@ picture img {
       #section-4 .col-xl-7 {
         flex: 0 0 100%;
         max-width: 100%; } }
+  @media (max-width: 1600px) {
+    #section-4 .content {
+      padding-right: 0; } }
 
 .steps__list {
   margin-top: 30px; }
@@ -4359,6 +4394,12 @@ picture img {
     margin-left: auto;
     margin-right: auto;
     width: 220px; } }
+
+@media (max-width: 1250px) {
+  .steps__list {
+    margin-top: 35px; }
+    .steps__list:first-child {
+      margin-top: 35px; } }
 
 #section-5 {
   padding: 70px 0 55px; }
@@ -4483,6 +4524,7 @@ picture img {
 .variations {
   color: #cfd7e5;
   font-size: 17px;
+  margin-top: 20px;
   background: linear-gradient(to bottom, transparent 0%, transparent 155px, #0d2580 155px, #0d2580 230px, transparent 230px, transparent 305px, #0d2580 305px, #0d2580 380px, transparent 380px, transparent 535px, #0d2580 535px, #0d2580 685px, transparent 685px, transparent 720px); }
   .variations .icon {
     min-height: 55px;

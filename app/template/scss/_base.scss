@@ -505,6 +505,10 @@ nav{
 		height: 50px;
 	}
 
+	.copyright{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 	.contacts{
 		margin-right: 37px;
 	}
@@ -514,6 +518,50 @@ nav{
 		font-weight: 700;
 		&:hover{
 			text-decoration: none;
+		}
+	}
+
+	@media (max-width: 1600px) {
+		.copyright{
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+	@media (min-width: 1250px) and (max-width: 1500px) {
+		.left{
+			flex-basis: auto;
+			flex-grow: 1;
+			max-width: calc(100% - 280px);
+		}
+		.right{
+			max-width: 280px;
+			flex-basis: 280px;
+			flex-shrink: 0;
+		}
+	}
+	@media (max-width: 1500px) {
+		font-size: 14px;
+		.right{
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+		}
+		.contacts{
+			margin-right: 0;
+			text-align: center;
+		}
+
+		.tel{
+			font-size: 25px;
+		}
+	}
+
+	@media (max-width: 1300px) {
+		.right{
+		}
+		.copyright{
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
 }
@@ -686,3 +734,5 @@ picture{
 		max-width: 100%		
 	}
 }
+
+
