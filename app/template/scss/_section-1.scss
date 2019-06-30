@@ -5,7 +5,7 @@
         top: 10px;
 		.tel{
 			color: $color2;
-			font-size: 2rem;
+			font-size: 24px;
 			font-weight: bold; 
 			margin-left: 2.5rem;
 			&:first-child{
@@ -31,7 +31,7 @@
 	.content{
 		color: $color6;
 		font-size: 20px;
-		padding-top: 30px;
+		padding-top: 90px;
 	}
 
 	form{
@@ -47,7 +47,7 @@
 // advantages
 .advantages{
 	&__list{
-		margin-top: 20px;
+		margin-top: 80px;
 	}
 	&__items{
 		color: $color2;
@@ -67,5 +67,17 @@
 	&-text{
 		font-size: 15px;
 		line-height: 1.6;
+	}
+}
+
+
+
+
+@media (max-width: 1050px){
+	.item__advantage{
+		&-title{
+			line-height: 1.3;
+			margin-bottom: 10px;
+		}
 	}
 }

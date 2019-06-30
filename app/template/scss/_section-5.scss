@@ -3,6 +3,8 @@
 	.subtitle{
 		font-size: 30px;
 		font-weight: 700;
+		line-height: 1.2;
+		margin-top: 10px;
 		margin-bottom: 15px;
 		padding-left: 14px;
 		& > span:before{
@@ -14,6 +16,13 @@
 	.content{
 		font-size: 17px;
 		line-height: 1.8;
+	}
+
+
+	@media (max-width: 1250px){
+		.subtitle{
+			font-size: 28px;
+		}
 	}
 }
 
@@ -33,5 +42,19 @@
 	&__text{
 		font-size: 17px;
 		font-weight: 700;
+	}
+
+	@media (max-width: 1600px){
+		&__title{
+			font-size: 60px;
+		}
+	}
+	@media (max-width: 1250px){
+		&__title{
+			font-size: 50px;
+		}
+		&__text{
+			font-size: 15px;
+		}
 	}
 }

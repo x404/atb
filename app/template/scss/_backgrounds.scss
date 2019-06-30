@@ -28,13 +28,18 @@
 #section-1{
 	background-color: #0a0a1f;
 	background-image: url(../images/bg/section-1-bg.jpg);
-	min-height: 1128px;
+	padding-bottom: 50px;
+	@media (min-width: 1600px) {
+		min-height: 1128px;
+	}
 }	
 
 #section-3{
 	background-image: url(../images/bg/section-3-bg.jpg);
 	background-color: #0b6be4;
-	min-height: 797px;
+	@media (min-width: 1600px) {
+		min-height: 797px;
+	}
 	.container{
 		background: url(../images/timer.png) no-repeat;
 		background-position: 60px 20px;

@@ -194,7 +194,7 @@ h3{font-size:1.6rem}
 	border: none;
 	cursor: pointer;
 	display: block;
-	margin-right: 2.8rem;
+	margin-right: 28px;
 	padding: 0;
 	width: 32px;
 
@@ -218,8 +218,6 @@ h3{font-size:1.6rem}
 .header{
 	padding-top: 30px;
 	padding-bottom: 10px;
-
-
 	.qorder{
 		$radius: 5rem;	
 		border-radius: $radius;
@@ -227,6 +225,9 @@ h3{font-size:1.6rem}
 		margin-left: 4.5rem;
 		font-size: 16px;
 		padding: 0 2.4rem;
+	}
+	.contacts{
+		color: $color2;
 	}
 }
 
@@ -673,5 +674,12 @@ nav{
 		display: block;
 		right: 20px;
 		top: 23px;
+	}
+}
+
+
+picture{
+	img{
+		max-width: 100%		
 	}
 }

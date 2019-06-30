@@ -16,15 +16,38 @@
 	}
 }
 
+
+.container {
+	width: 100%;
+	max-width: 100%;
+}
+
+
+
+
 @media (min-width: 768px) {
 	.container{
-		width: 730px;
+		// width: 730px;
 	}
 
 }
 @media (min-width: 992px) {
 	.container {
-		width: 940px;
+		// width: 940px;
+	}
+
+	.container,
+	.container-big{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media (min-width: 1050px) {
+	.container,
+	.container-big{
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 }
 
@@ -37,9 +60,46 @@
 
 @media (min-width: 1199px) {
 	.container {
-		width: 1100px;
+		// width: 1100px;
+	}
+
+	.container-big{
+		padding-left: 60px;
+		padding-right: 60px;
 	}
 }
+
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 100%;
+		width: 100%;
+		padding-left: 88px;
+		padding-right: 88px;
+	}
+	.container-big{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+
+
+
+@media (min-width: 1600px) {
+	.container {
+		max-width: 100%;
+		width: 100%;
+		padding-left: 98px;
+		padding-right: 98px;
+	}
+	.container-big{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+
 
 
 @media (min-width: 1700px) {
@@ -47,12 +107,19 @@
 		width: 1500px;
 		max-width: 1500px;
 	}
+	.container-big{
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
 
+@media (min-width: 1850px) {
+	.container {
+		width: 1700px;
+		max-width: 1700px;
+	}
 }
-.container-big{
-	padding-left: 60px;
-	padding-right: 60px;
-}
+
 
 
 @each $breakpoint in map-keys($grid-breakpoints) {
