@@ -3161,7 +3161,21 @@ a.text-dark:hover, a.text-dark:focus {
 
 .container {
   width: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (min-width: 480px) {
+  .container,
+  .container-big {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+@media (min-width: 768px) {
+  .container,
+  .container-big {
+    padding-left: 25px;
+    padding-right: 25px; } }
 
 @media (min-width: 992px) {
   .container,
@@ -3499,18 +3513,18 @@ h3 {
   position: absolute; }
 
 .btn {
+  height: 60px;
+  border-radius: 60px;
   background: none;
   position: relative;
+  font-size: 18px;
+  padding: 0 28px;
   align-items: center;
-  border-radius: 6rem;
   border: none;
   cursor: pointer;
   display: flex;
-  font-size: 18px;
   font-weight: bold;
-  height: 6rem;
   justify-content: center;
-  padding: 0 2.8rem;
   transition: background-color .3s;
   z-index: 2; }
   .btn:hover span {
@@ -4178,6 +4192,57 @@ picture img {
 #section-1 .btn-submit {
   margin-top: 28px; }
 
+@media (max-width: 1600px) {
+  #section-1 .subtitle {
+    font-size: 28px; }
+  #section-1 .content {
+    font-size: 18px; } }
+
+@media (max-width: 1050px) {
+  #section-1 .subtitle {
+    font-size: 28px; }
+  #section-1 .content {
+    font-size: 18px; } }
+
+@media (max-width: 991px) {
+  #section-1 .header {
+    margin-bottom: 40px; }
+  #section-1 .content {
+    font-size: 14px;
+    padding-top: 65px; }
+  #section-1 .form-wrapper {
+    align-items: center;
+    display: flex; }
+  #section-1 form {
+    margin-top: 20px; }
+    #section-1 form .input-field label {
+      font-size: 15px; }
+  #section-1 .advantages__list {
+    margin-top: 30px; } }
+
+@media (max-width: 950px) {
+  #section-1 .header .qorder {
+    height: 40px;
+    margin-left: 20px;
+    font-size: 14px; }
+  #section-1 .header .contacts {
+    position: static; }
+    #section-1 .header .contacts .city {
+      display: none; }
+    #section-1 .header .contacts .tel {
+      font-size: 18px; }
+  #section-1 .header .right {
+    flex-grow: 1;
+    justify-content: space-between !important;
+    padding-left: 50px; }
+  #section-1 .header .logo,
+  #section-1 .footer .logo {
+    font-size: 21px;
+    height: 40px;
+    width: 145px; }
+  #section-1 .subtitle {
+    font-size: 20px; } }
+
 .advantages__list {
   margin-top: 80px; }
 
@@ -4192,10 +4257,25 @@ picture img {
 .item__advantage-title {
   font-size: 20px;
   margin: 2px 0 15px; }
+  @media (max-width: 1600px) {
+    .item__advantage-title {
+      font-size: 18px; } }
+  @media (max-width: 1050px) {
+    .item__advantage-title {
+      font-size: 17px; } }
+  @media (max-width: 950px) {
+    .item__advantage-title {
+      font-size: 14px; } }
 
 .item__advantage-text {
   font-size: 15px;
   line-height: 1.6; }
+  @media (max-width: 1600px) {
+    .item__advantage-text {
+      font-size: 14px; } }
+  @media (max-width: 950px) {
+    .item__advantage-text {
+      display: none; } }
 
 @media (max-width: 1050px) {
   .item__advantage-title {
@@ -4863,20 +4943,16 @@ table {
   h2 {
     font-size: 22px; } }
 
-@media (max-width: 1600px) {
-  #section-1 .subtitle {
-    font-size: 28px; }
-  #section-1 .content {
-    font-size: 18px; }
-  .item__advantage-title {
-    font-size: 18px; }
-  .item__advantage-text {
-    font-size: 14px; } }
+@media (max-width: 991px) {
+  .title {
+    font-size: 35px; }
+  .btn {
+    border-radius: 45px;
+    height: 45px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px; } }
 
-@media (max-width: 1050px) {
-  #section-1 .subtitle {
-    font-size: 28px; }
-  #section-1 .content {
-    font-size: 18px; }
-  .item__advantage-title {
-    font-size: 17px; } }
+@media (max-width: 950px) {
+  .half-redline:before {
+    display: none; } }

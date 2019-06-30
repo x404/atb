@@ -72,7 +72,30 @@
 }
 
 @media (max-width: 991px){
+	.title{
+		font-size: 35px;
+	}
+
+	.btn{
+		$radius: 45px;
+		border-radius: $radius;
+		height: $radius;
+		font-size: 14px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
+
+@media (max-width: 950px){
+	.half{
+		&-redline{
+			&:before{
+				display: none;
+			}
+		}
+	}
+}
+
 
 @media (max-width: 767px){
 }

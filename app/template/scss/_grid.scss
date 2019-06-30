@@ -20,16 +20,25 @@
 .container {
 	width: 100%;
 	max-width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 
-
+@media (min-width: 480px) {
+	.container,
+	.container-big{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
 
 @media (min-width: 768px) {
-	.container{
-		// width: 730px;
+	.container,
+	.container-big{
+		padding-left: 25px;
+		padding-right: 25px;
 	}
-
 }
 @media (min-width: 992px) {
 	.container {

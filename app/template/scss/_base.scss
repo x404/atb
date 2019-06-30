@@ -131,21 +131,21 @@ h3{font-size:1.6rem}
 
 
 .btn{
-	$radius: 6rem;
+	$radius: 60px;
+	height: $radius;
+	border-radius: $radius;
 	background: none;
 	position: relative;
+	font-size: 18px;
+	padding: 0 28px;
 
 
 	align-items: center;
-	border-radius: $radius;
 	border: none;
 	cursor: pointer;
 	display: flex;
-	font-size: 18px;
 	font-weight: bold;
-	height: $radius;
 	justify-content: center;
-	padding: 0 2.8rem;
 	transition: background-color .3s;
 	z-index: 2;
 
