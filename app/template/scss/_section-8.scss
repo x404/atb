@@ -8,11 +8,25 @@
 		}
 
 		p:not(.title){
-			font-size: 20px;			
+			font-size: 20px;
 		}
 		ul{
 			line-height: 1.7;
 			margin-top: 20px;
+		}
+	}
+
+	@media (max-width: 1600px){
+		.content{
+			p:not(.title){
+				font-size: 16px;
+			}			
+		}
+	}
+
+	@media (max-width: 1050px){
+		.content{
+			padding-left: 15px;
 		}
 	}
 }

@@ -3935,23 +3935,31 @@ picture img {
 
 #section-6 {
   background-image: url(../images/bg/section-6-bg.jpg);
-  background-color: #0e2580;
-  min-height: 780px; }
+  background-color: #0e2580; }
+  @media (min-width: 1600px) {
+    #section-6 {
+      min-height: 780px; } }
 
 #section-7 {
   background-image: url(../images/bg/section-7-bg.jpg);
-  background-color: #0b1521;
-  min-height: 1085px; }
+  background-color: #0b1521; }
+  @media (min-width: 1600px) {
+    #section-7 {
+      min-height: 1085px; } }
 
 #section-8 {
   background-image: url(../images/bg/section-8-bg.jpg);
-  background-color: #f5f4f1;
-  min-height: 756px; }
+  background-color: #f5f4f1; }
+  @media (min-width: 1600px) {
+    #section-8 {
+      min-height: 756px; } }
 
 #section-10 {
   background-image: url(../images/bg/section-10-bg.jpg);
-  background-color: #1f2744;
-  min-height: 660px; }
+  background-color: #1f2744; }
+  @media (min-width: 1600px) {
+    #section-10 {
+      min-height: 660px; } }
 
 @font-face {
   font-family: 'proxima-nova';
@@ -4410,6 +4418,11 @@ picture img {
         width: 30px; }
   #section-6 .excerption {
     margin-bottom: 35px; }
+  @media (max-width: 1600px) {
+    #section-6 {
+      padding: 70px 0; }
+      #section-6 .diagnostics__cell:before {
+        left: -30px; } }
 
 #section-7 {
   font-size: 20px;
@@ -4419,12 +4432,13 @@ picture img {
   #section-7 .attempt {
     color: #ff0035;
     font-size: 30px;
+    line-height: 1.2;
     font-weight: 700;
     margin-top: 17px; }
   #section-7 .ready {
     font-size: 25px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.4;
     margin-top: 14px; }
     #section-7 .ready .right {
       flex-shrink: 0; }
@@ -4433,6 +4447,20 @@ picture img {
   #section-7 .btn {
     border-radius: 60px;
     height: 60px; }
+  @media (max-width: 1600px) {
+    #section-7 {
+      padding: 50px 0; }
+      #section-7 .ready {
+        display: block !important; }
+        #section-7 .ready .left {
+          margin-bottom: 20px; } }
+  @media (max-width: 1050px) {
+    #section-7 .attempt {
+      font-weight: normal;
+      font-size: 25px;
+      padding-top: 5px; }
+    #section-7 .ready {
+      font-size: 20px; } }
 
 .icon-attempt {
   background: url(../images/attempt.png) no-repeat left 5px;
@@ -4483,6 +4511,13 @@ picture img {
     font-size: 30px;
     font-weight: 400;
     font-family: "Proxima Nova - Black"; }
+  @media (max-width: 1600px) {
+    .variations {
+      background: none;
+      font-size: 15px; } }
+  @media (max-width: 1050px) {
+    .variations__title {
+      font-size: 25px; } }
 
 #section-8 {
   padding: 80px 0 60px; }
@@ -4496,6 +4531,12 @@ picture img {
     #section-8 .content ul {
       line-height: 1.7;
       margin-top: 20px; }
+  @media (max-width: 1600px) {
+    #section-8 .content p:not(.title) {
+      font-size: 16px; } }
+  @media (max-width: 1050px) {
+    #section-8 .content {
+      padding-left: 15px; } }
 
 #section-9 {
   font-size: 17px;

@@ -42,4 +42,15 @@
 	.excerption{
 		margin-bottom: 35px;
 	}
+
+	@media (max-width: 1600px){
+		padding: 70px 0 ;
+		.diagnostics{
+			&__cell{
+				&:before{
+					left: -30px;
+				}
+			}
+		}
+	}
 }

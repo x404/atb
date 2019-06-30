@@ -8,6 +8,7 @@
 	.attempt{
 		color: $color3;
 		font-size: 30px;
+		line-height: 1.2;
 		font-weight: 700;
 		margin-top: 17px;
 	}
@@ -15,7 +16,7 @@
 	.ready{
 		font-size: 25px;
 		font-weight: 700;
-		line-height: 1.2;
+		line-height: 1.4;
 		margin-top: 14px;
 		.right{
 			flex-shrink: 0;
@@ -30,6 +31,27 @@
 		border-radius: $h;
 		height: $h;
 	}
+
+	@media (max-width: 1600px){
+		padding: 50px 0;
+		.ready{
+			display: block !important;
+			.left{
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	@media (max-width: 1050px){
+		.attempt{
+			font-weight: normal;
+			font-size: 25px;
+			padding-top: 5px;
+		}
+		.ready{
+			font-size: 20px;
+		}
+	}
 }
 
 
@@ -38,6 +60,8 @@
 	min-height: 38px;
 	padding-left: 57px;	
 }
+
+
 
 .variations{
 	color: $color10;
@@ -107,5 +131,15 @@
 		font-weight: 400;
 		font-family: "Proxima Nova - Black";
 	}
-}
 
+
+	@media (max-width: 1600px){
+		background: none;
+		font-size: 15px;
+	}
+	@media (max-width: 1050px){
+		&__title{
+			font-size: 25px;
+		}
+	}
+}
