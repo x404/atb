@@ -4726,14 +4726,21 @@ table {
       text-decoration: none; }
 
 #map {
-  height: 433px;
+  height: 415px;
   width: 100%; }
 
 .map-wrapper {
-  box-shadow: 0 5px 30px rgba(13, 37, 128, 0.15); }
+  box-shadow: 0 5px 30px rgba(13, 37, 128, 0.15);
+  height: 415px;
+  overflow: hidden; }
   .map-wrapper .house {
     flex-shrink: 0;
-    width: 450px; }
+    width: 50%; }
+    .map-wrapper .house img {
+      display: block;
+      max-width: 100%;
+      height: 100%;
+      width: 100%; }
 
 .work-time {
   margin-top: 30px; }
@@ -4749,6 +4756,24 @@ table {
     font-weight: 700; }
   .work-time .day {
     font-size: 17px; }
+
+@media (max-width: 1600px) {
+  #section-12 {
+    padding: 40px 0; }
+  .map-wrapper,
+  #map {
+    height: 320px; } }
+
+@media (max-width: 1300px) {
+  .work-time .cell {
+    padding-right: 10px; } }
+
+@media (max-width: 1250px) {
+  #section-12 .contact-visual {
+    margin-top: 35px; }
+  .map-wrapper,
+  #map {
+    height: 450px; } }
 
 ::-ms-clear {
   display: none; }
