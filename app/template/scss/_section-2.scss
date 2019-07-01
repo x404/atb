@@ -138,12 +138,9 @@
 		.nav{
 			overflow-x: auto;
 			overflow-y: none;
-			// max-width: 100%;
 		}
 		.categories{
 			box-shadow: none;
-			// padding-top: 15px;
-			// padding-bottom: 15px;
 			.nav-item.active:after{
 				top: 105px;
 			}
@@ -164,14 +161,18 @@
 		.content{
 			font-size: 14px;
 		}
-		 .group-buttons{
-		 	flex-direction: column;
-		 	align-items: center;
-		 	.btn{
-		 		margin-bottom: 15px;
-		 		width: 230px;
-		 	}
-		 }
+		.group-buttons{
+			align-items: center;
+			flex-direction: column;
+			.btn{
+				margin-bottom: 15px;
+				width: 230px;
+			}
+		}
+
+		.tab-content{
+			padding-top: 10px;
+		}
 	}
 }
 
