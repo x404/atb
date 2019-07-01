@@ -5232,6 +5232,24 @@ table {
   @media (max-width: 1050px) {
     #section-10 {
       font-size: 15px; } }
+  @media (max-width: 768px) {
+    #section-10 {
+      font-size: 14px; } }
+  @media (max-width: 480px) {
+    #section-10 {
+      padding: 30px 0 25px; }
+      #section-10 .title {
+        font-size: 30px;
+        margin-bottom: 15px; } }
+  @media (max-width: 350px) {
+    #section-10 .title {
+      font-size: 26px;
+      margin-bottom: 15px; }
+    #section-10 .content {
+      text-align: center; }
+    #section-10 .btn {
+      margin-left: auto;
+      margin-right: auto; } }
 
 #section-11 {
   background-color: #00ffd2;
@@ -5413,7 +5431,6 @@ table {
     font-size: 20px; }
   h2 {
     font-size: 22px; }
-  #section-10,
   #section-11,
   #section-12,
   .footer {
@@ -5439,7 +5456,9 @@ table {
   .title {
     font-size: 30px; }
   h2 {
-    font-size: 17px; } }
+    font-size: 17px; }
+  .content {
+    margin-top: 15px; } }
 
 @media (max-width: 480px) {
   .title {
