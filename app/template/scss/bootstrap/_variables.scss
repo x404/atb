@@ -184,7 +184,7 @@ $paragraph-margin-bottom:   1rem !default;
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
+  sm: 480px,
   md: 768px,
   lg: 992px,
   xl: 1250px
@@ -199,7 +199,7 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 540px,
+  sm: 440px,
   md: 720px,
   lg: 960px,
   xl: 1200px

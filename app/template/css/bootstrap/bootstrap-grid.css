@@ -22,9 +22,9 @@ html {
   padding-left: 8px;
   margin-right: auto;
   margin-left: auto; }
-  @media (min-width: 576px) {
+  @media (min-width: 480px) {
     .container {
-      max-width: 540px; } }
+      max-width: 440px; } }
   @media (min-width: 768px) {
     .container {
       max-width: 720px; } }
@@ -204,7 +204,7 @@ html {
 .offset-11 {
   margin-left: 91.66667%; }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   .col-sm {
     flex-basis: 0;
     flex-grow: 1;
@@ -631,7 +631,7 @@ html {
 .d-inline-flex {
   display: inline-flex !important; }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   .d-sm-none {
     display: none !important; }
   .d-sm-inline {
@@ -833,7 +833,7 @@ html {
 .align-self-stretch {
   align-self: stretch !important; }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   .flex-sm-row {
     flex-direction: row !important; }
   .flex-sm-column {

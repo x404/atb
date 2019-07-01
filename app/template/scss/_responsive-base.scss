@@ -98,7 +98,28 @@
 
 
 @media (max-width: 767px){
+	.title{
+		font-size: 30px;
+	}
+
+	#section-2,
+	#section-3,
+	#section-4,
+	#section-5,
+	#section-6,
+	#section-7,
+	#section-8,
+	#section-9,
+	#section-10,
+	#section-11,
+	#section-12,
+	.footer{ 
+		display: none !important;
+	}
 }
 
-@media (max-width: 545px){
+@media (max-width: 480px){
+	.title{
+		font-size: 26px;
+	}
 }
