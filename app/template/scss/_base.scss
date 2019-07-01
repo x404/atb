@@ -470,6 +470,9 @@ form{
 		outline: none;
 		padding-left: $pl;
 		width: 260px;
+		&.error{
+			border-bottom-color: red !important
+		}
 	}
 }
 
@@ -736,3 +739,6 @@ picture{
 }
 
 
+label.error{
+	display: none !important;
+}

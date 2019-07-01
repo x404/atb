@@ -22,6 +22,7 @@ $(document).ready(function(){
 	});	
 
 
+
 	// inputs
 	$('.input-field').each(function(){
 		if ($(this).find('.form-control').val().length > 0) {
@@ -59,6 +60,64 @@ $(document).ready(function(){
 	$('.to-price').click(function () {
 		destination = $('#section-9').offset().top;
 		$('body, html').animate({scrollTop: destination }, 800);
+	});	
+
+
+	// validate
+	$.validator.addMethod("validphone", function(value){
+		if (Inputmask.isValid(value, { mask: '+7(999)999-99-99'})) return true
+		else return false;
+	},"");
+		
+
+
+	// validate
+	$('#form-1').validate({
+		rules: {
+			name:{
+				required : true
+			},
+			tel: {
+				validphone:true
+			}
+		},
+		submitHandler:function(form) {
+			let strSubmit= $(form).serialize(),
+				url = $(form).attr('action');
+			sendform(url, strSubmit, form);
+		}
+	});	
+
+	$('#form-2').validate({
+		rules: {
+			name:{
+				required : true
+			},
+			tel: {
+				validphone:true
+			}
+		},
+		submitHandler:function(form) {
+			let strSubmit= $(form).serialize(),
+				url = $(form).attr('action');
+			sendform(url, strSubmit, form);
+		}
+	});	
+
+	$('#form-3').validate({
+		rules: {
+			name:{
+				required : true
+			},
+			tel: {
+				validphone:true
+			}
+		},
+		submitHandler:function(form) {
+			let strSubmit= $(form).serialize(),
+				url = $(form).attr('action');
+			sendform(url, strSubmit, form);
+		}
 	});	
 });
 
@@ -106,3 +165,34 @@ function init(){
 }
 
 
+
+
+var thank = '<div class="thank text-center"><p>Форма отправлена!</p><p>В ближайщее время с вами свяжутся наши менеджеры для уточнения всех деталей</p></div>';
+var errorTxt = 'Форма не отправлена. Попробуйте позже.';
+
+function sendform(url, strSubmit, form){
+	$(form).find('fieldset').hide();
+	$(form).append('<div class="sending">Идет отправка ...</div>');
+	
+	fetch('/core/send.php', {
+		method: 'post',
+		headers: {
+	        "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+		},
+		body: strSubmit 
+	})
+	.then(function(response){ 
+		if (response.status == '200'){
+			document.querySelector('.sending').remove();
+			$(form).append(thank);
+			// startClock($(form));
+		} else{
+			alert(errorTxt);
+			$(form).find('fieldset').show();
+			$('.sending').remove();	
+		}
+	})
+	.catch (function (error) {
+	    console.log('Request failed', error);
+	});
+}

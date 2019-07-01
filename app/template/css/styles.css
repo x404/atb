@@ -3752,6 +3752,8 @@ form .form-control {
   outline: none;
   padding-left: 0;
   width: 260px; }
+  form .form-control.error {
+    border-bottom-color: red !important; }
 
 .excerption {
   border: 10px solid #00ffd2;
@@ -3933,6 +3935,9 @@ nav a {
 
 picture img {
   max-width: 100%; }
+
+label.error {
+  display: none !important; }
 
 .webp #section-1 {
   background-image: url(../images/bg/section-1-bg.webp); }
@@ -5258,6 +5263,7 @@ table {
     #section-11 .callback form {
       margin-top: 5px; }
     #section-11 .callback .form-control {
+      color: #000;
       border-bottom-color: #0d2580; }
     #section-11 .callback form .input-field label {
       color: #000;
