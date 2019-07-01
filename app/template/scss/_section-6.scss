@@ -53,4 +53,61 @@
 			}
 		}
 	}
+
+	@media (max-width: 768px){
+		padding: 45px 0;
+		.content{
+			font-size: 14px;
+		}
+		.excerption{
+			font-size: 16px;
+			line-height: 1.3;
+		}
+	}
+
+	@media (max-width: 767px){
+		.content{
+			margin-top: 20px;
+		}
+		.btn{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.excerption{
+			margin-top: 15px;
+		}
+
+		.diagnostics{
+			&__cell{
+				padding-bottom: 10px;
+			}
+		}
+	}
+
+	@media (max-width: 420px){
+		.content{
+			text-align: center;
+		}
+		.diagnostics{
+			display: block !important;
+			&__cell{
+				margin-bottom: 20px;
+				padding-bottom: 10px;
+				width: 100%;
+				&:after{
+					left: 50%;
+					margin-left: -15px;
+				}
+				&:before{
+					background-image: url(../images/cross320.png);
+					left: 50%;
+					top: 5px;
+					margin-left: -45px;
+				}
+			}
+		}
+		.excerption{
+			margin-bottom: 15px;
+		}
+	}
 }
