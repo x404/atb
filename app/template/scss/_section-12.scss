@@ -105,3 +105,105 @@
 		height: 450px;
 	}
 }
+
+@media (max-width: 768px) {
+	#section-12{
+		
+	}
+}
+
+
+@media (max-width: 767px) {
+	#section-12{
+		.title{
+			margin-bottom: 10px;
+		}
+		.address{
+			font-size: 15px;
+		}
+		.tel{
+			font-size: 20px;
+		}
+
+		.work-time .time{
+			font-size: 20px;
+		}
+	}
+
+}
+
+
+
+
+@media (max-width: 550px) {
+	#map, 
+	.map-wrapper{
+		height: 280px;
+	}
+}
+
+
+@media (max-width: 480px) {
+	#map, 
+	.map-wrapper{
+		height: 210px;
+	}
+
+	#section-12{
+		.tel{
+			white-space: nowrap
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	#section-12{
+		padding: 30px 0;
+		font-size: 14px;
+		.tel{
+			font-size: 16px;
+		}
+
+		.email{
+			font-size: 14px;
+		}
+
+		.work-time{
+			.cell{
+				margin-right: 0px;
+				padding-left: 5px;
+				&:last-child{
+					padding-right: 0;
+				}
+			}
+			.time{
+				font-size: 15px;
+			}
+			.day{
+				font-size: 13px;
+			}
+		}
+	}
+
+	.house,
+	#map{
+		height: 250px;
+		width: 100%;
+	}
+
+	.map-wrapper{
+		flex-direction: column;
+		height: auto;
+		.house{
+			order: 2;
+		}
+		#map{
+			order: 1;
+		}
+		.house,
+		#map
+		{
+			width: 100%;
+		}
+	}
+}
