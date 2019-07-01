@@ -5619,11 +5619,19 @@ table {
     margin-top: 23px;
     padding-left: 0; }
     .footer .right .contacts {
-      padding-right: 15px; } }
+      padding-right: 15px; }
+  .popup-menu {
+    font-size: 20px;
+    min-height: 520px; } }
 
 @media (max-width: 480px) {
   .title {
-    font-size: 26px; } }
+    font-size: 26px; }
+  .popup-menu {
+    font-size: 18px; }
+    .popup-menu .close-menu {
+      left: 20px;
+      top: 20px; } }
 
 @media (max-width: 400px) {
   .footer {
@@ -5641,4 +5649,6 @@ table {
       .footer .right .btn {
         margin-top: 10px; }
       .footer .right .contacts {
-        padding-right: 0; } }
+        padding-right: 0; }
+  .popup-menu {
+    font-size: 16px; } }
