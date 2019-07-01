@@ -4608,6 +4608,18 @@ picture img {
   @media (max-width: 1600px) {
     #section-4 .content {
       padding-right: 0; } }
+  @media (max-width: 1250px) {
+    #section-4 {
+      padding: 50px 0; } }
+  @media (max-width: 768px) {
+    #section-4 .content {
+      font-size: 15px; } }
+  @media (max-width: 550px) {
+    #section-4 {
+      padding: 40px 0; } }
+  @media (max-width: 450px) {
+    #section-4 {
+      padding: 40px 0 20px; } }
 
 .steps__list {
   margin-top: 30px; }
@@ -4667,6 +4679,43 @@ picture img {
     margin-top: 35px; }
     .steps__list:first-child {
       margin-top: 35px; } }
+
+@media (max-width: 991px) {
+  .steps__title {
+    width: 80%; } }
+
+@media (max-width: 768px) {
+  .steps__title {
+    font-weight: normal;
+    font-size: 14px; } }
+
+@media (max-width: 550px) {
+  .steps__list {
+    flex-wrap: wrap;
+    margin-top: 0; }
+    .steps__list .step {
+      align-items: center;
+      display: flex;
+      margin-bottom: 15px;
+      padding-right: 10px;
+      width: 50%; }
+      .steps__list .step:before {
+        display: none !important; }
+      .steps__list .step .circle {
+        height: 33px;
+        width: 33px; }
+      .steps__list .step .num {
+        font-size: 20px; }
+  .steps__title {
+    font-size: 13px;
+    margin-left: 15px;
+    text-align: left; } }
+
+@media (max-width: 450px) {
+  .steps__list {
+    display: block !important; }
+    .steps__list .step {
+      width: 100%; } }
 
 #section-5 {
   padding: 70px 0 55px; }
@@ -5116,8 +5165,6 @@ table {
     display: none; } }
 
 @media (max-width: 1250px) {
-  #section-4 {
-    padding: 50px 0 50px; }
   .excerption {
     font-size: 18px;
     font-weight: normal; }
@@ -5129,7 +5176,6 @@ table {
     font-size: 20px; }
   h2 {
     font-size: 22px; }
-  #section-4,
   #section-5,
   #section-6,
   #section-7,
