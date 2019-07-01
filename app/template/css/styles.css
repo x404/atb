@@ -4913,11 +4913,43 @@ picture img {
           margin-bottom: 20px; } }
   @media (max-width: 1050px) {
     #section-7 .attempt {
-      font-weight: normal;
       font-size: 25px;
       padding-top: 5px; }
     #section-7 .ready {
       font-size: 20px; } }
+  @media (max-width: 991px) {
+    #section-7 {
+      font-size: 15px; }
+      #section-7 .str-2 {
+        min-height: 90px; }
+      #section-7 .str-3 {
+        min-height: 90px; }
+      #section-7 .str-5 {
+        min-height: 192px; }
+      #section-7 .attempt {
+        font-size: 20px; }
+      #section-7 .ready {
+        font-size: 17px; }
+      #section-7 .btn {
+        height: 60px;
+        font-size: 15px; } }
+  @media (max-width: 768px) {
+    #section-7 .btn {
+      margin-left: auto;
+      margin-right: auto; }
+    #section-7 .ready {
+      font-size: 17px; }
+      #section-7 .ready .left {
+        padding-right: 0; } }
+  @media (max-width: 468px) {
+    #section-7 .btn {
+      height: 45px; } }
+  @media (max-width: 350px) {
+    #section-7 .attempt {
+      font-size: 18px;
+      padding-top: 5px; }
+    #section-7 .ready {
+      font-size: 16px; } }
 
 .icon-attempt {
   background: url(../images/attempt.png) no-repeat left 5px;
@@ -4976,6 +5008,29 @@ picture img {
   @media (max-width: 1050px) {
     .variations__title {
       font-size: 25px; } }
+  @media (max-width: 991px) {
+    .variations {
+      font-size: 14px; }
+      .variations__title {
+        font-size: 22px; } }
+  @media (max-width: 768px) {
+    .variations__cell-border {
+      padding-left: 10px;
+      padding-right: 10px; }
+    .variations .str {
+      padding-left: 40px; }
+    .variations .icon-ok {
+      background-image: url(../images/ok768.png); }
+    .variations .icon-no {
+      background-image: url(../images/no768.png); } }
+  @media (max-width: 767px) {
+    .variations .str {
+      min-height: 0 !important;
+      margin: 1 0px 0; }
+    .variations__cell {
+      padding-right: 10px; }
+    .variations__title {
+      font-size: 20px; } }
 
 #section-8 {
   padding: 80px 0 60px; }
@@ -5262,7 +5317,6 @@ table {
     font-size: 20px; }
   h2 {
     font-size: 22px; }
-  #section-7,
   #section-8,
   #section-9,
   #section-10,

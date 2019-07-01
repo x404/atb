@@ -44,12 +44,69 @@
 
 	@media (max-width: 1050px){
 		.attempt{
-			font-weight: normal;
 			font-size: 25px;
 			padding-top: 5px;
 		}
 		.ready{
 			font-size: 20px;
+		}
+	}
+
+	@media (max-width: 991px){
+		font-size: 15px;
+
+		.str{
+			&-2{
+				min-height: 90px;
+			}
+			&-3{
+				min-height: 90px;
+			}
+			&-5{
+				min-height: 192px;
+			}
+		}
+
+		.attempt{
+			font-size: 20px;
+		}
+
+		.ready{
+			font-size: 17px;
+		}
+
+		.btn{
+			height: 60px;
+			font-size: 15px; 
+		}
+	}
+
+
+	@media (max-width: 768px){
+		.btn{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.ready{
+			font-size: 17px;
+			.left{
+				padding-right: 0;
+			}
+		}
+	}
+	@media (max-width: 468px){
+		.btn{
+			height: 45px;
+		}
+	}
+
+	@media (max-width: 350px){
+		.attempt{
+			font-size: 18px;
+			padding-top: 5px;
+		}
+		.ready{
+			font-size: 16px;
 		}
 	}
 }
@@ -141,6 +198,43 @@
 	@media (max-width: 1050px){
 		&__title{
 			font-size: 25px;
+		}
+	}
+	@media (max-width: 991px){
+		font-size: 14px;
+		&__title{
+			font-size: 22px;
+		}
+	}
+	@media (max-width: 768px){
+		&__cell-border{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.str{
+			padding-left: 40px;
+		}
+		.icon{
+			&-ok{
+				background-image: url(../images/ok768.png);
+			}
+			&-no{
+				background-image: url(../images/no768.png);
+			}
+		}
+	}
+
+	@media (max-width: 767px){
+		.str{
+			min-height: 0 !important;
+			margin: 1 0px 0; 
+		}
+		&__cell{
+			padding-right: 10px;
+		}
+		&__title{
+			font-size: 20px;
 		}
 	}
 }
