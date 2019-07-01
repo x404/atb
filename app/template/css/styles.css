@@ -5316,6 +5316,99 @@ table {
   @media (max-width: 1050px) {
     #section-11 .title {
       font-size: 38px; } }
+  @media (max-width: 991px) {
+    #section-11 .title {
+      font-size: 30px; }
+    #section-11 .callback .left {
+      display: flex; }
+      #section-11 .callback .left .tel-link {
+        font-size: 22px;
+        margin-top: 0;
+        margin-left: 20px;
+        margin-top: -8px; }
+    #section-11 form .form-control {
+      width: 90%; }
+    #section-11 .form-body {
+      display: flex !important; }
+      #section-11 .form-body .form-group {
+        flex-grow: 1; } }
+  @media (max-width: 768px) {
+    #section-11 {
+      padding-top: 50px; }
+      #section-11 .title {
+        font-size: 25px; }
+      #section-11 .callback {
+        padding: 22px 20px 5px; }
+        #section-11 .callback .left {
+          color: #000; }
+          #section-11 .callback .left .tel-link {
+            background-image: url(../images/icon-tel-768.png);
+            background-position: left 2px;
+            font-size: 20px;
+            min-height: 30px;
+            padding-left: 28px;
+            margin-top: 0; }
+        #section-11 .callback form {
+          margin-top: 10px; }
+        #section-11 .callback .btn {
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-top: 10px; }
+        #section-11 .callback .right {
+          margin-top: 10px; }
+          #section-11 .callback .right form .input-field label {
+            font-size: 15px; } }
+  @media (max-width: 650px) {
+    #section-11 .callback {
+      font-size: 15px;
+      padding: 12px 10px 0 12px; }
+      #section-11 .callback .left {
+        display: block; }
+        #section-11 .callback .left .tel-link {
+          display: inline-block;
+          margin-left: 5px; }
+      #section-11 .callback form {
+        margin-top: 0; }
+      #section-11 .callback .policy {
+        margin-top: 10px;
+        margin-bottom: 5px; }
+    #section-11 .form-body {
+      display: block !important; } }
+  @media (max-width: 550px) {
+    #section-11 {
+      padding-top: 42px;
+      padding-bottom: 40px; }
+      #section-11 .title {
+        font-size: 22px; }
+      #section-11 .callback .left {
+        text-align: center; }
+      #section-11 .callback .btn {
+        margin-left: auto;
+        margin-right: auto; } }
+  @media (max-width: 450px) {
+    #section-11 {
+      padding-top: 25px;
+      padding-bottom: 25px; }
+      #section-11 .title {
+        line-height: 1.3;
+        font-size: 20px;
+        text-align: center; }
+      #section-11 .callback {
+        padding-left: 10px;
+        padding-bottom: 10px; }
+        #section-11 .callback p {
+          text-align: center; }
+        #section-11 .callback .right form .input-field label {
+          font-size: 14px; }
+        #section-11 .callback .right .form-control {
+          margin-right: 0;
+          width: 100%; }
+        #section-11 .callback .right .input-field {
+          width: 100%; }
+      #section-11 form .form-control {
+        height: 45px; }
+      #section-11 form .form-group {
+        display: block !important; } }
 
 #section-12 {
   padding: 85px 0 95px;
@@ -5431,7 +5524,6 @@ table {
     font-size: 20px; }
   h2 {
     font-size: 22px; }
-  #section-11,
   #section-12,
   .footer {
     display: none !important; } }
