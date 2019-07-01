@@ -4735,6 +4735,23 @@ picture img {
   @media (max-width: 1250px) {
     #section-5 .subtitle {
       font-size: 28px; } }
+  @media (max-width: 768px) {
+    #section-5 .subtitle {
+      font-size: 22px; }
+    #section-5 .content {
+      font-size: 14px;
+      line-height: 1.6; } }
+  @media (max-width: 767px) {
+    #section-5 .content {
+      margin-top: 15px; } }
+  @media (max-width: 550px) {
+    #section-5 {
+      padding: 40px 0 15px; } }
+  @media (max-width: 400px) {
+    #section-5 .content {
+      text-align: center; }
+    #section-5 .subtitle {
+      font-size: 20px; } }
 
 .statistics {
   margin: 50px 0 0; }
@@ -4758,6 +4775,35 @@ picture img {
       font-size: 50px; }
     .statistics__text {
       font-size: 15px; } }
+  @media (max-width: 991px) {
+    .statistics__title {
+      font-size: 44px; }
+    .statistics .cell {
+      padding-right: 30px; } }
+  @media (max-width: 768px) {
+    .statistics__title {
+      font-size: 40px; }
+    .statistics .cell {
+      padding-right: 15px; } }
+  @media (max-width: 767px) {
+    .statistics {
+      flex-wrap: wrap;
+      margin-top: 20px; }
+      .statistics .cell {
+        margin-bottom: 15px;
+        width: 50%; } }
+  @media (max-width: 550px) {
+    .statistics__text {
+      font-size: 13px;
+      padding-right: 20px; }
+    .statistics .cell {
+      padding-right: 0; } }
+  @media (max-width: 400px) {
+    .statistics__title {
+      font-size: 35px; }
+    .statistics__text {
+      font-size: 12px;
+      padding-right: 15px; } }
 
 #section-6 {
   padding: 110px 0 130px; }
@@ -5176,7 +5222,6 @@ table {
     font-size: 20px; }
   h2 {
     font-size: 22px; }
-  #section-5,
   #section-6,
   #section-7,
   #section-8,
