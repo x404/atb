@@ -69,6 +69,20 @@
 	h2{
 		font-size: 22px;
 	}
+
+
+	#section-4,
+	#section-5,
+	#section-6,
+	#section-7,
+	#section-8,
+	#section-9,
+	#section-10,
+	#section-11,
+	#section-12,
+	.footer{ 
+		display: none !important;
+	}
 }
 
 @media (max-width: 991px){
@@ -85,8 +99,8 @@
 		border-radius: $radius;
 		height: $radius;
 		font-size: 14px;
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 
@@ -111,19 +125,6 @@
 		font-size: 17px;
 	}
 
-	#section-3, 
-	#section-4,
-	#section-5,
-	#section-6,
-	#section-7,
-	#section-8,
-	#section-9,
-	#section-10,
-	#section-11,
-	#section-12,
-	.footer{ 
-		display: none !important;
-	}
 }
 
 @media (max-width: 480px){
