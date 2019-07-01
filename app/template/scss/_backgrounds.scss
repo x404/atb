@@ -7,6 +7,9 @@
 	}	
 	#section-6{
 		background-image: url(../images/bg/section-6-bg.webp);
+		@media (max-width: 768px) {
+			background-image: url(../images/bg/section-6-bg-768.webp);
+		}
 	}
 	#section-7{
 		background-image: url(../images/bg/section-7-bg.webp);
@@ -16,6 +19,9 @@
 	}
 	#section-10{
 		background-image: url(../images/bg/section-10-bg.webp);
+		@media (max-width: 768px) {
+			background-image: url(../images/bg/section-10-bg-768.webp);
+		}
 	} 
 }
 
@@ -57,6 +63,9 @@
 	@media (min-width: 1600px) {
 		min-height: 780px;
 	}
+	@media (max-width: 768px) {
+		background-image: url(../images/bg/section-6-bg-768.webp);
+	}
 }
 
 #section-7{
@@ -80,5 +89,8 @@
 	background-color: #1f2744;
 	@media (min-width: 1600px) {
 		min-height: 660px;
+	}
+	@media (max-width: 768px) {
+		background-image: url(../images/bg/section-10-bg-768.jpg);
 	}
 }

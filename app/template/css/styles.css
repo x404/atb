@@ -306,7 +306,6 @@ template {
 @font-face {
   font-family: 'proxima-nova';
   src: url("../fonts/ProximaNova-Semibold/proxima_nova_semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold/proxima_nova_semibold.woff") format("woff");
-  font-weight: normal;
   font-style: normal;
   font-weight: 900;
   font-display: swap; }
@@ -314,16 +313,8 @@ template {
 @font-face {
   font-family: "Proxima Nova - Black";
   src: url("../fonts/proxima_nova_black.woff2") format("woff2"), url("../fonts/proxima_nova_black.woff") format("woff");
-  font-weight: normal;
   font-style: normal;
   font-weight: 700;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'proxima_novablack_italic';
-  src: url("../fonts/ProximaNova-BlackIt/proxima_nova_black_italic.woff2") format("woff2"), url("../fonts/ProximaNova-BlackIt/proxima_nova_black_italic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
   font-display: swap; }
 
 @font-face {
@@ -338,13 +329,6 @@ template {
   src: url("../fonts/ProximaNova-Regular/proxima_nova_regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular/proxima_nova_regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'proxima-nova';
-  src: url("../fonts/ProximaNova-Light/proxima_nova_light.woff2") format("woff2"), url("../fonts/ProximaNova-Light/proxima_nova_light.woff") format("woff");
-  font-style: normal;
-  font-weight: 100;
   font-display: swap; }
 
 @font-face {
@@ -3958,6 +3942,9 @@ picture img {
 
 .webp #section-6 {
   background-image: url(../images/bg/section-6-bg.webp); }
+  @media (max-width: 768px) {
+    .webp #section-6 {
+      background-image: url(../images/bg/section-6-bg-768.webp); } }
 
 .webp #section-7 {
   background-image: url(../images/bg/section-7-bg.webp); }
@@ -3967,6 +3954,9 @@ picture img {
 
 .webp #section-10 {
   background-image: url(../images/bg/section-10-bg.webp); }
+  @media (max-width: 768px) {
+    .webp #section-10 {
+      background-image: url(../images/bg/section-10-bg-768.webp); } }
 
 .section {
   background-size: cover;
@@ -3999,6 +3989,9 @@ picture img {
   @media (min-width: 1600px) {
     #section-6 {
       min-height: 780px; } }
+  @media (max-width: 768px) {
+    #section-6 {
+      background-image: url(../images/bg/section-6-bg-768.webp); } }
 
 #section-7 {
   background-image: url(../images/bg/section-7-bg.jpg);
@@ -4020,11 +4013,13 @@ picture img {
   @media (min-width: 1600px) {
     #section-10 {
       min-height: 660px; } }
+  @media (max-width: 768px) {
+    #section-10 {
+      background-image: url(../images/bg/section-10-bg-768.jpg); } }
 
 @font-face {
   font-family: 'proxima-nova';
   src: url("../fonts/ProximaNova-Semibold/proxima_nova_semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold/proxima_nova_semibold.woff") format("woff");
-  font-weight: normal;
   font-style: normal;
   font-weight: 900;
   font-display: swap; }
@@ -4032,16 +4027,8 @@ picture img {
 @font-face {
   font-family: "Proxima Nova - Black";
   src: url("../fonts/proxima_nova_black.woff2") format("woff2"), url("../fonts/proxima_nova_black.woff") format("woff");
-  font-weight: normal;
   font-style: normal;
   font-weight: 700;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'proxima_novablack_italic';
-  src: url("../fonts/ProximaNova-BlackIt/proxima_nova_black_italic.woff2") format("woff2"), url("../fonts/ProximaNova-BlackIt/proxima_nova_black_italic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
   font-display: swap; }
 
 @font-face {
@@ -4056,13 +4043,6 @@ picture img {
   src: url("../fonts/ProximaNova-Regular/proxima_nova_regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular/proxima_nova_regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'proxima-nova';
-  src: url("../fonts/ProximaNova-Light/proxima_nova_light.woff2") format("woff2"), url("../fonts/ProximaNova-Light/proxima_nova_light.woff") format("woff");
-  font-style: normal;
-  font-weight: 100;
   font-display: swap; }
 
 @font-face {
