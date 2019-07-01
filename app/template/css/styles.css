@@ -5050,6 +5050,32 @@ picture img {
   @media (max-width: 1050px) {
     #section-8 .content {
       padding-left: 15px; } }
+  @media (max-width: 768px) {
+    #section-8 {
+      padding: 50px 0 30px; }
+      #section-8 .content {
+        font-size: 14px; }
+        #section-8 .content p:not(.title) {
+          font-size: 14px; }
+        #section-8 .content .title {
+          font-size: 35px; } }
+  @media (max-width: 767px) {
+    #section-8 .content {
+      padding-left: 0;
+      margin-top: 25px; }
+      #section-8 .content .title {
+        font-size: 30px; } }
+  @media (max-width: 350px) {
+    #section-8 {
+      padding: 30px 0 10px; }
+      #section-8 .content {
+        text-align: center; }
+        #section-8 .content .title {
+          font-size: 25px; }
+        #section-8 .content ul {
+          text-align: left; }
+          #section-8 .content ul li {
+            line-height: 1.5; } }
 
 #section-9 {
   font-size: 17px;
@@ -5317,7 +5343,6 @@ table {
     font-size: 20px; }
   h2 {
     font-size: 22px; }
-  #section-8,
   #section-9,
   #section-10,
   #section-11,
