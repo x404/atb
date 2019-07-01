@@ -55,21 +55,11 @@ $(document).ready(function(){
 		destination = $(elementClick).offset().top;
 		$('body, html').animate({scrollTop: destination }, 800);
 	});
-});
 
-
-$(function(){
-	$('.policy input').click(function(){
-		var $this = $(this),
-			$submit = $this.closest('.form-policy');
-
-		if ($this.is(':checked')){
-			$submit.find('.input, .form-control, .submit, .btn-submit, textarea, input[type=radio], button').removeAttr('disabled');
-		} else {
-			$submit.addClass('disabled');
-			$submit.find('.input, .form-control, .submit, .btn-submit, textarea, input[type=radio], button').attr('disabled', true);
-		}
-	})
+	$('.to-price').click(function () {
+		destination = $('#section-9').offset().top;
+		$('body, html').animate({scrollTop: destination }, 800);
+	});	
 });
 
 
