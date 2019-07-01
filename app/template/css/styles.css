@@ -5591,6 +5591,12 @@ table {
       white-space: nowrap;
       width: 103px; } }
 
+@media (max-width: 768px) {
+  #qorder .title {
+    font-size: 45px; }
+  #qorder .subtitle {
+    font-size: 18px; } }
+
 @media (max-width: 767px) {
   .title {
     font-size: 30px; }
@@ -5624,6 +5630,14 @@ table {
     font-size: 20px;
     min-height: 520px; } }
 
+@media (max-width: 600px) {
+  #qorder .modal-dialog {
+    width: 98%; }
+  #qorder .title {
+    font-size: 35px; }
+  #qorder .subtitle {
+    font-size: 16px; } }
+
 @media (max-width: 480px) {
   .title {
     font-size: 26px; }
@@ -5631,7 +5645,15 @@ table {
     font-size: 18px; }
     .popup-menu .close-menu {
       left: 20px;
-      top: 20px; } }
+      top: 20px; }
+  #qorder .modal-dialog {
+    margin-left: 2%;
+    width: 96%; }
+  #qorder .modal-content {
+    padding-left: 30px;
+    padding-right: 30px; }
+  #qorder .title {
+    font-size: 32px; } }
 
 @media (max-width: 400px) {
   .footer {
@@ -5652,3 +5674,9 @@ table {
         padding-right: 0; }
   .popup-menu {
     font-size: 16px; } }
+
+@media (max-width: 360px) {
+  #qorder .title {
+    font-size: 28px; }
+  #qorder .modal-content {
+    padding-left: 20px; } }

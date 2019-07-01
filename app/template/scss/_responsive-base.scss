@@ -133,6 +133,18 @@
 }
 
 
+@media (max-width: 768px){
+	#qorder{
+		.title{
+			font-size: 45px;
+		}
+		.subtitle{
+			font-size: 18px;
+		}
+	}
+}
+
+
 @media (max-width: 767px){
 	.title{
 		font-size: 30px;
@@ -186,6 +198,24 @@
 	}
 }
 
+
+
+@media (max-width: 600px){
+	#qorder{
+		.modal-dialog{
+			width: 98%;
+		}
+		.title{
+			font-size: 35px;
+		}
+		.subtitle{
+			font-size: 16px;
+		}
+	}
+}
+
+
+
 @media (max-width: 480px){
 	.title{
 		font-size: 26px;
@@ -198,6 +228,19 @@
 		}
 	}
 
+	#qorder{
+		.modal-dialog{
+			margin-left: 2%;
+			width: 96%;
+		}
+		.modal-content{
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		.title{
+			font-size: 32px;
+		}
+	}
 }
 
 @media (max-width: 400px){
@@ -229,3 +272,14 @@
 	}
 }
 
+
+@media (max-width: 360px){
+	#qorder{
+		.title{
+			font-size: 28px;
+		}
+		.modal-content{
+			padding-left: 20px;
+		}
+	}
+}
