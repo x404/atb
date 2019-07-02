@@ -1,3 +1,30 @@
+var idCaptcha1, idCaptcha2;
+var onloadReCaptchaInvisible = function() {
+	idCaptcha1 = grecaptcha.render('recaptcha1', {
+		"sitekey":"6LekqasUAAAAAEeSXL5E-tDlX2CVVp988nldHZJv",
+		"callback": "onSubmitReCaptcha1",
+		"size":"invisible"
+	});
+	idCaptcha2 = grecaptcha.render('recaptcha2', {
+		"sitekey":"6LekqasUAAAAAEeSXL5E-tDlX2CVVp988nldHZJv",
+		"callback": "onSubmitReCaptcha2",
+		"size":"invisible"
+	});
+};
+
+function onSubmitReCaptcha1(token) {
+	var idForm = 'form-1';
+	sendForm(document.getElementById(idForm), '/core/send.php', idCaptcha1, token);
+}
+
+
+function onSubmitReCaptcha2(token) {
+	var idForm = 'form-2';
+	sendForm(document.getElementById(idForm), '/core/send.php', idCaptcha2, token);
+}
+
+
+
 $(document).ready(function(){
 	// mobile-menu
 	$('#navbar').each(function(){
@@ -106,10 +133,7 @@ $(document).ready(function(){
 			};
 		},
 		submitHandler:function(form) {
-			let strSubmit= $(form).serialize(),
-				url = $(form).attr('action');
-				modal2.open();
-			sendform(url, strSubmit, form);
+			 grecaptcha.execute(idCaptcha1);
 		}
 	});	
 
@@ -140,10 +164,12 @@ $(document).ready(function(){
 			};
 		},
 		submitHandler:function(form) {
-			let strSubmit= $(form).serialize(),
-				url = $(form).attr('action');
-			modal2.open();
-			sendform(url, strSubmit, form);
+			 grecaptcha.execute(idCaptcha2);
+
+			// let strSubmit= $(form).serialize(),
+			// 	url = $(form).attr('action');
+			// modal2.open();
+			// sendform(url, strSubmit, form);
 		}
 	});	
 
@@ -230,13 +256,62 @@ function init(){
 var thank = '<div class="thank"><p class="title">Заявка отправлена!</p><p>Спасибо, мы получили Вашу заявку и перезвоним Вам в течение рабочего дня.</p></div>';
 var errorTxt = 'Форма не отправлена. Попробуйте позже.';
 
-function sendform(url, strSubmit, form){
+
+
+
+// подготовка данных формы
+var prepareDataForm = function(form, captchaID, token) {
+	// создаём экземпляр объекта FormData
+	var formData = new FormData(form);
+	// добавим ответ invisible reCaptcha
+	formData.append('g-recaptcha-response', grecaptcha.getResponse(captchaID));
+	formData.append("action", 'add_callback');
+	formData.append("token", token);
+	console.log(formData);
+	return formData;
+  }
+
+
+//http://cccp-blog.com/koding/google-recaptcha-v3#moi-vpechatleniya-ot-google-recaptcha-v3
+  // отправка формы через AJAX
+  function sendForm(form, url, captchaID, token){
+	var data = new FormData();
+	let formid = $(form).attr('id');
+
+	$('.send-popup').append('<div class="sending"><p>Идет отправка ...</p></div>');
+
+	modal2.open();
+	fetch('/core/send.php', {
+	    method: 'POST',
+	    body: prepareDataForm(form, captchaID, token)
+	}).then(function(response) {
+		if (response.status == '200'){
+			if (formid == 'form-1' || formid == 'form-2'){
+				document.querySelector('.sending').remove();
+				$('.send-popup').append(thank);
+			};
+
+			if (formid == 'form-3'){
+				$('#qorder .modal-body').hide();
+				$('#qorder .modal-content').append(thank);
+			}
+		} else {
+			alert(errorTxt);
+			modal2.close();
+		}
+	});
+  }
+
+
+
+
+function sendform2(url, strSubmit, form){
 	$('.send-popup').append('<div class="sending"><p>Идет отправка ...</p></div>');
 	
 	fetch('/core/send.php', {
 		method: 'post',
 		headers: {
-	        "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+			"Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
 		},
 		body: strSubmit 
 	})
@@ -247,8 +322,7 @@ function sendform(url, strSubmit, form){
 			if (formid == 'form-1' || formid == 'form-2'){
 				document.querySelector('.sending').remove();
 				$('.send-popup').append(thank);
-			} 
-
+			};
 
 			if (formid == 'form-3'){
 				$('#qorder .modal-body').hide();
@@ -261,7 +335,7 @@ function sendform(url, strSubmit, form){
 		}
 	})
 	.catch (function (error) {
-	    console.log('Request failed', error);
+		console.log('Request failed', error);
 	});
 }
 
@@ -288,16 +362,16 @@ class Popup{
 
 		// GENERAL EVENT - ONKEYDOWN
 		document.onkeydown = function(evt) {
-		    evt = evt || window.event;
-		    let isEscape = false;
-		    if ("key" in evt) {
-		        isEscape = (evt.key == "Escape" || evt.key == "Esc");
-		    } else {
-		        isEscape = (evt.keyCode == 27);
-		    }
-		    if (isEscape) {
-		    	modal2.close();
-		    }
+			evt = evt || window.event;
+			let isEscape = false;
+			if ("key" in evt) {
+				isEscape = (evt.key == "Escape" || evt.key == "Esc");
+			} else {
+				isEscape = (evt.keyCode == 27);
+			}
+			if (isEscape) {
+				modal2.close();
+			}
 		};
 
 		// show popup

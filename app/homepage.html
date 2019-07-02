@@ -22,6 +22,8 @@
 
 <title>Главная</title>
 <link rel="stylesheet" href="/template/css/styles.min.css" />
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadReCaptchaInvisible&render=explicit" async defer></script>
+
 <script src="/template/js/libs.min.js"></script>
 
 
@@ -85,7 +87,7 @@
 					<br>
 					<a href="#" data-toggle="modal" data-target="#qorder" class="btn btn-red btn-bg-turqueise">Заказать БЕСПЛАТНУЮ диагностику</a>
 				</div>
-				<form action="#" method="post" class="d-none d-sm-block" id="form-1">
+				<form action="/core/send.php" method="post" class="d-none d-sm-block" id="form-1">
 					<fieldset>
 						<div class="form-wrapper">
 							<div class="d-flex">
@@ -100,6 +102,7 @@
 									<input type="tel" id="tel" name="tel" class="form-control tel required" value="" aria-label="Телефон" />
 								</div>
 							</div>
+							<div id="recaptcha1"></div>
 							<input type="submit" value="Заказать БЕСПЛАТНУЮ диагностику" class="btn btn-red btn-bg-turqueise btn-submit " />
 						</div>
 						<p class="policy">Нажимая на кнопку Вы даете согласие на обработку персональных данных</p>
@@ -958,7 +961,7 @@
 			<div class="right">
 				<p>Или оставьте заявку и мы Вам перезвоним в течение рабочего дня</p>
 
-				<form action="#" method="post" id="form-2">
+				<form action="/core/send.php" method="post" id="form-2">
 					<fieldset>
 						<div class="d-block d-xl-flex form-body">
 							<div class="form-group d-flex">
@@ -974,6 +977,7 @@
 								</div>								
 							</div>
 							<p class="policy d-xl-none d-lg-block d-none">Нажимая на кнопку Вы даете согласие на обработку персональных данных</p>
+							<div id="recaptcha2"></div>
 							<input type="submit" value="Перезвоните мне" class="btn btn-blue btn-bg-red btn-submit " />
 						</div>
 						<p class="policy d-xl-block d-lg-none d-block">Нажимая на кнопку Вы даете согласие на обработку персональных данных</p>
