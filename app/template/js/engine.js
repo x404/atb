@@ -77,6 +77,7 @@ $(document).ready(function(){
 		$this.closest('form').find('label.error').remove();
 		$this.closest('.input-field').removeClass('error');
 	});
+	
 
 	$('#form-1').validate({
 		rules: {
@@ -107,6 +108,7 @@ $(document).ready(function(){
 		submitHandler:function(form) {
 			let strSubmit= $(form).serialize(),
 				url = $(form).attr('action');
+				modal2.open();
 			sendform(url, strSubmit, form);
 		}
 	});	
@@ -128,7 +130,6 @@ $(document).ready(function(){
 		},
 		errorPlacement: function(error, element) {
 			if (element.attr("name") == "name"){
-				console.log(element);
 				element.closest('.input-field').addClass('error');
 				error.insertAfter(element);
 			};
@@ -141,6 +142,7 @@ $(document).ready(function(){
 		submitHandler:function(form) {
 			let strSubmit= $(form).serialize(),
 				url = $(form).attr('action');
+			modal2.open();
 			sendform(url, strSubmit, form);
 		}
 	});	
@@ -174,6 +176,7 @@ $(document).ready(function(){
 		submitHandler:function(form) {
 			let strSubmit= $(form).serialize(),
 				url = $(form).attr('action');
+				
 			sendform(url, strSubmit, form);
 		}
 	});	
@@ -224,13 +227,11 @@ function init(){
 
 
 
-
-var thank = '<div class="thank text-center"><p>Форма отправлена!</p><p>В ближайщее время с вами свяжутся наши менеджеры для уточнения всех деталей</p></div>';
+var thank = '<div class="thank"><p class="title">Заявка отправлена!</p><p>Спасибо, мы получили Вашу заявку и перезвоним Вам в течение рабочего дня.</p></div>';
 var errorTxt = 'Форма не отправлена. Попробуйте позже.';
 
 function sendform(url, strSubmit, form){
-	$(form).find('fieldset').hide();
-	$(form).append('<div class="sending">Идет отправка ...</div>');
+	$('.send-popup').append('<div class="sending"><p>Идет отправка ...</p></div>');
 	
 	fetch('/core/send.php', {
 		method: 'post',
@@ -240,17 +241,75 @@ function sendform(url, strSubmit, form){
 		body: strSubmit 
 	})
 	.then(function(response){ 
+		let formid = $(form).attr('id');
 		if (response.status == '200'){
-			document.querySelector('.sending').remove();
-			$(form).append(thank);
-			// startClock($(form));
-		} else{
+
+			if (formid == 'form-1' || formid == 'form-2'){
+				document.querySelector('.sending').remove();
+				$('.send-popup').append(thank);
+			} 
+
+
+			if (formid == 'form-3'){
+				$('#qorder .modal-body').hide();
+				$('#qorder .modal-content').append(thank);
+			}
+
+		} else {
 			alert(errorTxt);
-			$(form).find('fieldset').show();
-			$('.sending').remove();	
+			modal2.close();
 		}
 	})
 	.catch (function (error) {
 	    console.log('Request failed', error);
 	});
 }
+
+
+document.querySelector('.send-popup .close-menu').addEventListener('click', function(e){
+	e.preventDefault();
+	modal2.close();
+});
+
+// popup on homepage
+class Popup{
+	constructor(name){
+		this.name = name;
+	}
+	open(){
+		// create overlay
+		const newOverlay = document.createElement('div');
+		newOverlay.className ='transparent-overlay';
+		document.querySelector('body').appendChild(newOverlay);
+		// show overlay
+		document.querySelector('.transparent-overlay').addEventListener('click', function(){
+			modal2.close();
+		});
+
+		// GENERAL EVENT - ONKEYDOWN
+		document.onkeydown = function(evt) {
+		    evt = evt || window.event;
+		    let isEscape = false;
+		    if ("key" in evt) {
+		        isEscape = (evt.key == "Escape" || evt.key == "Esc");
+		    } else {
+		        isEscape = (evt.keyCode == 27);
+		    }
+		    if (isEscape) {
+		    	modal2.close();
+		    }
+		};
+
+		// show popup
+
+		document.querySelector(this.name).classList.add('show');
+	}
+	close(){
+		document.querySelector('.transparent-overlay').remove();
+		if (document.querySelectorAll('.thank').length > 0) document.querySelector('.thank').remove();
+		// hide popup
+		document.querySelector(this.name).classList.remove('show');
+	}
+}
+
+var modal2 = new Popup('.send-popup');

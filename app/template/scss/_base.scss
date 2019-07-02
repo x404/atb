@@ -687,13 +687,13 @@ nav{
 	}
 
 	.close-menu{
-
 		left: 60px;
 		top: 45px;
 	}
 }
 
-.close-menu{
+.close-menu
+{
 	display: block;
 	background: none;
 	border: none;
@@ -724,10 +724,20 @@ nav{
 	.modal-dialog{
 		max-width: 567px;
 	}
-	.modal-content{
+	.modal-content,
+	.thank
+	{
 		background-color: $color4;
 		box-shadow: 0 0 30px $color4;
 		padding: 43px 65px;
+	}
+
+	.thank{
+		padding: 15px 0;
+		.title{
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
 	}
 	.title{
 		color: #000000;
@@ -793,4 +803,65 @@ label.error{
 	left: 0;
 	top: 0;
 	color: $color5;
+}
+
+
+.send-popup{
+	display: none;
+	width: 567px;
+	height: 203px;
+	background-color: $color4;
+	box-shadow: 0 0 30px $color4;
+	position: fixed;
+	left: 50%;
+	margin-left: -280px;
+	margin-top: -100px;
+	top: 50%;
+	z-index: 9999;
+	.sending{
+		height: 100%;
+		display: flex;
+		font-size: 24px;
+		font-weight: 700;
+		text-align: center;
+		p{
+			margin: auto;
+		}
+	}
+
+	.thank{
+		font-size: 16px;
+		height: 100%;
+		padding-left: 65px;
+		padding-right: 100px;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		.title{
+			font-family: "Proxima Nova - Black";
+			font-weight: 400;
+			font-size: 30px;
+			margin-bottom: 10px;	
+		}
+	}
+	&.show{
+		display: block;
+	}
+
+	.close-menu{
+		right: 20px;
+		top: 23px;
+		left: auto;
+	}
+}
+
+
+.transparent-overlay{
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 999;
 }
