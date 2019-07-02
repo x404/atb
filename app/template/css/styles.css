@@ -3715,6 +3715,21 @@ form .input-field {
   form .input-field .name-field {
     opacity: 0;
     color: #8bab9d; }
+  form .input-field.error .name-field,
+  form .input-field.error .helper-field {
+    color: red !important; }
+  form .input-field.error label {
+    transition: none; }
+  form .input-field.error .helper-field {
+    -webkit-transform: translate3d(0, -12px, 0) scale(0.8);
+    -ms-transform: translate3d(0, -12px, 0) scale(0.8);
+    transform: translate3d(0, -12px, 0) scale(0.8); }
+  form .input-field.error label.error {
+    color: red !important;
+    display: none; }
+    form .input-field.error label.error:last-child {
+      pointer-events: none;
+      display: block; }
 
 form .is-focused label {
   -webkit-transform: translate3d(0, -12px, 0) scale(0.8);
@@ -3730,10 +3745,23 @@ form .is-focused .helper-field {
 form .is-focused .form-control {
   border-bottom-color: #00ffd2; }
 
+form .is-focused label.error {
+  display: none !important; }
+  form .is-focused label.error:last-child {
+    display: none; }
+
 form .input-field.is-charged:not(.is-focused) > label.name-field {
   -webkit-transform: translate3d(0px, -7px, 0px) scale(0.8);
   -ms-transform: translate3d(0px, -7px, 0px) scale(0.8);
   transform: translate3d(0px, -7px, 0px) scale(0.8); }
+
+form .is-charged.error .name-field,
+form .is-charged.error .helper-field {
+  color: #fff;
+  display: block; }
+
+form .is-charged label.error {
+  display: none !important; }
 
 form .is-charged label {
   opacity: 0; }
@@ -3937,7 +3965,10 @@ picture img {
   max-width: 100%; }
 
 label.error {
-  display: none !important; }
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0d2580; }
 
 .webp #section-1 {
   background-image: url(../images/bg/section-1-bg.webp); }

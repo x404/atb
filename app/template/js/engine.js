@@ -72,6 +72,12 @@ $(document).ready(function(){
 
 
 	// validate
+	$('#form-1 input, #form-2 input, #form-3 input').click(function(){
+		let $this = $(this);
+		$this.closest('form').find('label.error').remove();
+		$this.closest('.input-field').removeClass('error');
+	});
+
 	$('#form-1').validate({
 		rules: {
 			name:{
@@ -80,6 +86,23 @@ $(document).ready(function(){
 			tel: {
 				validphone:true
 			}
+		},
+		messages:{
+			name: "Поле не заполнено",
+			tel: {
+				required: "Поле не заполнено"
+			}
+		},
+		errorPlacement: function(error, element) {
+			if (element.attr("name") == "name"){
+				element.closest('.input-field').addClass('error');
+				error.insertAfter(element);
+			};
+
+			if (element.attr("name") == "tel"){
+				element.closest('.input-field').addClass('error');
+				error.insertAfter(element);
+			};
 		},
 		submitHandler:function(form) {
 			let strSubmit= $(form).serialize(),
@@ -97,6 +120,24 @@ $(document).ready(function(){
 				validphone:true
 			}
 		},
+		messages:{
+			name: "Поле не заполнено",
+			tel: {
+				required: "Поле не заполнено"
+			}
+		},
+		errorPlacement: function(error, element) {
+			if (element.attr("name") == "name"){
+				console.log(element);
+				element.closest('.input-field').addClass('error');
+				error.insertAfter(element);
+			};
+
+			if (element.attr("name") == "tel"){
+				element.closest('.input-field').addClass('error');
+				error.insertAfter(element);
+			};
+		},
 		submitHandler:function(form) {
 			let strSubmit= $(form).serialize(),
 				url = $(form).attr('action');
@@ -112,6 +153,23 @@ $(document).ready(function(){
 			tel: {
 				validphone:true
 			}
+		},
+		messages:{
+			name: "Поле не заполнено",
+			tel: {
+				required: "Поле не заполнено"
+			}
+		},
+		errorPlacement: function(error, element) {
+			if (element.attr("name") == "name"){
+				element.closest('.input-field').addClass('error');
+				error.insertAfter(element);
+			};
+
+			if (element.attr("name") == "tel"){
+				element.closest('.input-field').addClass('error');
+				error.insertAfter(element);
+			};
 		},
 		submitHandler:function(form) {
 			let strSubmit= $(form).serialize(),

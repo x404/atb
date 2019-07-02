@@ -429,6 +429,33 @@ form{
 
 		.helper-field{
 		}
+		
+
+		// validate
+		&.error{
+			.name-field,
+			.helper-field
+			{
+				color: red !important; 
+			}
+
+			label{
+				transition: none;				
+			}
+
+			.helper-field{
+				@include transform(translate3d(0,-12px,0) scale(.8));
+			}
+
+			label.error{
+				color: red !important;
+				display: none;
+				&:last-child(){
+					pointer-events: none;
+					display: block;
+				}
+			}
+		}
 	}
 
 	.is-focused{
@@ -444,6 +471,16 @@ form{
 		.form-control{
 			border-bottom-color: $color4;
 		}
+		label.error{
+			display: none !important;
+			&:last-child(){
+				display: none;
+			}
+		}
+
+		&:not(.error){
+
+		}
 	}
 
 	.input-field.is-charged:not(.is-focused) > label.name-field{
@@ -451,6 +488,17 @@ form{
 	}
 
 	.is-charged{
+		&.error{
+			.name-field,
+			.helper-field
+			{
+				color: #fff;
+				display: block;
+			}			
+		}
+		label.error{
+			display: none !important;
+		}
 		label{
 			opacity: 0;
 		}
@@ -740,5 +788,9 @@ picture{
 
 
 label.error{
-	display: none !important;
+	// display: none !important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: $color5;
 }
