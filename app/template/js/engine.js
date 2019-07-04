@@ -285,6 +285,7 @@ var prepareDataForm = function(form, captchaID, token) {
   function sendForm(form, url, captchaID, token){
 	var data = new FormData();
 	let $table_url = 'https://docs.google.com/forms/d/e/1FAIpQLSfx9T7v7KRzyBAzMWIgXJ2JQ67Q5HHdYjdyWXoeDCWV_2sf5A/formResponse',
+		$table_url_work = 'https://docs.google.com/forms/d/e/1FAIpQLSfAdceJ11Jdk8tQD5w8bBC4IK8R40drPAz3_1ik-zuwd_n8vQ/formResponse';
 		formid = $(form).attr('id')
 
 	$('.send-popup').append('<div class="sending"><p>Идет отправка ...</p></div>');
@@ -298,7 +299,7 @@ var prepareDataForm = function(form, captchaID, token) {
 
 			// отправка в google forms
 			strSubmit = $(form).serialize();
-			$.ajax({type: "POST",url: $table_url,data: strSubmit});
+			$.ajax({type: "POST",url: $table_url_work ,data: strSubmit});
 
 			if (formid == 'form-1' || formid == 'form-2'){
 				$('.sending').remove();
