@@ -4026,6 +4026,11 @@ label.error {
   top: 0;
   z-index: 999; }
 
+#recaptcha1 .grecaptcha-badge {
+  position: absolute;
+  left: -100%;
+  top: -100%; }
+
 .webp #section-1 {
   background-image: url(../images/bg/section-1-bg.webp); }
 

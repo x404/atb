@@ -865,3 +865,12 @@ label.error{
 	top: 0;
 	z-index: 999;
 }
+
+
+#recaptcha1{
+	.grecaptcha-badge{
+		position: absolute;
+		left: -100%;
+		top: -100%;
+	}
+}
