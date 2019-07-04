@@ -77,7 +77,6 @@ gulp.task('compress', function(){
 			gulp.src([  // Берем все необходимые библиотеки
 				config.templateDir + '/js/modernizr-custom-webp.js',
 				config.libsDir + '/jquery/dist/jquery.js',
-				// config.libsDir + '/lazysizes/lazysizes.min.js',
 				config.libsDir + '/jquery-validation/dist/jquery.validate.js',
 				config.templateDir + '/js/util.js',
 				config.templateDir + '/js/modal.js',
@@ -243,15 +242,13 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	var buildCss = gulp.src([ // Переносим CSS стили в продакшен
 		config.templateDir + '/css/styles.css',
 		config.templateDir + '/css/styles.min.css',
-		config.templateDir + '/css/jquery.fancybox.min.css',
-		config.templateDir + '/css/tiny.css'
 	])
 	.pipe(gulp.dest(config.templateDestDir + '/css'));
 
 
 	var buildJs = gulp.src([ // move js to production
 		config.templateDir + '/js/libs.min.js',
-		config.templateDir + '/js/slick.min.js',
+		config.templateDir + '/js/fm.revealator.jquery.js',
 		config.templateDir + '/js/engine.js'
 	])
 	.pipe(gulp.dest(config.templateDestDir + '/js'));
