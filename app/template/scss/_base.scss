@@ -302,6 +302,7 @@ h3{font-size:1.6rem}
 	position: absolute;
 	transition: max-width 0.5s;
 	z-index: 100;
+	top: 0;
 }
 
 .cl-effect-11 a:hover::before,
@@ -318,12 +319,11 @@ h3{font-size:1.6rem}
 	}
 	.menu-item{
 		a {
+			line-height: 1.2;
 			transition: .3s;
 			white-space: nowrap;
 		    position: relative;
-		    // z-index: 100;
 			&:hover{
-				// color: $color2;
 				text-decoration: none;
 			}
 		}
@@ -796,9 +796,7 @@ picture{
 	}
 }
 
-
 label.error{
-	// display: none !important;
 	position: absolute;
 	left: 0;
 	top: 0;
