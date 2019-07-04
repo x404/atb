@@ -5729,7 +5729,16 @@ table {
   #qorder .title {
     font-size: 35px; }
   #qorder .subtitle {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .send-popup {
+    margin-left: 0;
+    left: 2%;
+    width: 96%; }
+    .send-popup .thank {
+      padding-left: 25px;
+      padding-right: 30px; }
+      .send-popup .thank .title {
+        font-size: 26px; } }
 
 @media (max-width: 480px) {
   .title {
@@ -5747,7 +5756,9 @@ table {
     padding-left: 30px;
     padding-right: 30px; }
   #qorder .title {
-    font-size: 32px; } }
+    font-size: 32px; }
+  .send-popup .thank {
+    text-align: center; } }
 
 @media (max-width: 400px) {
   .footer {
@@ -5766,6 +5777,13 @@ table {
         margin-top: 10px; }
       .footer .right .contacts {
         padding-right: 0; }
+  .send-popup .close-menu {
+    right: 15px;
+    top: 15px; }
+  .send-popup .title {
+    font-size: 22px; }
+  .send-popup .thank {
+    font-size: 14px; }
   .popup-menu {
     font-size: 16px; } }
 

@@ -77,6 +77,7 @@ gulp.task('compress', function(){
 			gulp.src([  // Берем все необходимые библиотеки
 				config.templateDir + '/js/modernizr-custom-webp.js',
 				config.libsDir + '/jquery/dist/jquery.js',
+				// config.libsDir + '/lazysizes/lazysizes.min.js',
 				config.libsDir + '/jquery-validation/dist/jquery.validate.js',
 				config.templateDir + '/js/util.js',
 				config.templateDir + '/js/modal.js',
