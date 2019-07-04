@@ -212,6 +212,19 @@
 			font-size: 16px;
 		}
 	}
+
+	.send-popup{
+		margin-left: 0;
+		left: 2%;
+		width: 96%;
+		.thank{
+			padding-left: 25px;
+			padding-right: 30px;
+			.title{
+				font-size: 26px;
+			}
+		}
+	}
 }
 
 
@@ -242,6 +255,12 @@
 			font-size: 32px;
 		}
 	}
+
+	.send-popup{
+		.thank{
+			text-align: center;
+		}
+	}
 }
 
 @media (max-width: 400px){
@@ -266,6 +285,19 @@
 			.contacts{
 				padding-right: 0;
 			}
+		}
+	}
+
+	.send-popup{
+		.close-menu{
+			right: 15px;
+			top: 15px;
+		}
+		.title{
+			font-size: 22px;
+		}
+		.thank{
+			font-size: 14px;
 		}
 	}
 	.popup-menu{

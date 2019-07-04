@@ -10,6 +10,11 @@ var onloadReCaptchaInvisible = function() {
 		"callback": "onSubmitReCaptcha2",
 		"size":"invisible"
 	});
+	idCaptcha3 = grecaptcha.render('recaptcha3', {
+		"sitekey":"6LekqasUAAAAAEeSXL5E-tDlX2CVVp988nldHZJv",
+		"callback": "onSubmitReCaptcha3",
+		"size":"invisible"
+	});
 };
 
 function onSubmitReCaptcha1(token) {
@@ -23,6 +28,10 @@ function onSubmitReCaptcha2(token) {
 	sendForm(document.getElementById(idForm), '/core/send.php', idCaptcha2, token);
 }
 
+function onSubmitReCaptcha3(token) {
+	var idForm = 'form-3';
+	sendForm(document.getElementById(idForm), '/core/send.php', idCaptcha2, token);
+}
 
 
 $(document).ready(function(){
@@ -200,10 +209,11 @@ $(document).ready(function(){
 			};
 		},
 		submitHandler:function(form) {
-			let strSubmit= $(form).serialize(),
-				url = $(form).attr('action');
+			// let strSubmit= $(form).serialize(),
+			// 	url = $(form).attr('action');
 				
-			sendform(url, strSubmit, form);
+			// sendform(url, strSubmit, form);
+			 grecaptcha.execute(idCaptcha3);
 		}
 	});	
 });
@@ -225,7 +235,8 @@ function init(){
 	ymaps.ready(function() {
 		var myMap = new ymaps.Map('map', {
 			center: [56.037413, 92.917646],
-			zoom: 11
+			zoom: 11,
+			controls: ['default', 'routeButtonControl']
 		}),
 		myPlacemark = new ymaps.Placemark(
 			[56.037413, 92.917646],
@@ -248,6 +259,12 @@ function init(){
 			},{
 		});
 		myMap.geoObjects.add(myPlacemark);
+
+		// Получим ссылку на элемент управления.
+		control = myMap.controls.get('routeButtonControl');
+
+		// Программно установим начальную точку маршрута.
+		control.routePanel.state.set('to', 'г. Красноярск, ул. 78й Добровольческой Бригады, д. 1');
 	});	
 }
 
@@ -287,13 +304,18 @@ var prepareDataForm = function(form, captchaID, token) {
 	}).then(function(response) {
 		if (response.status == '200'){
 			if (formid == 'form-1' || formid == 'form-2'){
-				document.querySelector('.sending').remove();
+				$('.sending').remove();
 				$('.send-popup').append(thank);
 			};
 
 			if (formid == 'form-3'){
-				$('#qorder .modal-body').hide();
-				$('#qorder .modal-content').append(thank);
+				// $('.send-popup').remove();
+				// $('#qorder .modal-content').hide();
+				// $('#qorder .modal-dialog').append(thank);
+
+				$('#qorder').modal('hide');
+				$('.sending').remove();
+				$('.send-popup').append(thank);
 			}
 		} else {
 			alert(errorTxt);
