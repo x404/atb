@@ -3,7 +3,8 @@ var onloadReCaptchaInvisible = function() {
 	idCaptcha1 = grecaptcha.render('recaptcha1', {
 		"sitekey":"6LekqasUAAAAAEeSXL5E-tDlX2CVVp988nldHZJv",
 		"callback": "onSubmitReCaptcha1",
-		"size":"invisible"
+		"size":"invisible",
+		"badge" : "inline"
 	});
 	idCaptcha2 = grecaptcha.render('recaptcha2', {
 		"sitekey":"6LekqasUAAAAAEeSXL5E-tDlX2CVVp988nldHZJv",
