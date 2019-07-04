@@ -213,6 +213,16 @@
 		}
 	}
 
+	.popup-menu{
+		min-height: 460px;
+		&-inner{
+			padding-top: 20px;
+		}
+		.close-menu{
+			left: 30px;
+			top: 30px;
+		}		
+	}
 	.send-popup{
 		margin-left: 0;
 		left: 2%;
@@ -302,6 +312,7 @@
 	}
 	.popup-menu{
 		font-size: 16px;
+		min-height: 410px;
 	}
 }
 

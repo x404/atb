@@ -300,7 +300,7 @@ var prepareDataForm = function(form, captchaID, token) {
 
 			// отправка в google forms
 			strSubmit = $(form).serialize();
-			$.ajax({type: "POST",url: $table_url_work ,data: strSubmit});
+			// $.ajax({type: "POST",url: $table_url_work ,data: strSubmit});
 
 			if (formid == 'form-1' || formid == 'form-2'){
 				$('.sending').remove();

@@ -18,8 +18,6 @@ var gulp 		= require('gulp'),
 	var realFavicon = require ('gulp-real-favicon');
 	var fs = require('fs');	
 
-	var groupmq = require('gulp-group-css-media-queries');
-
 
 var config = {
 	templateDir : 'app/template',
@@ -41,7 +39,6 @@ gulp.task('scss', function(){
 // сжатие css файла
 gulp.task('css-libs', ['scss'],  function(){
 	return gulp.src(config.templateDir + '/css/styles.css') // Выбираем файл для минификации
-		.pipe(groupmq())
 		.pipe(cleancss())  // Сжимаем
 		.pipe(rename({suffix: '.min'}))  // Добавляем суффикс .min
 		.pipe(gulp.dest(config.templateDir + '/css')) // Выгружаем в папку app/css
@@ -262,7 +259,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	var buildJsPhoneMask = gulp.src([ // move js to production
 		config.templateDir + '/js/inputmask/jquery.inputmask.bundle.min.js'
 	])
-	.pipe(gulp.dest(config.templateDestDir + '/inputmask/js'));
+	.pipe(gulp.dest(config.templateDestDir + '/js/inputmask'));
 
 	// var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
 	

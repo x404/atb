@@ -3616,6 +3616,7 @@ form .form-control {
   background: none;
   border: none;
   border-bottom: 2px solid #fff;
+  border-radius: 0;
   color: #fff;
   font-size: 17px;
   height: 54px;
@@ -4377,7 +4378,12 @@ label.error {
           margin-bottom: 15px;
           width: 230px; }
       #section-2 .tab-content {
-        padding-top: 10px; } }
+        padding-top: 10px; }
+      #section-2 .categories {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: -15px;
+        width: 100vw; } }
 
 .content ul {
   list-style: none; }
@@ -5511,6 +5517,13 @@ table {
     font-size: 35px; }
   #qorder .subtitle {
     font-size: 16px; }
+  .popup-menu {
+    min-height: 460px; }
+    .popup-menu-inner {
+      padding-top: 20px; }
+    .popup-menu .close-menu {
+      left: 30px;
+      top: 30px; }
   .send-popup {
     margin-left: 0;
     left: 2%;
@@ -5566,7 +5579,8 @@ table {
   .send-popup .thank {
     font-size: 14px; }
   .popup-menu {
-    font-size: 16px; } }
+    font-size: 16px;
+    min-height: 410px; } }
 
 @media (max-width: 360px) {
   #qorder .title {
