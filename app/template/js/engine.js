@@ -174,11 +174,6 @@ $(document).ready(function(){
 		},
 		submitHandler:function(form) {
 			 grecaptcha.execute(idCaptcha2);
-
-			// let strSubmit= $(form).serialize(),
-			// 	url = $(form).attr('action');
-			// modal2.open();
-			// sendform(url, strSubmit, form);
 		}
 	});	
 
@@ -209,10 +204,6 @@ $(document).ready(function(){
 			};
 		},
 		submitHandler:function(form) {
-			// let strSubmit= $(form).serialize(),
-			// 	url = $(form).attr('action');
-				
-			// sendform(url, strSubmit, form);
 			 grecaptcha.execute(idCaptcha3);
 		}
 	});	
@@ -293,7 +284,8 @@ var prepareDataForm = function(form, captchaID, token) {
   // отправка формы через AJAX
   function sendForm(form, url, captchaID, token){
 	var data = new FormData();
-	let formid = $(form).attr('id');
+	let $table_url = 'https://docs.google.com/forms/d/e/1FAIpQLSfx9T7v7KRzyBAzMWIgXJ2JQ67Q5HHdYjdyWXoeDCWV_2sf5A/formResponse',
+		formid = $(form).attr('id')
 
 	$('.send-popup').append('<div class="sending"><p>Идет отправка ...</p></div>');
 
@@ -303,16 +295,17 @@ var prepareDataForm = function(form, captchaID, token) {
 	    body: prepareDataForm(form, captchaID, token)
 	}).then(function(response) {
 		if (response.status == '200'){
+
+			// отправка в google forms
+			strSubmit = $(form).serialize();
+			$.ajax({type: "POST",url: $table_url,data: strSubmit});
+
 			if (formid == 'form-1' || formid == 'form-2'){
 				$('.sending').remove();
 				$('.send-popup').append(thank);
 			};
 
 			if (formid == 'form-3'){
-				// $('.send-popup').remove();
-				// $('#qorder .modal-content').hide();
-				// $('#qorder .modal-dialog').append(thank);
-
 				$('#qorder').modal('hide');
 				$('.sending').remove();
 				$('.send-popup').append(thank);
