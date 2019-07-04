@@ -3222,165 +3222,6 @@ a.text-dark:hover, a.text-dark:focus {
     width: 1700px;
     max-width: 1700px; } }
 
-.d-grid {
-  display: grid; }
-
-@media (min-width: 480px) {
-  .d-sm-grid {
-    display: grid; } }
-
-@media (min-width: 768px) {
-  .d-md-grid {
-    display: grid; } }
-
-@media (min-width: 992px) {
-  .d-lg-grid {
-    display: grid; } }
-
-@media (min-width: 1250px) {
-  .d-xl-grid {
-    display: grid; } }
-
-.grid-1 {
-  grid-template-columns: repeat(1, 1fr); }
-
-.grid-2 {
-  grid-template-columns: repeat(2, 1fr); }
-
-.grid-3 {
-  grid-template-columns: repeat(3, 1fr); }
-
-.grid-4 {
-  grid-template-columns: repeat(4, 1fr); }
-
-.grid-5 {
-  grid-template-columns: repeat(5, 1fr); }
-
-.grid-6 {
-  grid-template-columns: repeat(6, 1fr); }
-
-.grid-7 {
-  grid-template-columns: repeat(7, 1fr); }
-
-.grid-8 {
-  grid-template-columns: repeat(8, 1fr); }
-
-.grid-9 {
-  grid-template-columns: repeat(9, 1fr); }
-
-.grid-10 {
-  grid-template-columns: repeat(10, 1fr); }
-
-.grid-11 {
-  grid-template-columns: repeat(11, 1fr); }
-
-.grid-12 {
-  grid-template-columns: repeat(12, 1fr); }
-
-@media (min-width: 480px) {
-  .grid-sm-1 {
-    grid-template-columns: repeat(1, 1fr); }
-  .grid-sm-2 {
-    grid-template-columns: repeat(2, 1fr); }
-  .grid-sm-3 {
-    grid-template-columns: repeat(3, 1fr); }
-  .grid-sm-4 {
-    grid-template-columns: repeat(4, 1fr); }
-  .grid-sm-5 {
-    grid-template-columns: repeat(5, 1fr); }
-  .grid-sm-6 {
-    grid-template-columns: repeat(6, 1fr); }
-  .grid-sm-7 {
-    grid-template-columns: repeat(7, 1fr); }
-  .grid-sm-8 {
-    grid-template-columns: repeat(8, 1fr); }
-  .grid-sm-9 {
-    grid-template-columns: repeat(9, 1fr); }
-  .grid-sm-10 {
-    grid-template-columns: repeat(10, 1fr); }
-  .grid-sm-11 {
-    grid-template-columns: repeat(11, 1fr); }
-  .grid-sm-12 {
-    grid-template-columns: repeat(12, 1fr); } }
-
-@media (min-width: 768px) {
-  .grid-md-1 {
-    grid-template-columns: repeat(1, 1fr); }
-  .grid-md-2 {
-    grid-template-columns: repeat(2, 1fr); }
-  .grid-md-3 {
-    grid-template-columns: repeat(3, 1fr); }
-  .grid-md-4 {
-    grid-template-columns: repeat(4, 1fr); }
-  .grid-md-5 {
-    grid-template-columns: repeat(5, 1fr); }
-  .grid-md-6 {
-    grid-template-columns: repeat(6, 1fr); }
-  .grid-md-7 {
-    grid-template-columns: repeat(7, 1fr); }
-  .grid-md-8 {
-    grid-template-columns: repeat(8, 1fr); }
-  .grid-md-9 {
-    grid-template-columns: repeat(9, 1fr); }
-  .grid-md-10 {
-    grid-template-columns: repeat(10, 1fr); }
-  .grid-md-11 {
-    grid-template-columns: repeat(11, 1fr); }
-  .grid-md-12 {
-    grid-template-columns: repeat(12, 1fr); } }
-
-@media (min-width: 992px) {
-  .grid-lg-1 {
-    grid-template-columns: repeat(1, 1fr); }
-  .grid-lg-2 {
-    grid-template-columns: repeat(2, 1fr); }
-  .grid-lg-3 {
-    grid-template-columns: repeat(3, 1fr); }
-  .grid-lg-4 {
-    grid-template-columns: repeat(4, 1fr); }
-  .grid-lg-5 {
-    grid-template-columns: repeat(5, 1fr); }
-  .grid-lg-6 {
-    grid-template-columns: repeat(6, 1fr); }
-  .grid-lg-7 {
-    grid-template-columns: repeat(7, 1fr); }
-  .grid-lg-8 {
-    grid-template-columns: repeat(8, 1fr); }
-  .grid-lg-9 {
-    grid-template-columns: repeat(9, 1fr); }
-  .grid-lg-10 {
-    grid-template-columns: repeat(10, 1fr); }
-  .grid-lg-11 {
-    grid-template-columns: repeat(11, 1fr); }
-  .grid-lg-12 {
-    grid-template-columns: repeat(12, 1fr); } }
-
-@media (min-width: 1250px) {
-  .grid-xl-1 {
-    grid-template-columns: repeat(1, 1fr); }
-  .grid-xl-2 {
-    grid-template-columns: repeat(2, 1fr); }
-  .grid-xl-3 {
-    grid-template-columns: repeat(3, 1fr); }
-  .grid-xl-4 {
-    grid-template-columns: repeat(4, 1fr); }
-  .grid-xl-5 {
-    grid-template-columns: repeat(5, 1fr); }
-  .grid-xl-6 {
-    grid-template-columns: repeat(6, 1fr); }
-  .grid-xl-7 {
-    grid-template-columns: repeat(7, 1fr); }
-  .grid-xl-8 {
-    grid-template-columns: repeat(8, 1fr); }
-  .grid-xl-9 {
-    grid-template-columns: repeat(9, 1fr); }
-  .grid-xl-10 {
-    grid-template-columns: repeat(10, 1fr); }
-  .grid-xl-11 {
-    grid-template-columns: repeat(11, 1fr); }
-  .grid-xl-12 {
-    grid-template-columns: repeat(12, 1fr); } }
-
 /*---------------------------------------------------
     SCSS Elements 0.1
   ---------------------------------------------------
@@ -4165,79 +4006,6 @@ label.error {
   font-style: italic;
   font-display: swap; }
 
-/* Slider */
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent; }
-
-.slick-list {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  margin: 0;
-  padding: 0; }
-  .slick-list:focus {
-    outline: none; }
-  .slick-list.dragging {
-    cursor: pointer;
-    cursor: hand; }
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-.slick-track {
-  position: relative;
-  left: 0;
-  top: 0;
-  display: block; }
-  .slick-track:before, .slick-track:after {
-    content: "";
-    display: table; }
-  .slick-track:after {
-    clear: both; }
-  .slick-loading .slick-track {
-    visibility: hidden; }
-
-.slick-slide {
-  float: left;
-  height: 100%;
-  min-height: 1px;
-  display: none; }
-  [dir="rtl"] .slick-slide {
-    float: right; }
-  .slick-slide img {
-    display: block; }
-  .slick-slide.slick-loading img {
-    display: none; }
-  .slick-slide.dragging img {
-    pointer-events: none; }
-  .slick-initialized .slick-slide {
-    display: block; }
-  .slick-loading .slick-slide {
-    visibility: hidden; }
-  .slick-vertical .slick-slide {
-    display: block;
-    height: auto;
-    border: 1px solid transparent; }
-
-.slick-arrow.slick-hidden {
-  display: none; }
-
 #section-1 .contacts {
   font-size: 1.4rem;
   position: relative;
@@ -4466,6 +4234,12 @@ label.error {
   .item__advantage-title {
     line-height: 1.3;
     margin-bottom: 10px; } }
+
+@media (max-width: 991px) {
+  .item__advantage-title {
+    font-size: 15px; }
+  .item__advantage-text {
+    font-size: 13px; } }
 
 @media (max-width: 600px) {
   .advantages__list {

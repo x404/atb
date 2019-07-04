@@ -349,6 +349,17 @@
 }
 
 
+@media (max-width: 991px){
+	.item__advantage{
+		&-title{
+			font-size: 15px;
+		}
+		&-text{
+			font-size: 13px;
+		}
+	}
+}
+
 @media (max-width: 600px){
 	.advantages{
 		&__list{
