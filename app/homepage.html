@@ -1031,7 +1031,7 @@
 					</div>
 					<script>
 						$(document).ready(function(){
-							$.getScript("http://api-maps.yandex.ru/2.0.24/?load=package.full&lang=ru-RU", function() {
+							$.getScript("http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru_RU", function() {
 								// yandex maps	
 								ymaps.ready(init);
 							});
@@ -1109,7 +1109,7 @@
 				<p class="title">Оставьте заявку</p>
 				<p class="subtitle">И мы Вам перезвоним в течение рабочего дня</p>
 				
-				<form action="#" method="post" id="form-3">
+				<form action="/core/send.php" method="post" id="form-3">
 					<fieldset>
 						<div class="input-field">
 							<label for="qname" class="name-field">Ваше имя</label>
@@ -1121,6 +1121,7 @@
 							<label for="qtel" class="helper-field helper-field-name">Телефон</label>
 							<input type="tel" id="qtel" name="tel" class="form-control tel required" value="" aria-label="Телефон" />
 						</div>
+						<div id="recaptcha3"></div>
 						<input type="submit" value="Перезвоните мне" class="btn btn-blue btn-bg-red btn-submit " />
 						<p class="policy">Нажимая на кнопку Вы даете согласие <br>на обработку персональных данных</p>
 					</fieldset>
