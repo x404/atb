@@ -4262,21 +4262,23 @@ label.error {
     background-image: url(/images/bugtv480.webp); } }
 
 @media (max-width: 380px) {
-  #section-1 .title,
-  #section-1 .subtitle {
-    width: calc(100% - 150px); }
-  #section-1 .content {
-    background-image: url(/images/bugtv320.png); }
-  #section-1 .header {
-    background: #000;
-    display: flex;
-    height: 60px;
-    left: 0;
-    padding: 0 15px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999; }
+  #section-1 {
+    padding-top: 60px; }
+    #section-1 .title,
+    #section-1 .subtitle {
+      width: calc(100% - 150px); }
+    #section-1 .content {
+      background-image: url(/images/bugtv320.png); }
+    #section-1 .header {
+      background: #000;
+      display: flex;
+      height: 60px;
+      left: 0;
+      padding: 0 15px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999; }
   .webp #section-1 .content {
     background-image: url(/images/bugtv320.webp); } }
 
