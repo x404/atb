@@ -36,29 +36,6 @@ function onSubmitReCaptcha3(token) {
 
 
 $(document).ready(function(){
-	// mobile-menu
-	$('#navbar').each(function(){
-		var $this = $(this),
-			$link = $('.navbar-toggle'),
-			$close = $('.close-menu'),
-
-			init = function(){
-				$link.on('click', openMenu);
-				$close.on('click', closeMenu);
-			},
-			openMenu = function(e){
-				e.preventDefault();
-				$('body').addClass('o-menu');
-
-			},
-			closeMenu = function(e){
-				e.preventDefault();
-				$('body').removeClass('o-menu');
-			};
-		init();
-	});	
-
-
 
 	// inputs
 	$('.input-field').each(function(){
@@ -211,14 +188,6 @@ $(document).ready(function(){
 });
 
 
-document.querySelector('.extra-toggle').addEventListener('click', function(){
-	document.querySelector('body').classList.toggle('o-popup-menu')
-});
-document.querySelector('.popup-menu .close-menu').addEventListener('click', function(){
-	document.querySelector('body').classList.toggle('o-popup-menu')
-});
-
-
 function init(){
 	/******* =Yandex MAP ********/
 	//http://api.yandex.ru/maps/jsbox/2.1/placemark_shape
@@ -319,44 +288,6 @@ var prepareDataForm = function(form, captchaID, token) {
 	});
   }
 
-
-
-
-function sendform2(url, strSubmit, form){
-	$('.send-popup').append('<div class="sending"><p>Идет отправка ...</p></div>');
-	
-	fetch('/core/send.php', {
-		method: 'post',
-		headers: {
-			"Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
-		},
-		body: strSubmit 
-	})
-	.then(function(response){ 
-		let formid = $(form).attr('id');
-		if (response.status == '200'){
-
-			if (formid == 'form-1' || formid == 'form-2'){
-				document.querySelector('.sending').remove();
-				$('.send-popup').append(thank);
-			};
-
-			if (formid == 'form-3'){
-				$('#qorder .modal-body').hide();
-				$('#qorder .modal-content').append(thank);
-			}
-
-		} else {
-			alert(errorTxt);
-			modal2.close();
-		}
-	})
-	.catch (function (error) {
-		console.log('Request failed', error);
-	});
-}
-
-
 document.querySelector('.send-popup .close-menu').addEventListener('click', function(e){
 	e.preventDefault();
 	modal2.close();
@@ -402,5 +333,4 @@ class Popup{
 		document.querySelector(this.name).classList.remove('show');
 	}
 }
-
 var modal2 = new Popup('.send-popup');

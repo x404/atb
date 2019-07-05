@@ -646,7 +646,7 @@ nav{
 	top: 0;
 	width: 100%;
 	z-index: 999;
-	min-height: 580px;
+	min-height: 590px;
 	overflow: hidden;
 	transition: transform .6s;
 	transform: translateY(-140%);
@@ -654,7 +654,7 @@ nav{
 	&-inner{
 		overflow: auto;
 		padding: 45px 0 40px;
-		position: fixed;
+		position: absolute;
 		top: 0;
 		bottom: 0;
 		height: 100%;

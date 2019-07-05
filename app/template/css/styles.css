@@ -3143,6 +3143,10 @@ a.text-dark:hover, a.text-dark:focus {
     padding-left: 15px;
     padding-right: 15px; } }
 
+@media (max-width: 480px) {
+  .hide-480 {
+    display: none !important; } }
+
 .container,
 .container-big {
   width: 100%;
@@ -3707,14 +3711,14 @@ nav a {
   top: 0;
   width: 100%;
   z-index: 999;
-  min-height: 580px;
+  min-height: 590px;
   overflow: hidden;
   transition: transform .6s;
   transform: translateY(-140%); }
   .popup-menu-inner {
     overflow: auto;
     padding: 45px 0 40px;
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     height: 100%;
@@ -4007,188 +4011,172 @@ label.error {
   font-style: italic;
   font-display: swap; }
 
-#section-1 .contacts {
-  font-size: 1.4rem;
-  position: relative;
-  top: 10px; }
-  #section-1 .contacts .tel {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 2.5rem; }
-    #section-1 .contacts .tel:first-child {
-      margin-left: 0; }
-    #section-1 .contacts .tel:hover {
-      text-decoration: none; }
-
-#section-1 .title {
-  color: #fff; }
-
-#section-1 .subtitle {
-  color: #00ffd2;
-  font-size: 30px;
-  font-weight: 700;
-  margin: 15px 0; }
-
-#section-1 .content {
-  color: #dfdde5;
-  font-size: 20px;
-  padding-top: 90px; }
-
-#section-1 form {
-  margin-top: 50px; }
-
-#section-1 .btn-submit {
-  margin-top: 28px; }
-
-@media (max-width: 1600px) {
-  #section-1 .subtitle {
-    font-size: 28px; }
-  #section-1 .content {
-    font-size: 18px; } }
-
-@media (max-width: 1050px) {
-  #section-1 .subtitle {
-    font-size: 28px; }
-  #section-1 .content {
-    font-size: 18px; } }
-
-@media (max-width: 991px) {
-  #section-1 .header {
-    margin-bottom: 40px; }
-  #section-1 .content {
-    font-size: 14px;
-    padding-top: 65px; }
-  #section-1 .form-wrapper {
-    align-items: center;
-    display: flex; }
-  #section-1 form {
-    margin-top: 20px; }
-    #section-1 form .input-field label {
-      font-size: 15px; }
-  #section-1 .advantages__list {
-    margin-top: 30px; } }
-
-@media (max-width: 950px) {
-  #section-1 .header {
-    padding-top: 16px; }
-    #section-1 .header .qorder {
-      height: 40px;
-      margin-left: 20px;
-      font-size: 14px; }
-    #section-1 .header .contacts {
-      position: static; }
-      #section-1 .header .contacts .city {
-        display: none; }
-      #section-1 .header .contacts .tel {
-        font-size: 18px; }
-    #section-1 .header .right {
-      flex-grow: 1;
-      justify-content: space-between !important;
-      padding-left: 50px; }
-  #section-1 .subtitle {
-    font-size: 20px; }
-  #section-1 .content {
-    padding-top: 18px; }
-  #section-1 form .form-control {
-    margin-right: 20px;
-    width: 200px; }
-  #section-1 .policy {
-    margin-top: 15px; } }
-
-@media (max-width: 850px) {
-  #section-1 .header .right {
-    padding-left: 30px; } }
-
-@media (max-width: 825px) {
-  #section-1 .header .right {
-    padding-left: 20px; }
-  #section-1 .header .qorder {
-    margin-left: 5px;
-    padding: 0 10px;
-    white-space: nowrap; }
-  #section-1 .contacts .tel {
-    margin-left: 15px; } }
-
-@media (max-width: 800px) {
-  #section-1 .header .right {
-    padding-left: 15px; } }
-
-@media (max-width: 760px) {
-  #section-1 .header .qorder {
-    display: none; }
-  #section-1 .header .right {
-    justify-content: flex-end !important; }
-  #section-1 .form-wrapper {
-    display: block; } }
-
-@media (max-width: 600px) {
-  #section-1 .header {
-    margin-bottom: 15px; }
-    #section-1 .header .contacts {
-      display: flex;
-      flex-direction: column; }
-      #section-1 .header .contacts .tel {
-        margin-left: 0; }
-  #section-1 .subtitle {
-    font-size: 18px; }
-  #section-1 .content {
-    position: static; }
-  #section-1 .text {
-    margin-top: 40px;
-    width: calc(100vw - 40px); }
-  #section-1 form {
+#section-1 {
+  overflow: hidden; }
+  #section-1 .contacts {
+    font-size: 1.4rem;
     position: relative;
-    padding-bottom: 40px; }
-    #section-1 form .form-control {
-      width: 230px; }
-  #section-1 .policy {
-    bottom: -15px;
-    height: 40px;
-    left: 0;
-    position: absolute;
-    width: calc(100vw - 40px); } }
-
-@media (max-width: 550px) {
-  #section-1 .text {
-    margin-top: 15px; } }
-
-@media (max-width: 530px) {
-  #section-1 form .form-control {
-    width: 200px; } }
-
-@media (max-width: 479px) {
+    top: 10px; }
+    #section-1 .contacts .tel {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 2.5rem; }
+      #section-1 .contacts .tel:first-child {
+        margin-left: 0; }
+      #section-1 .contacts .tel:hover {
+        text-decoration: none; }
+  #section-1 .title {
+    color: #fff; }
+  #section-1 .subtitle {
+    color: #00ffd2;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 0; }
+  #section-1 .content {
+    color: #dfdde5;
+    font-size: 20px;
+    padding-top: 90px; }
   #section-1 form {
-    padding-bottom: 0; }
+    margin-top: 50px; }
+  #section-1 .btn-submit {
+    margin-top: 28px; }
+  @media (max-width: 1600px) {
+    #section-1 .subtitle {
+      font-size: 28px; }
+    #section-1 .content {
+      font-size: 18px; } }
+  @media (max-width: 1050px) {
+    #section-1 .subtitle {
+      font-size: 28px; }
+    #section-1 .content {
+      font-size: 18px; } }
+  @media (max-width: 991px) {
+    #section-1 .header {
+      margin-bottom: 40px; }
+    #section-1 .content {
+      font-size: 14px;
+      padding-top: 65px; }
+    #section-1 .form-wrapper {
+      align-items: center;
+      display: flex; }
+    #section-1 form {
+      margin-top: 20px; }
+      #section-1 form .input-field label {
+        font-size: 15px; }
+    #section-1 .advantages__list {
+      margin-top: 30px; } }
+  @media (max-width: 950px) {
+    #section-1 .header {
+      padding-top: 16px; }
+      #section-1 .header .qorder {
+        height: 40px;
+        margin-left: 20px;
+        font-size: 14px; }
+      #section-1 .header .contacts {
+        position: static; }
+        #section-1 .header .contacts .city {
+          display: none; }
+        #section-1 .header .contacts .tel {
+          font-size: 18px; }
+      #section-1 .header .right {
+        flex-grow: 1;
+        justify-content: space-between !important;
+        padding-left: 50px; }
+    #section-1 .subtitle {
+      font-size: 20px; }
+    #section-1 .content {
+      padding-top: 18px; }
     #section-1 form .form-control {
-      width: 97%; }
-  #section-1 .form-wrapper .d-flex {
-    display: block !important; }
-  #section-1 .policy {
-    position: static;
-    width: auto; }
-  #section-1 .text {
-    width: 100%; } }
-
-@media (max-width: 400px) {
-  #section-1 {
-    padding-bottom: 15px; }
-    #section-1 .extra-toggle {
-      margin-right: 8px; }
-    #section-1 .header .contacts .tel {
-      font-size: 14px; }
-    #section-1 .header .logo,
-    #section-1 .footer .logo {
-      border-width: 2px;
-      font-size: 16px;
-      height: 34px;
-      width: 112px; }
-      #section-1 .header .logo:after,
-      #section-1 .footer .logo:after {
+      margin-right: 20px;
+      width: 200px; }
+    #section-1 .policy {
+      margin-top: 15px; } }
+  @media (max-width: 850px) {
+    #section-1 .header .right {
+      padding-left: 30px; } }
+  @media (max-width: 825px) {
+    #section-1 .header .right {
+      padding-left: 20px; }
+    #section-1 .header .qorder {
+      margin-left: 5px;
+      padding: 0 10px;
+      white-space: nowrap; }
+    #section-1 .contacts .tel {
+      margin-left: 15px; } }
+  @media (max-width: 800px) {
+    #section-1 .header .right {
+      padding-left: 15px; } }
+  @media (max-width: 760px) {
+    #section-1 .header .qorder {
+      display: none; }
+    #section-1 .header .right {
+      justify-content: flex-end !important; }
+    #section-1 .form-wrapper {
+      display: block; } }
+  @media (max-width: 600px) {
+    #section-1 .header {
+      margin-bottom: 15px; }
+      #section-1 .header .contacts {
+        display: flex;
+        flex-direction: column; }
+        #section-1 .header .contacts .tel {
+          margin-left: 0; }
+    #section-1 .subtitle {
+      font-size: 18px; }
+    #section-1 .content {
+      position: static; }
+    #section-1 .text {
+      margin-top: 40px;
+      width: calc(100vw - 40px); }
+    #section-1 form {
+      position: relative;
+      padding-bottom: 40px; }
+      #section-1 form .form-control {
+        width: 230px; }
+    #section-1 .policy {
+      bottom: -15px;
+      height: 40px;
+      left: 0;
+      position: absolute;
+      width: calc(100vw - 40px); } }
+  @media (max-width: 550px) {
+    #section-1 .text {
+      margin-top: 15px; } }
+  @media (max-width: 530px) {
+    #section-1 form .form-control {
+      width: 200px; } }
+  @media (max-width: 479px) {
+    #section-1 form {
+      padding-bottom: 0; }
+      #section-1 form .form-control {
+        width: 97%; }
+    #section-1 .form-wrapper .d-flex {
+      display: block !important; }
+    #section-1 .policy {
+      position: static;
+      width: auto; }
+    #section-1 .text {
+      width: 100%; } }
+  @media (max-width: 400px) {
+    #section-1 {
+      padding-bottom: 15px; }
+      #section-1 .extra-toggle {
+        margin-right: 8px; }
+      #section-1 .header .contacts .tel {
+        font-size: 14px; }
+      #section-1 .header .logo,
+      #section-1 .footer .logo {
         border-width: 2px;
-        bottom: -7px; }
-    #section-1 form .form-control {
-      margin-right: 0; } }
+        font-size: 16px;
+        height: 34px;
+        width: 112px; }
+        #section-1 .header .logo:after,
+        #section-1 .footer .logo:after {
+          border-width: 2px;
+          bottom: -7px; }
+      #section-1 form .form-control {
+        margin-right: 0; } }
 
 .advantages__list {
   margin-top: 80px; }
@@ -4262,7 +4250,35 @@ label.error {
   .item__advantage-pic {
     height: 75px; }
     .item__advantage-pic img {
-      max-width: 60px; } }
+      max-width: 60px; }
+  #section-1 .title,
+  #section-1 .subtitle {
+    width: calc(100% - 200px); }
+  #section-1 .btn {
+    width: 290px; }
+  #section-1 .content {
+    background: url(/images/bugtv480.png) no-repeat right top; }
+  .webp #section-1 .content {
+    background-image: url(/images/bugtv480.webp); } }
+
+@media (max-width: 380px) {
+  #section-1 .title,
+  #section-1 .subtitle {
+    width: calc(100% - 150px); }
+  #section-1 .content {
+    background-image: url(/images/bugtv320.png); }
+  #section-1 .header {
+    background: #000;
+    display: flex;
+    height: 60px;
+    left: 0;
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999; }
+  .webp #section-1 .content {
+    background-image: url(/images/bugtv320.webp); } }
 
 #section-2 {
   padding: 90px 0 70px; }

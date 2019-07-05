@@ -16,6 +16,12 @@
 	}
 }
 
+@media (max-width: 480px) {
+	.hide-480{
+		display: none !important;
+	}
+}
+
 
 .container,
 .container-big
